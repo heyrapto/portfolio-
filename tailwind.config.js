@@ -5,7 +5,20 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        clash: ["Clash Display Medium", "sans-serif"],
+        lexend: ["Lexend", "sans-serif"], // Add Lexend font family
+        rubik: ["Rubik", "sans-serif"],
+      },
+      colors: {
+        green: "#34afcb",
+      },
+      backgroundColor: {
+        green: "#34afcb",
+      },
+    },
   },
   plugins: [],
 }

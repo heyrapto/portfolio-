@@ -1,68 +1,43 @@
 const Skills = () => {
-    return(
-        <>
-        <br />
-        <h2>Skills<span className="bounce">🤹</span></h2>
-            <p>These are some of the skills I’ve learnt over the past years.</p>
-            <section className="block-container">
-                <div className="block-3 block-left">
-                    <div>
-                        <h3>HTML</h3>
+    const skillsList = [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Firebase",
+      "ReactJs",
+      "TailwindCSS",
+      "NextJs",
+      "Git/Github",
+      "Animations",
+      "SEO",
+      ". . .",
+    ];
+
+    return (
+        <section>
+            <div className="flex justify-center py-5">
+                <div className="my_fixed_width">
+                    <h2 className="text-2xl font-bold font-clash">
+                        Skills
+                        <span className="inline-block animate-bounce">🤹</span>
+                    </h2>
+                    <p className="text-sm text-[#808e91] font-rubik my-3">
+                        These are some of the skills I&apos;ve learnt over the past years.
+                    </p>
+                    <div className="grid place-items-center my-5 gap-5 sm:grid-cols-2 md:grid-cols-3">
+                        {skillsList.map((skill, index) => (
+                            <div 
+                                key={skill} 
+                                className={`w-full flex items-center relative overflow-hidden p-4 bg-[#0a1c20] font-clash ${index % 2 === 0 ? 'block_left' : 'block_right'} transition-all duration-300 text-[0.9rem] hover:text-[0.8rem]`}
+                            >
+                                <p>{skill}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
-                <div className="block-3 block-right">
-                    <div>
-                        <h3>CSS</h3>
-                    </div>
-                </div>
-                <div className="block-3 block-left">
-                    <div>
-                        <h3>JavaScript</h3>
-                    </div>
-                </div>
-                <div className="block-3 block-right">
-                    <div>
-                        <h3>Firebase</h3>
-                    </div>
-                </div>
-                <div className="block-3 block-left">
-                    <div>
-                        <h3>Bootstrap</h3>
-                    </div>
-                </div>
-                <div className="block-3 block-right">
-                    <div>
-                        <h3>SEO</h3>
-                    </div>
-                </div>
-                <div className="block-3 block-left">
-                    <div>
-                        <h3>Tailwind CSS</h3>
-                    </div>
-                </div>
-                <div className="block-3 block-right">
-                    <div>
-                        <h3>React Js</h3>
-                    </div>
-                </div>
-                <div className="block-3 block-left">
-                    <div>
-                        <h3>Git/GitHub</h3>
-                    </div>
-                </div>
-                <div className="block-3 block-right">
-                    <div>
-                        <h3>Animations</h3>
-                    </div>
-                </div>
-                <div className="block-3 block-left">
-                    <div>
-                        <h3>. . .</h3>
-                    </div>
-                </div>
-            </section>
-        </>
-    )
-}
+            </div>
+        </section>
+    );
+};
 
 export default Skills;

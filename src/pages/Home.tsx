@@ -1,73 +1,83 @@
-const Home = () => {
-    return(
-            <header>
-            <div className="grid colored-border">
-                <div className="grid-item">
-                    <div className="item">
-                        <h1 className="gradient-text">
-                            Creative Frontend Developer.
-                        </h1>
-                    </div>
-                    <div className="item">
-                        <p className="p">
-                            I code and design simple beautiful things, and I
-                            love what I do.
-                        </p>
-                    </div>
-                    <div className="item">
-                        <p>
-                            3+ years of experience. Specialized in building
-                            products, while ensuring a seamless web experience
-                            for clients across Africa.
-                        </p>
-                    </div>
-                    <div className="item">
-                        <p>
-                            Highly skilled at progressive enhancement, design
-                            systems & UI Engineering - performance and
-                            scalability are top objectives on my radar.
-                        </p>
-                    </div>
-                    <div className="item">
-                        <br />
-                        <section className="social-icons-container">
-                            <a
-                                href="https://www.facebook.com/profile.php?id=100085862181551"
-                                target="_blank"
-                                className="social-icons"
-                                ><i className="fab fa-facebook"></i
-                            ></a>
-                            <a
-                                href="https://twitter.com/TreasureUzoma1"
-                                className="social-icons"
-                                ><i className="fab fa-twitter"></i
-                            ></a>
-                            <a
-                                href="https://www.instagram.com/naira_jasper"
-                                className="social-icons"
-                                ><i className="fab fa-instagram"></i
-                            ></a>
-                            <a
-                                href="https://www.linkedin.com/in/treasure-uzoma-40a789260"
-                                className="social-icons"
-                                ><i className="fab fa-linkedin"></i
-                            ></a>
-                        </section>
-                    </div>
-                </div>
-                <div className="grid-item centered">
-                    <div className="avatar-container">
-                        <img
-                            src="https://treasureuzoma.vercel.app/images/hero.png"
-                            alt="avatar"
-                            className="avatar-pic"
-                        />
-                        <div className="avatar-border"></div>
-                    </div>
-                </div>
-            </div>
-        </header>
-    )
-}
+import SvgIcons from "./icons/SvgIcons";
+import HeroImage from "./mainComponents/HeroImage";
 
-export default Home;
+const Hero = () => {
+    return (
+      <header className="my-[5.4rem] flex items-center justify-center min-h-screen relative overflow-hidden w-full lg:min-h-[100vh] md:mt-0">
+        <div className="my_fixed_width md:flex justify-between items-center sm:pr-2 md:px-3">
+          <div className="md:w-[52%] lg:w-[60%]">
+            <h1 className="gradient_text text-[2.1rem] font-clash leading-[2.5rem] md:leading-[3.6rem] md:text-[3.5rem]">
+              Creative <br className="md:hidden" /> Frontend Developer.
+            </h1>
+            <div className="font-[400] mt-[2.5rem] font-rubik pr-5 text-sm">
+              <p className="gradient_text">
+                Crafting simple, beautiful, and intuitive digital experiences is
+                what I do best.
+              </p>
+              <p className="gradient_text py-[1.8rem]">
+                With 3+ years of experience, I build seamless, enjoyable web
+                experiences for clients and businesses. Let’s make
+                something amazing together!
+              </p>
+            </div>
+            <div className="mt-[1.7rem] flex space-x-5">
+              <a
+                href="https://www.facebook.com/profile.php?id=100085862181551"
+                className="rounded-full border border-2 border-[#34afcb] hover:border-green hover:bg-green"
+                target="_blank"
+              >
+                <SvgIcons
+                  type="facebook"
+                  height="20"
+                  width="20"
+                  color="#34afcb"
+                  className="m-1 hover:fill-[#061417]"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/treasure-uzoma-40a789260"
+                className="rounded-full border border-2 border-[#34afcb] hover:border-green hover:bg-green"
+                target="_blank"
+              >
+                <SvgIcons
+                  type="linkedin"
+                  height="20"
+                  width="20"
+                  color="#34afcb"
+                  className="m-1 hover:fill-[#061417]"
+                />
+              </a>
+              <a
+                href="https://www.twitter.com/TreasureUzoma1"
+                className="rounded-full border-2 border-[#34afcb] hover:border-green hover:bg-green"
+                target="_blank"
+              >
+                <SvgIcons
+                  type="twitter"
+                  height="20"
+                  width="20"
+                  color="#34afcb"
+                  className="m-1 hover:fill-[#061417]"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/naira_jasper"
+                className="rounded-full border-2 border-[#34afcb] hover:border-green hover:bg-green"
+                target="_blank"
+              >
+                <SvgIcons
+                  type="instagram"
+                  height="20"
+                  width="20"
+                  color="#34afcb"
+                  className="m-1 hover:fill-[#061417]"
+                />
+              </a>
+            </div>
+          </div>
+          <HeroImage />
+        </div>
+      </header>
+    );
+};
+export default Hero;

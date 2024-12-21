@@ -2,20 +2,22 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import RecentWorks from "./pages/RecentWorks";
 import Skills from "./pages/Skills";
-import Contact from "./pages/Contact";
 import { Section } from "./components/Section";
 import { Footer } from "./components/Footer";
+import { Navbar } from "./components/Navbar";
 
 function App() {
   return (
-    <main>
-      <Home />
-      <Services />
-      <RecentWorks />
-      <Skills />
-      <Contact />
-      <Footer />
-    </main>
+    <>
+            <Navbar />
+            <Home />
+            <main>
+              <Services />
+              <RecentWorks />
+              <Skills />
+            </main>
+            <Footer />
+        </>
   )
 }
 
