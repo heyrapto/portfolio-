@@ -60,19 +60,19 @@ const Services = () => {
                 {
                   title: "WEB DEVELOPMENT",
                   description:
-                    "I design and build beautiful websites with React Js, CSS, Tailwind, NextJs and JavaScript.",
+                    "I design and build beautiful websites with React Js, CSS, Tailwind, NodeJS and JavaScript.",
                   className: "block_left",
                 },
                 {
-                  title: "API INTEGRATIONS",
+                  title: "MOBILE APPS",
                   description:
-                    "Integrating backend services and APIs to the frontend securely to fetch and display data in real time.",
+                    "I Build Cool and Intuitive cross-platform (Android and IOS) Applications with React Native.",
                   className: "block_right",
                 },
                 {
-                  title: "RESPONSIVE DESIGN",
+                  title: "BLOCKCHAIN",
                   description:
-                    "Building websites and applications that work seamlessly on various devices and screen sizes, from desktop to smartphones.",
+                    "I write Smart Contracts that matches the needs of many web3 companies.",
                   className: "block_left",
                 },
                 {
@@ -88,10 +88,16 @@ const Services = () => {
                   className: "block_left",
                 },
                 {
-                  title: "TECHNICAL SUPPORT",
+                  title: "RESPONSIVE DESIGN",
                   description:
-                    "Providing technical support to troubleshoot frontend-related issues.",
+                    "Building websites and applications that work seamlessly on various devices and screen sizes, from desktop to smartphones.",
                   className: "block_right",
+                },
+                {
+                  title: "API INTEGRATIONS",
+                  description:
+                    "Integrating backend services and APIs to the frontend securely to fetch and display data in real time.",
+                  className: "block_left",
                 },
               ].map((service, index) => (
                 <motion.div

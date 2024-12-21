@@ -4,10 +4,10 @@ export const Navbar = () => {
             <div className="flex justify-center w-full">
                 <div className="flex justify-between my_fixed_width items-center">
                     <span className="text-base font-bold font-clash">
-                        Treasure Uzoma ⚡
+                        Raptomi ⚡
                     </span>
                     <a
-                        href="https://www.github.com/TreasureUzoma"
+                        href="https://www.github.com/heycalebszn"
                         target="_blank"
                     >
                         <i className="fab fa-github text-[1.28rem] hover:text-[1.33rem]"></i>

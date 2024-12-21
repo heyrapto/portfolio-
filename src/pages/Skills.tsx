@@ -1,15 +1,19 @@
 const Skills = () => {
     const skillsList = [
+      "ReactJS",
       "HTML",
       "CSS",
       "JavaScript",
-      "Firebase",
-      "ReactJs",
+      "NodeJS",
+      "ExpressJS",
       "TailwindCSS",
       "NextJs",
+      "React Native",
+      "Solidity",
       "Git/Github",
       "Animations",
       "SEO",
+      "Communication",
       ". . .",
     ];
 

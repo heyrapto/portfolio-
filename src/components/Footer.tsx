@@ -9,26 +9,25 @@ export const Footer = () => {
               <span className="animate-bounce inline-block">🚀</span>
             </h2>
             <p className="text-[#808e91] font-rubik text-sm my-2">
-              Interested in working together? We should queue up a time to chat.
-              I’ll buy the coffee :)
+              Interested in making waves together? Hit Me Up, I don't bite.
             </p>
             <hr className="my-[2.7rem] border-[#4c5a5d] inline-block w-[65%] md:w-[45%]" />
             <div className=" flex justify-center items-center flex-col md:space-x-4 md:flex-row md:flex-wrap">
               <div className="flex justify-center items-center space-x-4 mb-4 md:mb-0">
                 <a
-                  href="https://www.facebook.com/profile.php?id=100085862181551"
+                  href="https://www.facebook.com/raptomiofw"
                   className={iconStyle}
                 >
                   <i className="fab fa-facebook"></i>
                 </a>
                 <a
-                  href="https://twitter.com/TreasureUzoma1"
+                  href="https://twitter.com/heyrapto"
                   className={iconStyle}
                 >
                   <i className="fab fa-twitter"></i>
                 </a>
                 <a
-                  href="https://www.instagram.com/naira_jasper"
+                  href="https://www.instagram.com/caleb.kale"
                   className={iconStyle}
                 >
                   <i className="fab fa-instagram"></i>
@@ -36,16 +35,16 @@ export const Footer = () => {
               </div>
               <div className="flex justify-center items-center space-x-4">
                 <a
-                  href="https://www.github.com/TreasureUzoma"
+                  href="https://www.github.com/heycalebszn"
                   className={iconStyle}
                 >
                   <i className="fab fa-github"></i>
                 </a>
-                <a href="https://wa.me/+2349133354993" className={iconStyle}>
+                <a href="https://wa.me/+2347064019926" className={iconStyle}>
                   <i className="fab fa-whatsapp"></i>
                 </a>
                 <a
-                  href="mailto: treasureuzoma650@gmail.com"
+                  href="mailto: raptomiofw@gmail.com"
                   className={iconStyle}
                 >
                   <i className="fa fa-envelope"></i>
@@ -53,8 +52,8 @@ export const Footer = () => {
               </div>
             </div>
             <div className="text-white font-bold text-sm mt-[5rem] my-[2rem]">
-              <p>&copy; twentytwentyfour</p>
-              <p className="mt-4">Treasure Uzoma</p>
+              <p>&copy; 2025</p>
+              <p className="mt-4">Raptomi</p>
             </div>
           </div>
         </div>

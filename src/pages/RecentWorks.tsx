@@ -8,103 +8,12 @@ const RecentWorks = () => {
 
   const projects = [
     {
-      title: "Eversub",
+      title: "Bannerly",
       description:
-        "A full-stack VTU web app for paying bills and handling subscriptions effortlessly.",
-      tags: ["NextJs", "Typescript", "TailwindCSS", "Firebase", "API"],
-      previewLink: "https://eversub.vercel.app/",
-      githubLink: "https://github.com/TreasureUzoma/eversubsite/",
-    },
-    {
-      title: "GapPay Website",
-      description:
-        "Fintech landing page streamlining transactions with secure user-friendly interface.",
-      tags: ["CSS", "JavaScript"],
-      previewLink: "https://gappaywebsite.onrender.com",
-    },
-    
-    {
-      title: "SecretSender",
-      description:
-        "Landing page for a web app for getting anonymous replies on questions from friends.",
-      tags: ["ReactJs", "JavaScript", "TailwindCSS", "Framer Motion"],
-      previewLink: "https://secretsenderweb.vercel.app/",
-      githubLink: "https://github.com/TreasureUzoma/secretsenderweb/",
-    },
-    {
-      title: "SecretSender PWA",
-      description:
-        "Mobile-responsive web app for receiving anonymous replies on the go just like ngl.",
-      tags: ["ReactJs", "JavaScript", "TailwindCSS", "Firebase"],
-      previewLink: "https://secretsenderapp.vercel.app",
-    },
-    {
-      title: "StreakMaster",
-      description:
-        "Landing page for a habit tracker PWA app promoting goal achievement.",
-      tags: ["ReactJs", "JavaScript", "TailwindCSS"],
-      previewLink: "https://streakmastersite.vercel.app/",
-      githubLink: "https://github.com/TreasureUzoma/secretsenderweb/",
-    },
-    {
-      title: "StreakMaster PWA",
-      description:
-        "Cloud-based habit tracker and streak & progress counter web app",
-      tags: ["ReactJs", "JavaScript", "TailwindCSS", "Firebase"],
-      previewLink: "https://streakmaster.vercel.app",
-    },
-    {
-      title: "Paddy AI",
-      description:
-        "Gemini powered AI Chatbot for task management and assistance.",
-      tags: ["ReactJS", "TailwindCSS", "Gemeni API"],
-      previewLink: "https://mypaddy.vercel.app/",
-      githubLink: "https://github.com/TreasureUzoma/MyPaddy",
-    },
-    {
-      title: "LinkLite - Link Shortener",
-      description:
-        "Convert’s long cumbersome links to shorter links efficiently.",
-      tags: ["ReactJs", "TailwindCSS", "TinyUrlAPI", "CSS"],
-      previewLink: "https://link-lite-eta.vercel.app/",
-      githubLink: "https://github.com/TreasureUzoma/LinkLite"
-    },
-    {
-      title: "GitHub Roast AI",
-      description: "AI-powered GitHub profile roasts for humorous insights.",
-      tags: ["JavaScript", "GithubAPI", "Tailwindcss", "ReactJs"],
-      previewLink: "https://github-profile-roast.vercel.app/",
-    },
-    {
-      title: "Tastrees Clone",
-      description:
-        "AI powered recipe generator for generating recipes based on food/recipe image uploaded.",
-      tags: ["NextJS", "TypeScript", "Gemini API", "TailwindCSS"],
-      previewLink: "https://tastreesclone.vercel.app",
-      githubLink: "https://github.com/TreasureUzoma/tastreesClone",
-    },
-    {
-      title: "Code Byte",
-      description:
-        "A web design agency portfolio showcasing modern, responsive design expertise.",
-      tags: ["JavaScript", "FirebaseAPI", "CSS"],
-      previewLink: "https://codebytehq.web.app",
-    },
-    {
-      title: "Password Generator",
-      description:
-        "Secure password generator tool for generating secure memorable passwords.",
-      tags: ["ReactJs", "JavaScript", "TailwindCSS"],
-      previewLink: "https://password-generator-iota-seven-45.vercel.app/",
-      githubLink: "https://github.com/TreasureUzoma/password-generator/",
-    },
-    {
-      title: "Jokes Generator",
-      description:
-        "Random dry jokes generator delivering humor on a click of a button.",
-      tags: ["JokeAPI", "JavaScript", "CSS"],
-      previewLink: "https://jokegenerator.onrender.com/",
-      githubLink: "https://github.com/TreasureUzoma/Dev-Joke-Generator/",
+        "A software that generates Fully customizable Social Banners for Freelancers.",
+      tags: ["ReactJs", "JavaScript", "TailwindCSS", "Cloudinary", "API"],
+      previewLink: "https://bannerly.vercel.app",
+      githubLink: "https://github.com/heycaleszn/bannerly",
     },
   ];
 
