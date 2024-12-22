@@ -1,9 +1,11 @@
 const Skills = () => {
     const skillsList = [
-      "ReactJS",
+      
       "HTML",
       "CSS",
       "JavaScript",
+      "Typescript",
+      "React",
       "NodeJS",
       "ExpressJS",
       "TailwindCSS",

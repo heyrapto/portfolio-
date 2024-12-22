@@ -48,7 +48,7 @@ const Services = () => {
         <div className="flex justify-center py-5">
           <div className="my_fixed_width">
             <h2 className="text-2xl font-bold font-clash">
-              Services
+              Services i Offer
               <span className="inline-block animate-bounce">🔥</span>
             </h2>
             <p className="text-sm text-[#808e91] font-rubik my-3">
@@ -95,6 +95,18 @@ const Services = () => {
                 },
                 {
                   title: "API INTEGRATIONS",
+                  description:
+                    "Integrating backend services and APIs to the frontend securely to fetch and display data in real time.",
+                  className: "block_left",
+                },
+                {
+                  title: "Cross-Browser Compatability",
+                  description:
+                    "Integrating backend services and APIs to the frontend securely to fetch and display data in real time.",
+                  className: "block_right",
+                },
+                {
+                  title: "Version Control & Collaoration",
                   description:
                     "Integrating backend services and APIs to the frontend securely to fetch and display data in real time.",
                   className: "block_left",

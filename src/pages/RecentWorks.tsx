@@ -10,8 +10,48 @@ const RecentWorks = () => {
     {
       title: "Bannerly",
       description:
-        "A software that generates Fully customizable Social Banners for Freelancers.",
+        "I built a software that generates Fully customizable Social Banners for Freelancers.",
       tags: ["ReactJs", "JavaScript", "TailwindCSS", "Cloudinary", "API"],
+      previewLink: "https://bannerly.vercel.app",
+      githubLink: "https://github.com/heycaleszn/bannerly",
+    },
+    {
+      title: "Baba AI",
+      description:
+        "I contributed in building Baba AI for my first ever Hackathon Win, this is a pidgin chat ai software .",
+      tags: ["ReactJs", "NodeJS", "Express", "TailwindCSS", "MongoDB", "API"],
+      previewLink: "https://bannerly.vercel.app",
+      githubLink: "https://github.com/heycaleszn/bannerly",
+    },
+    {
+      title: "Afrovivo Waitlist",
+      description:
+        "I built a Waitlist for a ghanian-based company.",
+      tags: ["ReactJS", "JavaScript", "TailwindCSS"],
+      previewLink: "https://bannerly.vercel.app",
+      githubLink: "https://github.com/heycaleszn/bannerly",
+    },
+    {
+      title: "Nike",
+      description:
+        "I built a Nike Clone with a more modern feel.",
+      tags: ["ReactJS", "JavaScript", "TailwindCSS"],
+      previewLink: "https://bannerly.vercel.app",
+      githubLink: "https://github.com/heycaleszn/bannerly",
+    },
+    {
+      title: "Virtual AR",
+      description:
+        "I built an online video-based modern landing page.",
+      tags: ["ReactJS", "JavaScript", "TailwindCSS"],
+      previewLink: "https://bannerly.vercel.app",
+      githubLink: "https://github.com/heycaleszn/bannerly",
+    },
+    {
+      title: "Modern",
+      description:
+        "I built a Nike Clone with a more modern feel.",
+      tags: ["ReactJS", "JavaScript", "TailwindCSS"],
       previewLink: "https://bannerly.vercel.app",
       githubLink: "https://github.com/heycaleszn/bannerly",
     },
@@ -22,7 +62,7 @@ const RecentWorks = () => {
       <div className="flex justify-center py-5">
         <div className="my_fixed_width">
           <h2 className="text-2xl font-bold font-clash">
-            Recent Work
+            Some of my Works
             <span className="inline-block animate-bounce">👨‍🍳</span>
           </h2>
           <p className="text-sm text-[#808e91] font-rubik my-3">
@@ -44,7 +84,7 @@ const RecentWorks = () => {
                 }}
                 className="min-h-[300px] my-2 flex items-center justify-center overflow-hidden px-7 bg-[#0a1c20] w-full md:px-8"
               >
-                <div>
+                <div className="w-full">
                   <p className="text-xl text-white font-clash">
                     {project.title}
                   </p>

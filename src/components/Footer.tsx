@@ -51,9 +51,9 @@ export const Footer = () => {
                 </a>
               </div>
             </div>
-            <div className="text-white font-bold text-sm mt-[5rem] my-[2rem]">
+            <div className="text-white font-bold text-sm mt-[5rem] my-[2rem] flex items-center text-center justify-center">
               <p>&copy; 2025</p>
-              <p className="mt-4">Raptomi</p>
+              <p className="ml-2">Raptomi</p>
             </div>
           </div>
         </div>
