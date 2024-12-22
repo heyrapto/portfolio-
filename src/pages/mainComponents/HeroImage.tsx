@@ -20,7 +20,7 @@ const HeroImage = () => {
             src="/images/avatar.png"
             width={280}
             height={280}
-            alt="Treasure Uzoma Avatar"
+            alt="Raptomi Avatar"
             className="avatar_pic block"
           />
         </motion.div>
