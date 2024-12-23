@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import SvgIcons from "./icons/SvgIcons";
 
 const RecentWorks = () => {
-  const tagsWrapperStyle = "my-[1rem] flex flex-wrap gap-y-3 w-[230px]";
+  const tagsWrapperStyle = "my-[1rem] flex flex-wrap gap-y-3 w-full";
   const tagStyle =
     "py-1 px-2 rounded-lg bg-[#061417] text-white text-[0.65rem] font-bold overflow-nextline";
 
@@ -19,7 +19,7 @@ const RecentWorks = () => {
       title: "Baba AI",
       description:
         "I contributed in building Baba AI for my first ever Hackathon Win, this is a pidgin chat ai software .",
-      tags: ["ReactJs", "NodeJS", "Express", "TailwindCSS", "MongoDB", "API"],
+      tags: ["ReactJs", "API", "NodeJS", "Express", "TailwindCSS", "MongoDB"],
       previewLink: "https://bannerly.vercel.app",
       githubLink: "https://github.com/heycaleszn/bannerly",
     },
@@ -68,7 +68,7 @@ const RecentWorks = () => {
           <p className="text-sm text-[#808e91] font-rubik my-3">
             Here are some of the fun and recent projects I’ve worked on
           </p>
-          <div className="grid place-items-center my-5 gap-6 sm:grid-cols-2 md:grid-cols-3 sm:gap-8">
+          <div className="grid place-items-center my-5 gap-6 sm:grid-cols-2 md:grid-cols-3 sm:gap-8 justify-between">
             {projects.map((project, index) => (
               <motion.div
                 key={`project-${index}`}
