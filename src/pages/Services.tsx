@@ -102,13 +102,13 @@ const Services = () => {
                 {
                   title: "Cross-Browser Compatability",
                   description:
-                    "Integrating backend services and APIs to the frontend securely to fetch and display data in real time.",
+                    "Building Websites that works on every type of browser Safari, Chrome, Firefox, Brave etc.",
                   className: "block_right",
                 },
                 {
-                  title: "Version Control & Collaoration",
+                  title: "Version Control & Collaboration",
                   description:
-                    "Integrating backend services and APIs to the frontend securely to fetch and display data in real time.",
+                    "I worked with tools like Git and Github for version control and ease of collaborating on projects.",
                   className: "block_left",
                 },
               ].map((service, index) => (

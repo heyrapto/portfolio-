@@ -40,9 +40,9 @@ const WorkExp = () => {
             Here are some companies i have worked with
           </p>
 
-          <div className="flex flex-col md:grid md:grid-cols-2 md:gap-4 gap-2">
+          <div className="flex flex-col md:grid md:grid-cols-2 md:gap-4 gap-4">
             {expData.map((data, index) => (
-                <div key={data.company} className="bg-[#0a1c20] w-full rounded-md md:p-[20px] flex flex-col p-[10px]">
+                <div key={data.company} className="bg-[#0a1c20] w-full rounded-md md:p-[20px] flex flex-col p-[20px]">
                   <div className="flex justify-between">
                     <h1>{data.expTitle} at <span>{data.company}</span></h1>
                     {visibleIndex === index ? (
