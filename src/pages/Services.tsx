@@ -60,7 +60,7 @@ const Services = () => {
                 {
                   title: "WEB DEVELOPMENT",
                   description:
-                    "I design and build beautiful websites with React Js, CSS, Tailwind, NodeJS and JavaScript.",
+                    "I design and build beautiful websites with React, CSS, TailwindCSS, Typescript, and JavaScript. I also develop backend API's with Node/ExpressJS.",
                   className: "block_left",
                 },
                 {
