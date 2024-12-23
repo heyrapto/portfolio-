@@ -1,5 +1,5 @@
 import { ArrowDown, Minus, Check } from "lucide-react";
-import { SetStateAction, useEffect, useState } from "react";
+import { useState } from "react";
 const WorkExp = () => {
     const expData = [
         {
@@ -23,8 +23,6 @@ const WorkExp = () => {
             desc: "I helped  them develop Quality User Interfaces"
         },
     ]
-
-    const [openDesc, setOpenDesc] = useState<boolean>(false);
     const [visibleIndex, setVisibleIndex] = useState<number | null>(null);
 
     const toggleDropdown = (index: number) => {
