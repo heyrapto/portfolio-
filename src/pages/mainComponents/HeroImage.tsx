@@ -17,7 +17,7 @@ const HeroImage = () => {
           transition={{ duration: 0.5 }}
         >
           <img
-            src="/images/avatar.jpg_small"
+            src="/images/rapto_avatar.jpg_small"
             width={280}
             height={280}
             alt="Raptomi Avatar"
