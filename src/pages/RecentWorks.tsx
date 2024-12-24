@@ -20,40 +20,48 @@ const RecentWorks = () => {
       description:
         "I contributed in building Baba AI for my first ever Hackathon Win, this is a pidgin chat ai software .",
       tags: ["ReactJs", "API", "NodeJS", "Express", "TailwindCSS", "MongoDB"],
-      previewLink: "https://bannerly.vercel.app",
-      githubLink: "https://github.com/heycaleszn/bannerly",
+      previewLink: "https://baba-frontend-react-06ac.onrender.com/",
+      githubLink: "https://github.com/code-clan-g3/baba-frontend-react",
     },
     {
       title: "Afrovivo Waitlist",
       description:
         "I built a Waitlist for a ghanian-based company.",
       tags: ["ReactJS", "JavaScript", "TailwindCSS"],
-      previewLink: "https://bannerly.vercel.app",
-      githubLink: "https://github.com/heycaleszn/bannerly",
+      previewLink: "https://afrovivo-waitlist-coral.vercel.app/",
+      githubLink: "https://github.com/heycalebszn/afrovivo-waitlist",
+    },
+    {
+      title: "Kobodrop",
+      description:
+        "I built a Waitlist for a ghanian-based company.",
+      tags: ["ReactJS", "Typescript", "TailwindCSS"],
+      previewLink: "",
+      githubLink: "https://github.com/heycalebszn/Kobodrop",
     },
     {
       title: "Nike",
       description:
         "I built a Nike Clone with a more modern feel.",
       tags: ["ReactJS", "JavaScript", "TailwindCSS"],
-      previewLink: "https://bannerly.vercel.app",
-      githubLink: "https://github.com/heycaleszn/bannerly",
+      previewLink: "https://szn-nikelanding.netlify.app",
+      githubLink: "https://github.com/heycalebszn/nike",
     },
     {
       title: "Virtual AR",
       description:
         "I built an online video-based modern landing page.",
       tags: ["ReactJS", "JavaScript", "TailwindCSS"],
-      previewLink: "https://bannerly.vercel.app",
-      githubLink: "https://github.com/heycaleszn/bannerly",
+      previewLink: "https://virtualar.netlify.app",
+      githubLink: "https://github.com/heycalebszn/virtual",
     },
     {
-      title: "Modern",
+      title: "HooBank",
       description:
-        "I built a Nike Clone with a more modern feel.",
+        "A modern bank landing page.",
       tags: ["ReactJS", "JavaScript", "TailwindCSS"],
-      previewLink: "https://bannerly.vercel.app",
-      githubLink: "https://github.com/heycaleszn/bannerly",
+      previewLink: "",
+      githubLink: "https://github.com/heycalebszn/Brainwave",
     },
   ];
 

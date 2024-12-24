@@ -3,24 +3,32 @@ import { useState } from "react";
 const WorkExp = () => {
     const expData = [
         {
-            company: "Afrovivo",
+            company: "Qruzpay",
             expTitle: "Frontend Developer",
-            desc: "I helped  them develop Quality User Interfaces"
+            desc1: "Redesigned user interfaces to enhance payment experiences.",
+            desc2: "Collaborated on front-end solutions for seamless transactions",
+            desc3: "Streamlined UI for secure and efficient payment platforms.",
+        },
+        {
+            company: "TCU",
+            expTitle: "Frontend Developer",
+            desc1: "Crafted modern designs to improve platform usability.",
+            desc2: "Developed front-end features to enhance customer satisfaction",
+            desc3: "optimized responsive layout for better accessibility.",
         },
         {
             company: "Afrovivo",
             expTitle: "Frontend Developer",
-            desc: "I helped  them develop Quality User Interfaces"
+            desc1: "Built engaging interfaces",
+            desc2: "Developed a demo waitlist and got to network with others on the team",
+            desc3: "",
         },
         {
-            company: "Afrovivo",
-            expTitle: "Frontend Developer",
-            desc: "I helped  them develop Quality User Interfaces"
-        },
-        {
-            company: "Afrovivo",
-            expTitle: "Frontend Developer",
-            desc: "I helped  them develop Quality User Interfaces"
+            company: "",
+            expTitle: "Blockchain and Frontend Developer",
+            desc1: "Developed interfaces for secure blockchain applications.",
+            desc2: "Simplified complex blockchain processes through intuitive design.",
+            desc3: "Enhanced accesibility of decentralized platforms with modern UIs.",
         },
     ]
     const [visibleIndex, setVisibleIndex] = useState<number | null>(null);
@@ -54,9 +62,19 @@ const WorkExp = () => {
                   </div>
                   {visibleIndex === index && (
                     <div className="flex flex-col mt-[20px]">
-                      <div className="flex gap-2 items-center">
-                        <Check className="w-[15px]" />
-                        <p className="text-[0.7rem]">{data.desc}</p>
+                      <div className="flex flex-col gap-6">
+                        <div className="flex gap-2 items-center">
+                        <Check className="w-[20px]" />
+                        <p className="text-[0.8rem]">{data.desc1}</p>
+                        </div>
+                        <div className="flex gap-2 items-center">
+                        <Check className="w-[20px]" />
+                        <p className="text-[0.8rem]">{data.desc2}</p>
+                        </div>
+                        <div className="flex gap-2 items-center">
+                        <Check className="w-[20px]" />
+                        <p className="text-[0.8rem]">{data.desc3}</p>
+                        </div>
                       </div>
                     </div>
                   )}
