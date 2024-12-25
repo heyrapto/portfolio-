@@ -32,20 +32,20 @@ const RecentWorks = () => {
       githubLink: "https://github.com/heycalebszn/afrovivo-waitlist",
     },
     {
-      title: "Kobodrop",
+      title: "Electric Keke",
       description:
-        "I built a Waitlist for a ghanian-based company.",
-      tags: ["ReactJS", "Typescript", "TailwindCSS"],
-      previewLink: "",
+        "I contributed to build an Electric Keke booking website.",
+      tags: ["ReactJS", , "TailwindCSS", "Axios, "Map API", "API integration"],
+      previewLink: "https://electric-keke-frontend.vercel.app/",
       githubLink: "https://github.com/heycalebszn/Kobodrop",
     },
     {
       title: "Nike",
       description:
         "I built a Nike Clone with a more modern feel.",
-      tags: ["ReactJS", "JavaScript", "TailwindCSS"],
+      tags: ["ReactJS", "JavaScript", "TailwindCSS", "Axios", "Map"],
       previewLink: "https://szn-nikelanding.netlify.app",
-      githubLink: "https://github.com/heycalebszn/nike",
+      githubLink: "https://github.com/Techies-Collab-and-Upskill-Live-Project/Electric-keke-frontend-",
     },
     {
       title: "Virtual AR",
