@@ -35,7 +35,7 @@ const RecentWorks = () => {
       title: "Electric Keke",
       description:
         "I contributed to build an Electric Keke booking website.",
-      tags: ["ReactJS", , "TailwindCSS", "Axios, "Map API", "API integration"],
+      tags: ["ReactJS", , "TailwindCSS", "Axios", "Map API", "API integration"],
       previewLink: "https://electric-keke-frontend.vercel.app/",
       githubLink: "https://github.com/heycalebszn/Kobodrop",
     },
