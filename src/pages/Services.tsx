@@ -52,7 +52,7 @@ const Services = () => {
               <span className="inline-block animate-bounce">🔥</span>
             </h2>
             <p className="text-sm text-[#808e91] font-rubik my-3">
-              These are some of the services I offer as a frontend web
+              These are some of the services I offer as a software
               developer.
             </p>
             <div className="grid place-items-center my-5 gap-6 sm:grid-cols-2 md:grid-cols-3 sm:gap-8">
