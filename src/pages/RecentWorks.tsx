@@ -43,7 +43,7 @@ const RecentWorks = () => {
       title: "Nike",
       description:
         "I built a Nike Clone with a more modern feel.",
-      tags: ["ReactJS", "JavaScript", "TailwindCSS", "Axios", "Map"],
+      tags: ["ReactJS", "JavaScript", "TailwindCSS", "Map"],
       previewLink: "https://szn-nikelanding.netlify.app",
       githubLink: "https://github.com/Techies-Collab-and-Upskill-Live-Project/Electric-keke-frontend-",
     },
