@@ -24,7 +24,7 @@ const WorkExp = () => {
             desc3: "",
         },
         {
-            company: "",
+            company: "Educhain",
             expTitle: "Blockchain and Frontend Developer",
             desc1: "Developed interfaces for secure blockchain applications.",
             desc2: "Simplified complex blockchain processes through intuitive design.",
