@@ -55,14 +55,6 @@ const RecentWorks = () => {
       previewLink: "https://virtualar.netlify.app",
       githubLink: "https://github.com/heycalebszn/virtual",
     },
-    {
-      title: "HooBank",
-      description:
-        "A modern bank landing page.",
-      tags: ["ReactJS", "JavaScript", "TailwindCSS"],
-      previewLink: "",
-      githubLink: "https://github.com/heycalebszn/Brainwave",
-    },
   ];
 
   return (
