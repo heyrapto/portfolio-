@@ -21,7 +21,6 @@ const WorkExp = () => {
             expTitle: "Frontend Developer",
             desc1: "Built engaging interfaces",
             desc2: "Developed a demo waitlist and got to network with others on the team",
-            desc3: "",
         },
         {
             company: "Educhain",
@@ -54,9 +53,9 @@ const WorkExp = () => {
                   <div className="flex justify-between">
                     <h1>{data.expTitle} at <span>{data.company}</span></h1>
                     {visibleIndex === index ? (
-                    <Minus onClick={() => toggleDropdown(index)} className="cursor-pointer"/>
+                    <Minus onClick={() => toggleDropdown(index)} className="cursor-pointer mx-[10px]"/>
                     ) : (
-                      <ArrowDown onClick={() => toggleDropdown(index)} className="cursor-pointer"/>
+                      <ArrowDown onClick={() => toggleDropdown(index)} className="cursor-pointer mx-[10px]"/>
                     )}
                     
                   </div>
