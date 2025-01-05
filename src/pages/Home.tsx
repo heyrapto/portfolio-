@@ -11,7 +11,7 @@ const Hero = () => {
             </h1>
             <div className="font-[400] mt-[2.5rem] font-rubik pr-5 text-sm">
               <p className="gradient_text">
-                You got here! I'm <span className="name">Rapto</span>, a Fullstack Developer heavy on Frontend and passionate about Web3, Blockchain and writing smart contracts. 
+                You got here! I'm <span className="text-transparent bg-clip-text bg-gradient from-violet-400 to-violet-700">Rapto</span>, a Fullstack Developer heavy on Frontend and passionate about Web3, Blockchain and writing smart contracts. 
               </p>
               <p className="gradient_text py-[1.8rem]">
                 I develop industry standard products that solves everyday problems with an emphasis on user experience, accessibility and performance.
