@@ -47,7 +47,7 @@ const RecentWorks = () => {
       previewLink: "https://www.npmjs.com/package/rewrap-vitejs-tailwind",
       githubLink: "https://github.com/heycalebszn/Rewrap-",
     
-    }
+    },
     {
       title: "Nike",
       description:
