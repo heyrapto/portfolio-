@@ -40,6 +40,15 @@ const RecentWorks = () => {
       githubLink: "https://github.com/heycalebszn/Kobodrop",
     },
     {
+      title: "Rewrap",
+      description:
+        "I built an NPM package to simplify the installation of Vite + TailwindCSS",
+      tags: ["NodeJS", "Chalk", "Execa", "Prompts"],
+      previewLink: "https://www.npmjs.com/package/rewrap-vitejs-tailwind",
+      githubLink: "https://github.com/heycalebszn/Rewrap-",
+    
+    }
+    {
       title: "Nike",
       description:
         "I built a Nike Clone with a more modern feel.",
