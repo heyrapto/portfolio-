@@ -1,5 +1,5 @@
-import SvgIcons from "./icons/SvgIcons";
-import HeroImage from "./mainComponents/HeroImage";
+import SvgIcons from "../assets/icons/SvgIcons";
+import HeroImage from "../components/HeroImage";
 
 const Hero = () => {
     return (
