@@ -1,5 +1,4 @@
 import SvgIcons from "../assets/icons/SvgIcons";
-import HeroImage from "../components/HeroImage";
 
 const Hero = () => {
     return (
@@ -73,6 +72,7 @@ const Hero = () => {
             </div>
           </div>
           {/*<HeroImage />*/}
+          
         </div>
       </header>
     );
