@@ -53,9 +53,9 @@ const WorkExp = () => {
                   <div className="flex justify-between">
                     <h1>{data.expTitle} at <span>{data.company}</span></h1>
                     {visibleIndex === index ? (
-                    <Minus onClick={() => toggleDropdown(index)} className="cursor-pointer mx-[10px]"/>
+                    <Minus onClick={() => toggleDropdown(index)} className="cursor-pointer mx-[10px] w-[20px]"/>
                     ) : (
-                      <ArrowDown onClick={() => toggleDropdown(index)} className="cursor-pointer mx-[10px]"/>
+                      <ArrowDown onClick={() => toggleDropdown(index)} className="cursor-pointer mx-[10px] w-[20px]"/>
                     )}
                     
                   </div>
@@ -63,15 +63,15 @@ const WorkExp = () => {
                     <div className="flex flex-col mt-[20px]">
                       <div className="flex flex-col gap-6">
                         <div className="flex gap-2 items-center">
-                        <Check className="w-[20px]" />
+                        <Check className="min-w-[20px]" />
                         <p className="text-[0.8rem]">{data.desc1}</p>
                         </div>
                         <div className="flex gap-2 items-center">
-                        <Check className="w-[20px]" />
+                        <Check className="min-w-[20px]" />
                         <p className="text-[0.8rem]">{data.desc2}</p>
                         </div>
                         <div className="flex gap-2 items-center">
-                        <Check className="w-[20px]" />
+                        <Check className="min-w-[20px]" />
                         <p className="text-[0.8rem]">{data.desc3}</p>
                         </div>
                       </div>
