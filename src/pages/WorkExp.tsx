@@ -21,6 +21,7 @@ const WorkExp = () => {
             expTitle: "Frontend Developer",
             desc1: "Built engaging interfaces",
             desc2: "Developed a demo waitlist and got to network with others on the team",
+            desc3: "Developed a demo waitlist and got to network with others on the team",
         },
         {
             company: "Educhain",
