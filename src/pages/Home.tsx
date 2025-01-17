@@ -1,8 +1,10 @@
 import SvgIcons from "../assets/icons/SvgIcons";
+import { BackgroundLines } from "../components/ui/background-lines";
 
 const Hero = () => {
     return (
       <header className="my-[5.4rem] flex items-center justify-center min-h-screen relative overflow-hidden w-full lg:min-h-[100vh] md:mt-0">
+      <BackgroundLines>
         <div className="my_fixed_width md:flex justify-center items-center sm:pr-2 md:px-3 text-center">
           <div className="md:w-[52%] lg:w-[60%]">
             <h1 className="gradient_text text-[2.2rem] font-clash leading-[2.5rem] md:leading-[3.6rem] md:text-[3.5rem]">
@@ -74,6 +76,7 @@ const Hero = () => {
           {/*<HeroImage />*/}
           
         </div>
+        </BackgroundLines>
       </header>
     );
 };
