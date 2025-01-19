@@ -14,9 +14,6 @@ const Hero = () => {
               <p className="gradient_text">
                 You got here! I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-blue-600">Caleb Kalejaiye</span>, a Fullstack Developer heavy on Frontend and passionate about Web3, Blockchain and writing smart contracts. 
               </p>
-              <p className="gradient_text py-[1.8rem]">
-                I develop industry standard products that solves everyday problems with an emphasis on user experience, accessibility and performance.
-              </p>
             </div>
             <div className="mt-[1.7rem] flex space-x-5 items-center justify-center">
               <a
