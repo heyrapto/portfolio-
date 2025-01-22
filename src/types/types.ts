@@ -1,4 +1,4 @@
 export interface ButtonProps {
     name: string
-    bgStyle: strin
+    bgStyle: string
 }
