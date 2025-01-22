@@ -49,6 +49,15 @@ const RecentWorks = () => {
     
     },
     {
+      title: "Multi Signature Wallet",
+      description:
+        "I built wrote a multi signature wallet contract.",
+      tags: ["Solidity"],
+      previewLink: "https://www.npmjs.com/package/rewrap-vitejs-tailwind",
+      githubLink: "https://github.com/heycalebszn/Rewrap-",
+    
+    },
+    {
       title: "Nike",
       description:
         "I built a Nike Clone with a more modern feel.",
