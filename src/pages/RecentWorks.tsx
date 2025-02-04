@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
 import SvgIcons from "../assets/icons/SvgIcons";
+import { ArrowUpRight, Github } from "lucide-react";
+import { SS } from "../assets";
 
 const RecentWorks = () => {
   const tagsWrapperStyle = "my-[1rem] flex flex-wrap gap-y-3 w-full";
   const tagStyle =
-    "py-1 px-2 rounded-lg bg-[#061417] text-white text-[0.65rem] font-bold overflow-nextline";
+    "py-1 pr-2 rounded-lg bg-[#061417] text-white text-[0.7rem] font-bold overflow-nextline";
 
   const projects = [
     {
@@ -14,6 +16,7 @@ const RecentWorks = () => {
       tags: ["ReactJs", "JavaScript", "TailwindCSS", "Cloudinary", "API"],
       previewLink: "https://bannerly.vercel.app",
       githubLink: "https://github.com/heycaleszn/bannerly",
+      image: SS,
     },
     {
       title: "Baba AI",
@@ -22,6 +25,7 @@ const RecentWorks = () => {
       tags: ["ReactJs", "API", "NodeJS", "Express", "TailwindCSS", "MongoDB"],
       previewLink: "https://baba-frontend-react-06ac.onrender.com/",
       githubLink: "https://github.com/code-clan-g3/baba-frontend-react",
+      image:  SS,
     },
     {
       title: "Afrovivo Waitlist",
@@ -30,6 +34,7 @@ const RecentWorks = () => {
       tags: ["ReactJS", "JavaScript", "TailwindCSS"],
       previewLink: "https://afrovivo-waitlist-coral.vercel.app/",
       githubLink: "https://github.com/heycalebszn/afrovivo-waitlist",
+      image: SS,
     },
     {
       title: "Electric Keke",
@@ -38,6 +43,7 @@ const RecentWorks = () => {
       tags: ["ReactJS", , "TailwindCSS", "Axios", "Map API", "API integration"],
       previewLink: "https://electric-keke-frontend.vercel.app/",
       githubLink: "https://github.com/heycalebszn/Kobodrop",
+      image: SS,
     },
     {
       title: "Rewrap",
@@ -46,6 +52,7 @@ const RecentWorks = () => {
       tags: ["NodeJS", "Chalk", "Execa", "Prompts"],
       previewLink: "https://www.npmjs.com/package/rewrap-vitejs-tailwind",
       githubLink: "https://github.com/heycalebszn/Rewrap-",
+      image: SS,
     
     },
     {
@@ -55,6 +62,7 @@ const RecentWorks = () => {
       tags: ["Solidity", "Typescript", "Remix", "EVM"],
       previewLink: "https://www.npmjs.com/package/rewrap-vitejs-tailwind",
       githubLink: "https://github.com/heycalebszn/Rewrap-",
+      image: SS,
     
     },
     {
@@ -64,6 +72,7 @@ const RecentWorks = () => {
       tags: ["ReactJS", "JavaScript", "TailwindCSS", "Map"],
       previewLink: "https://szn-nikelanding.netlify.app",
       githubLink: "https://github.com/Techies-Collab-and-Upskill-Live-Project/Electric-keke-frontend-",
+      image: SS,
     },
     {
       title: "Virtual AR",
@@ -72,88 +81,63 @@ const RecentWorks = () => {
       tags: ["ReactJS", "JavaScript", "TailwindCSS"],
       previewLink: "https://virtualar.netlify.app",
       githubLink: "https://github.com/heycalebszn/virtual",
+      image: SS,
     },
   ];
 
   return (
-    <section>
-      <div className="flex justify-center py-5">
-        <div className="my_fixed_width">
-          <h2 className="text-2xl font-bold font-clash">
-            Some of my Works
-            <span className="inline-block animate-bounce">👨‍🍳</span>
-          </h2>
-          <p className="text-sm text-[#808e91] font-rubik my-3">
-            Here are some of the fun and recent projects I’ve worked on
-          </p>
-          <div className="grid place-items-center my-5 gap-6 sm:grid-cols-2 md:grid-cols-3 sm:gap-8 justify-between">
-            {projects.map((project, index) => (
-              <motion.div
-                key={`project-${index}`}
-                whileHover={{
-                  scale: 1.05,
-                  boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.3)",
-                  transition: { duration: 0.3 },
-                }}
-                whileTap={{
-                  scale: 1.05,
-                  boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.3)",
-                  transition: { duration: 0.3 },
-                }}
-                className="min-h-[300px] my-2 flex items-center justify-center overflow-hidden px-7 bg-[#0a1c20] w-full md:px-8"
-              >
-                <div className="w-full">
-                  <p className="text-xl text-white font-clash">
-                    {project.title}
-                  </p>
-                  <p className="text-sm font-rubik text-[#808e91] leading-[1.4rem] mt-2">
-                    {project.description}
-                  </p>
-                  <div className={tagsWrapperStyle}>
-                    {project.tags
-                      .map((tag, tagIndex) => (
-                        <span
-                          key={`tag-${index}-${tagIndex}`}
-                          className={tagStyle}
-                        >
-                          {tag}
-                        </span>
-                      ))
-                      .reduce((prev, curr) => (
-                        <>
-                          {prev}
-                          <span key={`dot-${index}`} className="text-sm px-[0.7rem]">
-                            •
-                          </span>
-                          {curr}
-                        </>
-                      ))}
-                  </div>
-
-                  <div className="flex justify-center items-center gap-3">
-                    <a
-                      href={project.previewLink}
-                      className="bg-white rounded-md w-full mt-5 py-2 text-sm text-black space-x-3 justify-center text-center font-bold flex items-center hover:bg-gray-400"
-                      rel="nofollow"
-                      target="_blank"
-                    >
-                      <span>Preview</span>
-                      <SvgIcons type="visibility" width="15" height="15" className="inline-block" />
-                    </a>
-                    {project.githubLink && (
-                      <a
-                        href={project.githubLink}
-                        className="bg-white rounded-md w-[30%] mt-5 py-[0.59rem] text-sm text-black space-x-3 justify-center text-center font-bold flex items-center hover:bg-gray-400"
-                        target="_blank"
-                      >
-                        <i className="!text-[1rem] fa-brands fa-github"></i>
-                      </a>
-                    )}
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+    <section className="py-20 bg-gradient-to-b from-black to-primary-900">
+      <div className="container mx-auto px-4">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="text-4xl md:text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-secondary-400 to-primary-400"
+        >
+          Recent Works
+        </motion.h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+              className="bg-gradient-to-br from-primary-800/30 to-primary-900/30 rounded-2xl p-6 backdrop-blur-sm border border-gray-500 justify-between flex flex-col"
+            >
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-48 object-cover rounded-lg mb-4"
+              />
+              <h3 className="text-[20px] font-bold mb-2 text-white">{project.title}</h3>
+              <p className="text-gray-400 mb-4 text-[1rem]">{project.description}</p>
+              <div className={tagsWrapperStyle}>
+                {project.tags.map((tag, tagIndex) => (
+                  <span key={tagIndex} className={tagStyle}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <div className="flex justify-between items-center mt-4">
+                <a
+                  href={project.previewLink}
+                  className="text-secondary-400 hover:text-secondary-300 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ArrowUpRight />
+                </a>
+                <a
+                  href={project.githubLink}
+                  className="text-secondary-400 hover:text-secondary-300 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github />
+                </a>
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
