@@ -107,7 +107,7 @@ const RecentWorks = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-48 object-cover rounded-lg mb-4"
+                className="w-full h-[150px] object-cover rounded-lg mb-4"
               />
               <h3 className="text-[20px] font-bold mb-2 text-white">{project.title}</h3>
               <p className="text-gray-400 mb-4 text-[1rem]">{project.description}</p>
@@ -121,7 +121,7 @@ const RecentWorks = () => {
               <div className="flex justify-between items-center mt-4">
                 <a
                   href={project.previewLink}
-                  className="text-secondary-400 hover:text-secondary-300 transition-colors"
+                  className="text-secondary-400 hover:text-secondary-300 transition-colors hover:scale-110"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -129,7 +129,7 @@ const RecentWorks = () => {
                 </a>
                 <a
                   href={project.githubLink}
-                  className="text-secondary-400 hover:text-secondary-300 transition-colors"
+                  className="text-secondary-400 hover:text-secondary-300 transition-colors hover:scale-110"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
