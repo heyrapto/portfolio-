@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import SvgIcons from "../assets/icons/SvgIcons";
 import { ArrowUpRight, Github } from "lucide-react";
 import { SS } from "../assets";
 
