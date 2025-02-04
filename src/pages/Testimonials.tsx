@@ -1,6 +1,10 @@
+import { AnimatedTestimonials } from "../components/ui/animated-testimonials";
+
 const Testimonials = () => {
     return(
-        <section></section>
+        <section>
+            <AnimatedTestimonials testimonials={[]} />
+        </section>
     )
 }
 export default Testimonials;
