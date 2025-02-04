@@ -7,17 +7,15 @@ const Services = () => {
 
     const pStyle = "text-sm font-rubik text-[#808e91] mt-4 leading-[1.44rem]";
 
-    // Animation variants for each service block
     const itemVariants = {
         hidden: { opacity: 0, y: 20 },
         visible: {
             opacity: 1,
             y: 0,
-            scale: 1.05 // Pop effect when visible
+            scale: 1.05 
         }
     };
 
-    // Set up IntersectionObserver to trigger animations when blocks are in view
     useEffect(() => {
         const observers = refs.current.map((ref, index) => {
             const observer = new IntersectionObserver(

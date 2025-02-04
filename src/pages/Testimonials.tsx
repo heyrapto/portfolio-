@@ -3,7 +3,7 @@ import { AnimatedTestimonials } from "../components/ui/animated-testimonials";
 const Testimonials = () => {
     return(
         <section>
-            <AnimatedTestimonials testimonials={[]} />
+            <AnimatedTestimonials testimonials={[ ]} />
         </section>
     )
 }

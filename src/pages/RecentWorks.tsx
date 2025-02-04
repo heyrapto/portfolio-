@@ -86,15 +86,15 @@ const RecentWorks = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-black to-primary-900">
-      <div className="container mx-auto px-4">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          className="text-4xl md:text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-secondary-400 to-primary-400"
-        >
-          Recent Works
-        </motion.h2>
+    <section className="py-20 flex justify-center">
+      <div className="my_fixed_width">
+      <h2 className="text-2xl font-bold font-clash">
+              Some of my Works
+              <span className="inline-block animate-bounce">🔥</span>
+            </h2>
+            <p className="text-sm text-[#808e91] font-rubik my-3">
+              Here are some of the recent projects that I have worked on.
+            </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
