@@ -1,5 +1,6 @@
 import SvgIcons from "../assets/icons/SvgIcons";
 import { BackgroundLines } from "../components/ui/background-lines";
+import { Ethereum, Javascript, Typescript } from "../models";
 
 const Hero = () => {
     return (
@@ -15,7 +16,12 @@ const Hero = () => {
                 You got here! I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-blue-600">Caleb Kalejaiye</span>, a Fullstack Developer heavy on Frontend and passionate about Web3, Blockchain and writing smart contracts. 
               </p>
             </div>
-            <div className="mt-[1.7rem] flex space-x-5 items-center justify-center">
+            <div className="flex items-center gap-3 mt-5 justify-center">
+              <img src={Typescript} className="w-[50px]" alt="" />
+              <img src={Javascript} className="w-[50px]" alt="" />
+              <img src={Ethereum} className="w-[50px]" alt="" />
+            </div>
+           {/* <div className="mt-[1.7rem] flex space-x-5 items-center justify-center">
               <a
                 href="https://www.facebook.com/raptomiofw"
                 className="rounded-full border-2 border-[#34afcb] hover:border-green hover:bg-green md:p-2 p-0 cursor-pointer"
@@ -68,7 +74,7 @@ const Hero = () => {
                   className="m-1 hover:fill-[#061417]"
                 />
               </a>
-            </div>
+            </div> */}
           </div>
           {/*<HeroImage />*/}
           
