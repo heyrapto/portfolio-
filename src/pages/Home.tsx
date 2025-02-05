@@ -1,4 +1,3 @@
-import SvgIcons from "../assets/icons/SvgIcons";
 import { BackgroundLines } from "../components/ui/background-lines";
 import { Ethereum, Javascript, Typescript } from "../models";
 
