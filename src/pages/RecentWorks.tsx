@@ -119,7 +119,7 @@ const RecentWorks = () => {
       <div className="my_fixed_width">
       <h2 className="text-2xl font-bold font-clash">
               Some of my Works
-              <span className="inline-block animate-bounce">🔥</span>
+              <span className="inline-block animate-bounce">💼</span>
             </h2>
             <p className="text-sm text-[#808e91] font-rubik my-3">
               Here are some of the recent projects that I have worked on.

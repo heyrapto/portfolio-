@@ -1,4 +1,5 @@
 import SvgIcons from "../assets/icons/SvgIcons";
+import FloatingLogos from "../components/FloatingLogos";
 import { BackgroundLines } from "../components/ui/background-lines";
 
 const Hero = () => {
