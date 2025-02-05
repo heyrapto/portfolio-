@@ -18,7 +18,7 @@ const Hero = () => {
             <div className="mt-[1.7rem] flex space-x-5 items-center justify-center">
               <a
                 href="https://www.facebook.com/raptomiofw"
-                className="rounded-full border-2 border-[#34afcb] hover:border-green hover:bg-green md:p-2 p-0"
+                className="rounded-full border-2 border-[#34afcb] hover:border-green hover:bg-green md:p-2 p-0 cursor-pointer"
                 target="_blank"
               >
                 <SvgIcons

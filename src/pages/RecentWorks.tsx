@@ -5,7 +5,7 @@ import { SS } from "../assets";
 const RecentWorks = () => {
   const tagsWrapperStyle = "my-[1rem] flex flex-wrap gap-y-3 w-full";
   const tagStyle =
-    "py-1 pr-2 rounded-lg bg-[#061417] text-white text-[0.7rem] font-bold overflow-nextline";
+    "py-1 p-2 bg-[#DCFCE7] text-[#14532D] text-[0.7rem] font-bold overflow-nextline mx-1 rounded-full cursor-pointer";
 
   const projects = [
     {
@@ -120,15 +120,18 @@ const RecentWorks = () => {
               <div className="flex justify-between items-center mt-4">
                 <a
                   href={project.previewLink}
-                  className="text-secondary-400 hover:text-secondary-300 transition-colors hover:scale-110"
+                  className="text-emerald-400 hover:text-emerald-300 transition-colors hover:scale-110 flex items-center gap-1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <ArrowUpRight />
+                  <span className="text-emerald-400 hover:text-emerald-300 transition-colors">
+                    Preview
+                  </span>{" "}
+                  <ArrowUpRight className="w-[20px]" />
                 </a>
                 <a
                   href={project.githubLink}
-                  className="text-secondary-400 hover:text-secondary-300 transition-colors hover:scale-110"
+                  className="text-gray-400 hover:text-gray-300 transition-colors hover:scale-110"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -4,7 +4,7 @@ export const Navbar = () => {
             <div className="flex justify-center w-full">
                 <div className="flex justify-between my_fixed_width items-center">
                     <span className="text-base font-bold font-clash">
-                        Raptomi ⚡
+                    Caleb Kalejaiye | Rapto
                     </span>
                     <a
                         href="https://www.github.com/heycalebszn"
