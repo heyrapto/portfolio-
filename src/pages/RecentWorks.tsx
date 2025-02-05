@@ -5,7 +5,7 @@ import { Afrovivo, Baba, Bannerly, Ecoride, MockTrade, MultiTrading, Nike, Ports
 const RecentWorks = () => {
   const tagsWrapperStyle = "my-[1rem] flex flex-wrap gap-y-3 w-full";
   const tagStyle =
-    "py-1 p-2 bg-[#DCFCE7] text-[#14532D] text-[0.7rem] font-bold overflow-nextline mx-1 rounded-full cursor-pointer";
+    "py-1 p-2 bg-[#ECFDF5] text-[#064E3B] text-[0.7rem] font-bold overflow-nextline mx-1 rounded-full cursor-pointer";
 
   const projects = [
     
@@ -138,7 +138,7 @@ const RecentWorks = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-[150px] object-cover rounded-lg mb-4"
+                className="w-full h-[150px] rounded-lg mb-4"
               />
               <h3 className="text-[20px] font-bold mb-2 text-white">{project.title}</h3>
               <p className="text-gray-400 mb-4 text-[1rem]">{project.description}</p>
@@ -152,7 +152,7 @@ const RecentWorks = () => {
               <div className="flex justify-between items-center mt-4">
                 <a
                   href={project.previewLink}
-                  className="text-emerald-400 hover:text-emerald-300 transition-colors hover:scale-110 flex items-center gap-1"
+                  className="text-emerald-400 hover:text-emerald-300 transition-colors hover:scale-110 flex items-center gap-1 transition-ease-in-out duration:300"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -163,7 +163,7 @@ const RecentWorks = () => {
                 </a>
                 <a
                   href={project.githubLink}
-                  className="text-gray-400 hover:text-gray-300 transition-colors hover:scale-110"
+                  className="text-gray-400 hover:text-gray-300 transition-colors hover:scale-110 transition-ease-in-out duration:300" 
                   target="_blank"
                   rel="noopener noreferrer"
                 >
