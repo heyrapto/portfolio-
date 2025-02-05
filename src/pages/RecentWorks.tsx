@@ -8,24 +8,7 @@ const RecentWorks = () => {
     "py-1 p-2 bg-[#DCFCE7] text-[#14532D] text-[0.7rem] font-bold overflow-nextline mx-1 rounded-full cursor-pointer";
 
   const projects = [
-    {
-      title: "Bannerly",
-      description:
-        "I built a software that generates Fully customizable Social Banners for Freelancers.",
-      tags: ["ReactJs", "JavaScript", "TailwindCSS", "Cloudinary", "API"],
-      previewLink: "https://bannerly.vercel.app",
-      githubLink: "https://github.com/heycaleszn/bannerly",
-      image: Bannerly,
-    },
-    {
-      title: "Baba AI",
-      description:
-        "I contributed in building Baba AI for my first ever Hackathon Win, this is a pidgin chat ai software .",
-      tags: ["ReactJs", "API", "NodeJS", "Express", "TailwindCSS", "MongoDB"],
-      previewLink: "https://baba-frontend-react-06ac.onrender.com/",
-      githubLink: "https://github.com/code-clan-g3/baba-frontend-react",
-      image:  Baba,
-    },
+    
     {
       title: "Afrovivo Waitlist",
       description:
@@ -43,26 +26,6 @@ const RecentWorks = () => {
       previewLink: "https://electric-keke-frontend.vercel.app/",
       githubLink: "https://github.com/heycalebszn/Kobodrop",
       image: Ecoride,
-    },
-    {
-      title: "Rewrap",
-      description:
-        "I built an NPM package to simplify the installation of Vite + TailwindCSS",
-      tags: ["NodeJS", "Chalk", "Execa", "Prompts"],
-      previewLink: "https://www.npmjs.com/package/rewrap-vitejs-tailwind",
-      githubLink: "https://github.com/heycalebszn/Rewrap-",
-      image: Rewrap,
-    
-    },
-    {
-      title: "Multi Signature Wallet",
-      description:
-        "I built wrote a multi signature wallet contract.",
-      tags: ["Solidity", "Typescript", "Remix", "EVM"],
-      previewLink: "https://github.com/heycalebszn/Multi-Signature-Wallet",
-      githubLink: "https://github.com/heycalebszn/Multi-Signature-Wallet",
-      image: MultiTrading,
-    
     },
     {
       title: "PortScan",
@@ -94,6 +57,45 @@ const RecentWorks = () => {
       image: Stacist,
     
     },
+    {
+      title: "Rewrap",
+      description:
+        "I built an NPM package to simplify the installation of Vite + TailwindCSS",
+      tags: ["NodeJS", "Chalk", "Execa", "Prompts"],
+      previewLink: "https://www.npmjs.com/package/rewrap-vitejs-tailwind",
+      githubLink: "https://github.com/heycalebszn/Rewrap-",
+      image: Rewrap,
+    
+    },
+    {
+      title: "Bannerly",
+      description:
+        "I built a software that generates Fully customizable Social Banners for Freelancers.",
+      tags: ["ReactJs", "JavaScript", "TailwindCSS", "Cloudinary", "API"],
+      previewLink: "https://bannerly.vercel.app",
+      githubLink: "https://github.com/heycaleszn/bannerly",
+      image: Bannerly,
+    },
+    {
+      title: "Baba AI",
+      description:
+        "I contributed in building Baba AI for my first ever Hackathon Win, this is a pidgin chat ai software .",
+      tags: ["ReactJs", "API", "NodeJS", "Express", "TailwindCSS", "MongoDB"],
+      previewLink: "https://baba-frontend-react-06ac.onrender.com/",
+      githubLink: "https://github.com/code-clan-g3/baba-frontend-react",
+      image:  Baba,
+    },
+    {
+      title: "Multi Signature Wallet",
+      description:
+        "I built wrote a multi signature wallet contract.",
+      tags: ["Solidity", "Typescript", "Remix", "EVM"],
+      previewLink: "https://github.com/heycalebszn/Multi-Signature-Wallet",
+      githubLink: "https://github.com/heycalebszn/Multi-Signature-Wallet",
+      image: MultiTrading,
+    
+    },
+    
     {
       title: "Nike",
       description:
