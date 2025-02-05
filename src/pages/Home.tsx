@@ -12,7 +12,8 @@ const Hero = () => {
             </h1>
             <div className="font-[400] mt-[2.5rem] font-rubik pr-5 text-sm text-center">
               <p className="gradient_text">
-                You got here! I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-blue-600">Caleb Kalejaiye</span>, a Fullstack Developer heavy on Frontend and passionate about Web3, Blockchain and writing smart contracts. 
+                I craft stunning human-centric products and experience through 
+                <span className="text-white bg-gradient-white ml-1 italic">lines of code.</span>  
               </p>
             </div>
             <div className="flex items-center gap-3 mt-5 justify-center">
