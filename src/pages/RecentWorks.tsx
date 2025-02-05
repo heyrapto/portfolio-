@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, Github } from "lucide-react";
-import { SS } from "../assets";
+import { Afrovivo, Baba, Bannerly, Ecoride, MockTrade, MultiTrading, Nike, Portscan, Rewrap, Stacist, VirtualAR } from "../assets";
 
 const RecentWorks = () => {
   const tagsWrapperStyle = "my-[1rem] flex flex-wrap gap-y-3 w-full";
@@ -15,7 +15,7 @@ const RecentWorks = () => {
       tags: ["ReactJs", "JavaScript", "TailwindCSS", "Cloudinary", "API"],
       previewLink: "https://bannerly.vercel.app",
       githubLink: "https://github.com/heycaleszn/bannerly",
-      image: SS,
+      image: Bannerly,
     },
     {
       title: "Baba AI",
@@ -24,7 +24,7 @@ const RecentWorks = () => {
       tags: ["ReactJs", "API", "NodeJS", "Express", "TailwindCSS", "MongoDB"],
       previewLink: "https://baba-frontend-react-06ac.onrender.com/",
       githubLink: "https://github.com/code-clan-g3/baba-frontend-react",
-      image:  SS,
+      image:  Baba,
     },
     {
       title: "Afrovivo Waitlist",
@@ -33,7 +33,7 @@ const RecentWorks = () => {
       tags: ["ReactJS", "JavaScript", "TailwindCSS"],
       previewLink: "https://afrovivo-waitlist-coral.vercel.app/",
       githubLink: "https://github.com/heycalebszn/afrovivo-waitlist",
-      image: SS,
+      image: Afrovivo,
     },
     {
       title: "Electric Keke",
@@ -42,7 +42,7 @@ const RecentWorks = () => {
       tags: ["ReactJS", , "TailwindCSS", "Axios", "Map API", "API integration"],
       previewLink: "https://electric-keke-frontend.vercel.app/",
       githubLink: "https://github.com/heycalebszn/Kobodrop",
-      image: SS,
+      image: Ecoride,
     },
     {
       title: "Rewrap",
@@ -51,7 +51,7 @@ const RecentWorks = () => {
       tags: ["NodeJS", "Chalk", "Execa", "Prompts"],
       previewLink: "https://www.npmjs.com/package/rewrap-vitejs-tailwind",
       githubLink: "https://github.com/heycalebszn/Rewrap-",
-      image: SS,
+      image: Rewrap,
     
     },
     {
@@ -59,9 +59,39 @@ const RecentWorks = () => {
       description:
         "I built wrote a multi signature wallet contract.",
       tags: ["Solidity", "Typescript", "Remix", "EVM"],
-      previewLink: "https://www.npmjs.com/package/rewrap-vitejs-tailwind",
-      githubLink: "https://github.com/heycalebszn/Rewrap-",
-      image: SS,
+      previewLink: "https://github.com/heycalebszn/Multi-Signature-Wallet",
+      githubLink: "https://github.com/heycalebszn/Multi-Signature-Wallet",
+      image: MultiTrading,
+    
+    },
+    {
+      title: "PortScan",
+      description:
+        "I built wrote a multi signature wallet contract.",
+      tags: ["React", "Typescript", "NodeJS", "Express", "Gemini API", "Playwright"],
+      previewLink: "https://port-scan-ten.vercel.app/",
+      githubLink: "https://github.com/heycalebszn/PortScan",
+      image: Portscan,
+    
+    },
+    {
+      title: "MockTrade",
+      description:
+        "I built a website to practice trading with mock funds.",
+      tags: ["NextJS", "Typescript", "CoinGecko API", "Clerk Auth"],
+      previewLink: "https://mock-trading.vercel.app/",
+      githubLink: "https://github.com/heycalebszn/mock_trading",
+      image: MockTrade,
+    
+    },
+    {
+      title: "Stacist",
+      description:
+        "I built a sleek ui landing page.",
+      tags: ["React", "Typescript", "TailwindCSS", "Figma"],
+      previewLink: "https://mock-trading.vercel.app/",
+      githubLink: "https://github.com/heycalebszn/mock_trading",
+      image: Stacist,
     
     },
     {
@@ -71,7 +101,7 @@ const RecentWorks = () => {
       tags: ["ReactJS", "JavaScript", "TailwindCSS", "Map"],
       previewLink: "https://szn-nikelanding.netlify.app",
       githubLink: "https://github.com/Techies-Collab-and-Upskill-Live-Project/Electric-keke-frontend-",
-      image: SS,
+      image: Nike,
     },
     {
       title: "Virtual AR",
@@ -80,7 +110,7 @@ const RecentWorks = () => {
       tags: ["ReactJS", "JavaScript", "TailwindCSS"],
       previewLink: "https://virtualar.netlify.app",
       githubLink: "https://github.com/heycalebszn/virtual",
-      image: SS,
+      image: VirtualAR,
     },
   ];
 
