@@ -4,6 +4,7 @@ import { Ethereum, Javascript, Typescript } from "../models";
 const Hero = () => {
     return (
       <header className="my-[5.4rem] flex items-center justify-center relative overflow-hidden w-full md:mt-0 md:h-screen h-[80vh]">
+      <BackgroundLines>
         <div className="my_fixed_width md:flex justify-center items-center sm:pr-2 md:px-3 text-center">
           <div className="md:w-[52%] lg:w-[60%]">
             <h1 className="gradient_text text-[2.5rem] font-clash leading-[2.5rem] md:leading-[3.6rem] md:text-[3.5rem]">
@@ -78,6 +79,7 @@ const Hero = () => {
           {/*<HeroImage />*/}
           
         </div>
+        </BackgroundLines>
       </header>
     );
 };
