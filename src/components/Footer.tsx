@@ -51,10 +51,11 @@ export const Footer = () => {
                 </a>
               </div>
             </div>
-            <div className="text-white font-bold text-sm mt-[5rem] my-[2rem] flex items-center text-center justify-center">
+            <div className="text-white font-bold text-sm mt-[5rem] my-[2rem] flex flex-col items-center text-center justify-center">
               <p>&copy; 2025</p>
-              <p className="ml-1">Raptomi</p>
+              <p className="ml-1">Inspired by Treasure</p>
             </div>
+              
           </div>
         </div>
       </footer>
