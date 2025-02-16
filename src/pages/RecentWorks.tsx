@@ -67,7 +67,7 @@ const RecentWorks = () => {
       image: Rewrap,
     
     },
-    {
+   /* {
       title: "Bannerly",
       description:
         "I built a software that generates Fully customizable Social Banners for Freelancers.",
@@ -75,7 +75,7 @@ const RecentWorks = () => {
       previewLink: "https://bannerly.vercel.app",
       githubLink: "https://github.com/heycaleszn/bannerly",
       image: Bannerly,
-    },
+    }, */
     {
       title: "Baba AI",
       description:
@@ -96,7 +96,7 @@ const RecentWorks = () => {
     
     },
     
-    {
+  /*  {
       title: "Nike",
       description:
         "I built a Nike Clone with a more modern feel.",
@@ -113,7 +113,7 @@ const RecentWorks = () => {
       previewLink: "https://virtualar.netlify.app",
       githubLink: "https://github.com/heycalebszn/virtual",
       image: VirtualAR,
-    },
+    }, */
   ];
 
   return (
