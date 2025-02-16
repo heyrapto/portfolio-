@@ -5,7 +5,7 @@ import Skills from "./pages/Skills";
 import WorkExp from "./pages/WorkExp";
 import { Footer } from "./components/Footer";
 import { Navbar } from "./components/Navbar";
-import { Testimonials } from "./pages/Testimonials";
+// import { Testimonials } from "./pages/Testimonials";
 
 function App() {
   return (
@@ -17,7 +17,6 @@ function App() {
               <RecentWorks />
               <Skills />
               <WorkExp />
-              <Testimonials />
             </main>
             <Footer />
         </>
