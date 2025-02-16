@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, Github } from "lucide-react";
-import { Afrovivo, Baba, Bannerly, Ecoride, MockTrade, MultiTrading, Nike, Portscan, Rewrap, Stacist, VirtualAR } from "../assets";
+import { Afrovivo, Baba, Ecoride, MockTrade, MultiTrading, Portscan, Rewrap, Stacist } from "../assets";
 
 const RecentWorks = () => {
   const tagsWrapperStyle = "my-[1rem] flex flex-wrap gap-y-3 w-full";
