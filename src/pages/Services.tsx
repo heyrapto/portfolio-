@@ -114,7 +114,7 @@ const Services = () => {
                   key={index}
                   ref={(el) => {
                     refs.current[index] = el;
-                  }} // Proper ref assignment without return
+                  }} 
                   className={`w-full h-[270px] flex items-center justify-center relative overflow-hidden px-7 font-clash bg-[#0a1c20] ${service.className}`}
                   variants={itemVariants}
                   initial="hidden"
@@ -124,7 +124,7 @@ const Services = () => {
                     delay: index * 0.2,
                     type: "spring",
                     stiffness: 300,
-                  }} // Add spring effect
+                  }} 
                 >
                   <div>
                     <h3 className="font-bold text-xl text-white w-[69%] md:w-full">
