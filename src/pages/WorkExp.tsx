@@ -10,7 +10,14 @@ const WorkExp = () => {
             desc3: "Streamlined UI for secure and efficient payment platforms.",
         },
         {
-            company: "TCU",
+            company: "Chimly",
+            expTitle: "Fullstack Developer",
+            desc1: "Redesigned user interfaces to enhance payment experiences.",
+            desc2: "Collaborated on front-end solutions for seamless transactions",
+            desc3: "Streamlined UI for secure and efficient payment platforms.",
+        },
+        {
+            company: "interned @ TCU",
             expTitle: "Frontend Developer",
             desc1: "Crafted modern designs to improve platform usability.",
             desc2: "Developed front-end features to enhance customer satisfaction",
