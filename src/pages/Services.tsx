@@ -62,12 +62,6 @@ const Services = () => {
                   className: "block_left",
                 },
                 {
-                  title: "MOBILE APPS",
-                  description:
-                    "I Build Cool and Intuitive cross-platform (Android and IOS) Applications with React Native.",
-                  className: "block_right",
-                },
-                {
                   title: "BLOCKCHAIN",
                   description:
                     "I write Smart Contracts that matches the needs of many web3 companies.",
