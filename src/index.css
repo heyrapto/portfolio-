@@ -26,12 +26,50 @@ body {
 }
 
 .gradient_text {
-    background: linear-gradient(to right, #fcfae9, #dfe9fe);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-weight: bolder;
-    animation: colorChange 2.8s infinite;
+  overflow: hidden;
+  background: linear-gradient(76deg,
+      #fde1ff,
+      #e0e7ff,
+      #e0f9ff,
+      #fffae9,
+      #e8eaff,
+      #ffe3f7,
+      #daf1ff,
+      #fde1ff,
+      #e0e7ff,
+      #e0f9ff,
+      #fffae9,
+      #e8eaff,
+      #ffe3f7,
+      #daf1ff,
+      #fde1ff,
+      #e0e7ff,
+      #e0f9ff,
+      #fffae9,
+      #e8eaff,
+      #ffe3f7,
+      #daf1ff);
+  background-size: 500% 500%;
+  -webkit-animation: slime 45s ease infinite;
+  animation: slime 45s ease infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+
+.gradientText h1 {
+  @apply font-semibold text-[34px] leading-[36.9px] text-[#CFFAFF] md:leading-[45px] md:text-[35px] md:max-w-max lg:leading-[73.8px] lg:max-w-[580px] lg:text-[60px];
+  font-family: clashBold;
+  color: rgba(255, 255, 255, 0);
+  text-transform: capitalize;
+
+}
+
+.gradientText h2 {
+  color: rgba(255, 255, 255, 0);
+  text-transform: capitalize;
+  font-family: clash;
+  @apply flex items-center font-semibold text-white text-[20px] leading-[30.75px] lg:text-[60px] lg:leading-[73.8px];
 }
 
 @keyframes colorChange {
