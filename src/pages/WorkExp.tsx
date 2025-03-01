@@ -1,5 +1,8 @@
 import { ArrowDown, Minus, Check } from "lucide-react";
 import { useState } from "react";
+import Resume from "./resume";
+const resumeUrl = '/pdf/resume.pdf'; 
+
 const WorkExp = () => {
     const expData = [
         {
