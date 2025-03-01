@@ -97,8 +97,8 @@ const WorkExp = () => {
           transition={{ duration: 0.5 }}
           className="mb-10"
         >
-          <h2 className="text-3xl font-bold font-clash mb-2">Professional Experience</h2>
-          <p className="text-sm text-[#808e91] font-rubik">
+          <h2 className="text-3xl font-bold mb-2">Professional Experience</h2>
+          <p className="text-sm text-[#808e91]">
             A chronological overview of my professional journey
           </p>
         </motion.div>
