@@ -1,12 +1,39 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Code, Layout, Server, Database, GitBranch, Cpu, Lightbulb, LineChart, MessageSquare } from "lucide-react";
+import {
+  Layout,
+  Server,
+  GitBranch,
+  Cpu,
+  Lightbulb,
+  LineChart,
+  MessageSquare,
+} from "lucide-react";
+
+interface Skill {
+  name: string;
+  expertise: "Beginner" | "Intermediate" | "Advanced" | "Expert";
+  color: string;
+}
+
+type Category =
+  | "Frontend"
+  | "Backend"
+  | "Blockchain"
+  | "Tools"
+  | "Soft Skills"
+  | "Other";
+
+interface SkillsCategory {
+  icon: JSX.Element;
+  skills: Skill[];
+}
 
 const Skills = () => {
-  const [activeCategory, setActiveCategory] = useState("all");
+  const [activeCategory, setActiveCategory] = useState<"all" | Category>("all");
 
-  const skillsData = {
-    "Frontend": {
+  const skillsData: Record<Category, SkillsCategory> = {
+    Frontend: {
       icon: <Layout className="w-5 h-5" />,
       skills: [
         { name: "HTML", expertise: "Expert", color: "#E34F26" },
@@ -17,33 +44,33 @@ const Skills = () => {
         { name: "TailwindCSS", expertise: "Expert", color: "#06B6D4" },
         { name: "Animations", expertise: "Advanced", color: "#FF4D4D" },
         { name: "React Native", expertise: "Intermediate", color: "#61DAFB" },
-      ]
+      ],
     },
-    "Backend": {
+    Backend: {
       icon: <Server className="w-5 h-5" />,
       skills: [
         { name: "NodeJS", expertise: "Advanced", color: "#339933" },
         { name: "ExpressJS", expertise: "Advanced", color: "#000000" },
         { name: "RESTful APIs", expertise: "Expert", color: "#FF9900" },
         { name: "Authentication", expertise: "Advanced", color: "#7046C3" },
-      ]
+      ],
     },
-    "Blockchain": {
+    Blockchain: {
       icon: <Cpu className="w-5 h-5" />,
       skills: [
         { name: "Solidity", expertise: "Advanced", color: "#363636" },
         { name: "Web3.js", expertise: "Intermediate", color: "#F16822" },
         { name: "Smart Contracts", expertise: "Intermediate", color: "#5A67D8" },
-      ]
+      ],
     },
-    "Tools": {
+    Tools: {
       icon: <GitBranch className="w-5 h-5" />,
       skills: [
         { name: "Git/Github", expertise: "Expert", color: "#F05032" },
         { name: "VS Code", expertise: "Expert", color: "#007ACC" },
         { name: "NPM", expertise: "Expert", color: "#CB3837" },
         { name: "Webpack", expertise: "Intermediate", color: "#8DD6F9" },
-      ]
+      ],
     },
     "Soft Skills": {
       icon: <MessageSquare className="w-5 h-5" />,
@@ -52,31 +79,31 @@ const Skills = () => {
         { name: "Teamwork", expertise: "Expert", color: "#4C51BF" },
         { name: "Problem Solving", expertise: "Expert", color: "#ED8936" },
         { name: "Time Management", expertise: "Advanced", color: "#9F7AEA" },
-      ]
+      ],
     },
-    "Other": {
+    Other: {
       icon: <Lightbulb className="w-5 h-5" />,
       skills: [
         { name: "SEO", expertise: "Advanced", color: "#48BB78" },
         { name: "UI/UX Design", expertise: "Advanced", color: "#F56565" },
         { name: "Agile/Scrum", expertise: "Advanced", color: "#667EEA" },
         { name: "Performance Optimization", expertise: "Advanced", color: "#F6AD55" },
-      ]
-    }
+      ],
+    },
   };
 
   // Get all skills across categories
-  const getAllSkills = () => {
-    const allSkills = [];
-    Object.values(skillsData).forEach(category => {
-      category.skills.forEach(skill => {
+  const getAllSkills = (): Skill[] => {
+    const allSkills: Skill[] = [];
+    Object.values(skillsData).forEach((category) => {
+      category.skills.forEach((skill) => {
         allSkills.push(skill);
       });
     });
     return allSkills;
   };
 
-  const getDisplayedSkills = () => {
+  const getDisplayedSkills = (): Skill[] => {
     if (activeCategory === "all") {
       return getAllSkills();
     }
@@ -89,9 +116,9 @@ const Skills = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.05
-      }
-    }
+        staggerChildren: 0.05,
+      },
+    },
   };
 
   const itemVariants = {
@@ -100,9 +127,9 @@ const Skills = () => {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 0.4
-      }
-    }
+        duration: 0.4,
+      },
+    },
   };
 
   const categories = [
@@ -110,16 +137,16 @@ const Skills = () => {
     ...Object.entries(skillsData).map(([key, value]) => ({
       id: key,
       name: key,
-      icon: value.icon
-    }))
+      icon: value.icon,
+    })),
   ];
 
   // Map expertise level to a width value for the bar
-  const expertiseToWidth = {
-    "Beginner": "w-1/4",
-    "Intermediate": "w-2/4",
-    "Advanced": "w-3/4",
-    "Expert": "w-full"
+  const expertiseToWidth: Record<Skill["expertise"], string> = {
+    Beginner: "w-1/4",
+    Intermediate: "w-2/4",
+    Advanced: "w-3/4",
+    Expert: "w-full",
   };
 
   return (
@@ -136,13 +163,14 @@ const Skills = () => {
             <span className="inline-block ml-2">💻</span>
           </h2>
           <p className="text-sm text-[#808e91] font-rubik mt-2 mb-8">
-            A comprehensive overview of my technical capabilities and domain knowledge.
+            A comprehensive overview of my technical capabilities and domain
+            knowledge.
           </p>
         </motion.div>
 
         {/* Category Filter */}
         <div className="mb-10 overflow-x-auto">
-          <motion.div 
+          <motion.div
             className="flex space-x-2 min-w-max pb-2"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -151,7 +179,9 @@ const Skills = () => {
             {categories.map((category) => (
               <button
                 key={category.id}
-                onClick={() => setActiveCategory(category.id)}
+                onClick={() =>
+                  setActiveCategory(category.id as "all" | Category)
+                }
                 className={`flex items-center px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                   activeCategory === category.id
                     ? "bg-[#1a2e33] text-white shadow-lg"
@@ -173,14 +203,11 @@ const Skills = () => {
           animate="visible"
           key={activeCategory} // Re-run animation when category changes
         >
-          {getDisplayedSkills().map((skill, index) => (
+          {getDisplayedSkills().map((skill: Skill, index: number) => (
             <motion.div
               key={`${skill.name}-${index}`}
               variants={itemVariants}
-              whileHover={{ 
-                y: -5, 
-                transition: { duration: 0.2 } 
-              }}
+              whileHover={{ y: -5, transition: { duration: 0.2 } }}
               className="bg-[#0a1c20] rounded-lg p-5 border border-[#1a2e33] shadow-md hover:shadow-lg transition-all duration-300"
             >
               <div className="flex justify-between items-center mb-3">
@@ -189,10 +216,12 @@ const Skills = () => {
                   {skill.expertise}
                 </span>
               </div>
-              
+
               <div className="w-full bg-[#162429] rounded-full h-1.5 mb-1 overflow-hidden">
-                <motion.div 
-                  className={`h-1.5 rounded-full ${expertiseToWidth[skill.expertise]}`}
+                <motion.div
+                  className={`h-1.5 rounded-full ${
+                    expertiseToWidth[skill.expertise]
+                  }`}
                   style={{ backgroundColor: skill.color }}
                   initial={{ width: 0 }}
                   animate={{ width: expertiseToWidth[skill.expertise] }}
@@ -210,7 +239,9 @@ const Skills = () => {
           transition={{ delay: 0.8, duration: 0.5 }}
           className="mt-16 relative"
         >
-          <h3 className="text-xl font-bold font-clash mb-6 text-center">Skills Ecosystem</h3>
+          <h3 className="text-xl font-bold font-clash mb-6 text-center">
+            Skills Ecosystem
+          </h3>
           <SkillCloud skills={getAllSkills()} />
         </motion.div>
       </div>
@@ -219,19 +250,23 @@ const Skills = () => {
 };
 
 // 3D Skills Cloud Component
-const SkillCloud = ({ skills }) => {
-  const [rotationX, setRotationX] = useState(0);
-  const [rotationY, setRotationY] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(true);
+interface SkillCloudProps {
+  skills: Skill[];
+}
+
+const SkillCloud: React.FC<SkillCloudProps> = ({ skills }) => {
+  const [rotationX, setRotationX] = useState<number>(0);
+  const [rotationY, setRotationY] = useState<number>(0);
+  const [isAnimating, setIsAnimating] = useState<boolean>(true);
 
   useEffect(() => {
     if (!isAnimating) return;
-    
+
     const interval = setInterval(() => {
-      setRotationX(prev => (prev + 0.3) % 360);
-      setRotationY(prev => (prev + 0.5) % 360);
+      setRotationX((prev) => (prev + 0.3) % 360);
+      setRotationY((prev) => (prev + 0.5) % 360);
     }, 50);
-    
+
     return () => clearInterval(interval);
   }, [isAnimating]);
 
@@ -243,61 +278,61 @@ const SkillCloud = ({ skills }) => {
     setIsAnimating(true);
   };
 
-  const handleMouseMove = (e) => {
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (isAnimating) return;
-    
+
     const rect = e.currentTarget.getBoundingClientRect();
     const centerX = rect.left + rect.width / 2;
     const centerY = rect.top + rect.height / 2;
-    
+
     // Calculate rotation based on mouse position relative to center
     const angleX = ((e.clientY - centerY) / (rect.height / 2)) * 15;
     const angleY = ((e.clientX - centerX) / (rect.width / 2)) * 15;
-    
+
     setRotationX(angleX);
     setRotationY(angleY);
   };
 
   return (
-    <div 
+    <div
       className="h-64 relative perspective-skill-cloud"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onMouseMove={handleMouseMove}
     >
-      <div 
+      <div
         className="w-full h-full relative transform-skill-cloud"
         style={{
           transform: `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`,
-          transformStyle: 'preserve-3d',
-          transition: isAnimating ? 'none' : 'transform 0.1s ease-out'
+          transformStyle: "preserve-3d",
+          transition: isAnimating ? "none" : "transform 0.1s ease-out",
         }}
       >
-        {skills.map((skill, index) => {
+        {skills.map((skill: Skill, index: number) => {
           // Position tags in a spherical arrangement
           const phi = Math.acos(-1 + (2 * index) / skills.length);
           const theta = Math.sqrt(skills.length * Math.PI) * phi;
-          
+
           const x = 100 * Math.cos(theta) * Math.sin(phi);
           const y = 100 * Math.sin(theta) * Math.sin(phi);
           const z = 100 * Math.cos(phi);
-          
+
           // Scale opacity based on z position (items in front are more visible)
           const opacity = (z + 100) / 200;
           const scale = (z + 120) / 220; // Items in front are slightly larger
-          
+
           return (
             <div
               key={`${skill.name}-${index}-cloud`}
               className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 px-3 py-1 rounded-full text-xs whitespace-nowrap"
               style={{
                 transform: `translateX(${x}px) translateY(${y}px) translateZ(${z}px) scale(${scale})`,
-                backgroundColor: `${skill.color}22`, // Semi-transparent background
+                backgroundColor: `${skill.color}22`,
                 color: skill.color,
                 border: `1px solid ${skill.color}`,
                 opacity,
-                textShadow: '0px 0px 3px rgba(0,0,0,0.5)',
-                boxShadow: `0 0 8px ${skill.color}44`
+                textShadow: "0px 0px 3px rgba(0,0,0,0.5)",
+                boxShadow: `0 0 8px ${skill.color}44`,
               }}
             >
               {skill.name}
