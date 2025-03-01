@@ -43,7 +43,7 @@ const Services = () => {
 
     return (
       <section>
-        <div className="flex justify-center py-5">
+        <div className="flex justify-center py-24">
           <div className="my_fixed_width">
             <h2 className="text-2xl font-bold font-clash">
               Services i Offer
