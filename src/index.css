@@ -7,9 +7,9 @@
 }
 
 body {
-    background-color: #061417;
+    background-color: #1a120b; /* Dark brownish-gold */
     color: #fff;
-    font-family: poppins;
+    font-family: Poppins, sans-serif;
 }
 
 @theme {
