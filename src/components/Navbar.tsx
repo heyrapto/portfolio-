@@ -5,7 +5,7 @@ export const Navbar = () => {
         <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between py-5 bg-transparent bg-opacity-60 backdrop-filter backdrop-blur-md">
             <div className="flex justify-center w-full">
                 <div className="flex justify-between my_fixed_width items-center">
-                    <span className="text-base font-bold">
+                    <span className="text-base font-bold text-[18px] md:text-[25px]">
                         Raptomi ⚡
                     </span>
                     <div className="text-[#FFFFFF99] group group-hover:text-white transition-all duration-300">
