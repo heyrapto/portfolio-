@@ -9,7 +9,7 @@ export const projects = [
 {
     name: "Xdegen",
     desc: "A sefer way to trade degen/meme coins.",
-    lang: "Next.js + ReactJS + TaiwimdCSS + Typescript",
+    lang: "Next.js + ReactJS + TaiwindCSS + Typescript",
     link: "https://waitlist.xdegen.xyz/",
     github: "https://github.com/heycalebszn",
   },
