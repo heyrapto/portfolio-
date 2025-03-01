@@ -1,7 +1,7 @@
 import { Facebook, Twitter, Instagram, Github, Phone, Mail } from 'lucide-react';
 
 export const Footer = () => {
-  const iconStyle = "flex items-center justify-center rounded-full border border-1 border-yellow-400 w-10 h-10 text-yellow-400 hover:border-cyan-500 hover:bg-cyan-500 hover:text-gray-900 transition-all duration-300";
+  const iconStyle = "flex items-center justify-center rounded-full border border-1 border-yellow-400 w-10 h-10 text-yellow-400 hover:text-gray-900 transition-all duration-300";
   
   const year = new Date().getFullYear();
   
