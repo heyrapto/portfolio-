@@ -1,113 +1,97 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Layout, Server, GitBranch, Cpu, Lightbulb, LineChart, MessageSquare } from "lucide-react";
-
-// Define types for skills and categories
-interface Skill {
-  name: string;
-  level: number;
-  color: string;
-}
-
-interface SkillCategory {
-  icon: React.ReactNode;
-  skills: Skill[];
-}
-
-type CategoryKey = "all" | "Frontend" | "Backend" | "Blockchain" | "Tools" | "Soft Skills" | "Other";
-
-// Define skills data with proper types
-const skillsData: Record<Exclude<CategoryKey, "all">, SkillCategory> = {
-  Frontend: {
-    icon: <Layout className="w-5 h-5" />,
-    skills: [
-      { name: "HTML", level: 90, color: "#E34F26" },
-      { name: "CSS", level: 85, color: "#1572B6" },
-      { name: "JavaScript", level: 88, color: "#F7DF1E" },
-      { name: "TypeScript", level: 80, color: "#3178C6" },
-      { name: "React", level: 85, color: "#61DAFB" },
-      { name: "TailwindCSS", level: 92, color: "#06B6D4" },
-      { name: "Animations", level: 75, color: "#FF4D4D" },
-      { name: "React Native", level: 70, color: "#61DAFB" },
-    ],
-  },
-  Backend: {
-    icon: <Server className="w-5 h-5" />,
-    skills: [
-      { name: "NodeJS", level: 82, color: "#339933" },
-      { name: "ExpressJS", level: 78, color: "#000000" },
-      { name: "RESTful APIs", level: 85, color: "#FF9900" },
-      { name: "Authentication", level: 80, color: "#7046C3" },
-    ],
-  },
-  Blockchain: {
-    icon: <Cpu className="w-5 h-5" />,
-    skills: [
-      { name: "Solidity", level: 75, color: "#363636" },
-      { name: "Web3.js", level: 70, color: "#F16822" },
-      { name: "Smart Contracts", level: 65, color: "#5A67D8" },
-    ],
-  },
-  Tools: {
-    icon: <GitBranch className="w-5 h-5" />,
-    skills: [
-      { name: "Git/Github", level: 88, color: "#F05032" },
-      { name: "VS Code", level: 90, color: "#007ACC" },
-      { name: "NPM", level: 85, color: "#CB3837" },
-      { name: "Webpack", level: 65, color: "#8DD6F9" },
-    ],
-  },
-  "Soft Skills": {
-    icon: <MessageSquare className="w-5 h-5" />,
-    skills: [
-      { name: "Communication", level: 95, color: "#38B2AC" },
-      { name: "Teamwork", level: 90, color: "#4C51BF" },
-      { name: "Problem Solving", level: 88, color: "#ED8936" },
-      { name: "Time Management", level: 85, color: "#9F7AEA" },
-    ],
-  },
-  Other: {
-    icon: <Lightbulb className="w-5 h-5" />,
-    skills: [
-      { name: "SEO", level: 78, color: "#48BB78" },
-      { name: "UI/UX Design", level: 75, color: "#F56565" },
-      { name: "Agile/Scrum", level: 80, color: "#667EEA" },
-      { name: "Performance Optimization", level: 82, color: "#F6AD55" },
-    ],
-  },
-};
+import { Code, Layout, Server, Database, GitBranch, Cpu, Lightbulb, LineChart, MessageSquare } from "lucide-react";
 
 const Skills = () => {
-  const [activeCategory, setActiveCategory] = useState<CategoryKey>("all");
+  const [activeCategory, setActiveCategory] = useState("all");
+
+  const skillsData = {
+    "Frontend": {
+      icon: <Layout className="w-5 h-5" />,
+      skills: [
+        { name: "HTML", expertise: "Expert", color: "#E34F26" },
+        { name: "CSS", expertise: "Expert", color: "#1572B6" },
+        { name: "JavaScript", expertise: "Expert", color: "#F7DF1E" },
+        { name: "TypeScript", expertise: "Advanced", color: "#3178C6" },
+        { name: "React", expertise: "Expert", color: "#61DAFB" },
+        { name: "TailwindCSS", expertise: "Expert", color: "#06B6D4" },
+        { name: "Animations", expertise: "Advanced", color: "#FF4D4D" },
+        { name: "React Native", expertise: "Intermediate", color: "#61DAFB" },
+      ]
+    },
+    "Backend": {
+      icon: <Server className="w-5 h-5" />,
+      skills: [
+        { name: "NodeJS", expertise: "Advanced", color: "#339933" },
+        { name: "ExpressJS", expertise: "Advanced", color: "#000000" },
+        { name: "RESTful APIs", expertise: "Expert", color: "#FF9900" },
+        { name: "Authentication", expertise: "Advanced", color: "#7046C3" },
+      ]
+    },
+    "Blockchain": {
+      icon: <Cpu className="w-5 h-5" />,
+      skills: [
+        { name: "Solidity", expertise: "Advanced", color: "#363636" },
+        { name: "Web3.js", expertise: "Intermediate", color: "#F16822" },
+        { name: "Smart Contracts", expertise: "Intermediate", color: "#5A67D8" },
+      ]
+    },
+    "Tools": {
+      icon: <GitBranch className="w-5 h-5" />,
+      skills: [
+        { name: "Git/Github", expertise: "Expert", color: "#F05032" },
+        { name: "VS Code", expertise: "Expert", color: "#007ACC" },
+        { name: "NPM", expertise: "Expert", color: "#CB3837" },
+        { name: "Webpack", expertise: "Intermediate", color: "#8DD6F9" },
+      ]
+    },
+    "Soft Skills": {
+      icon: <MessageSquare className="w-5 h-5" />,
+      skills: [
+        { name: "Communication", expertise: "Expert", color: "#38B2AC" },
+        { name: "Teamwork", expertise: "Expert", color: "#4C51BF" },
+        { name: "Problem Solving", expertise: "Expert", color: "#ED8936" },
+        { name: "Time Management", expertise: "Advanced", color: "#9F7AEA" },
+      ]
+    },
+    "Other": {
+      icon: <Lightbulb className="w-5 h-5" />,
+      skills: [
+        { name: "SEO", expertise: "Advanced", color: "#48BB78" },
+        { name: "UI/UX Design", expertise: "Advanced", color: "#F56565" },
+        { name: "Agile/Scrum", expertise: "Advanced", color: "#667EEA" },
+        { name: "Performance Optimization", expertise: "Advanced", color: "#F6AD55" },
+      ]
+    }
+  };
 
   // Get all skills across categories
-  const getAllSkills = (): Skill[] => {
-    const allSkills: Skill[] = [];
-    Object.values(skillsData).forEach((category: SkillCategory) => {
-      category.skills.forEach((skill: Skill) => {
+  const getAllSkills = () => {
+    const allSkills = [];
+    Object.values(skillsData).forEach(category => {
+      category.skills.forEach(skill => {
         allSkills.push(skill);
       });
     });
     return allSkills;
   };
 
-  // Filter skills based on active category
-  const getDisplayedSkills = (): Skill[] => {
+  const getDisplayedSkills = () => {
     if (activeCategory === "all") {
       return getAllSkills();
     }
-    return skillsData[activeCategory as Exclude<CategoryKey, "all">].skills;
+    return skillsData[activeCategory]?.skills || [];
   };
 
-  // Animation variants for Framer Motion
+  // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.05,
-      },
-    },
+        staggerChildren: 0.05
+      }
+    }
   };
 
   const itemVariants = {
@@ -116,20 +100,27 @@ const Skills = () => {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 0.4,
-      },
-    },
+        duration: 0.4
+      }
+    }
   };
 
-  // Categories for filter buttons
-  const categories: { id: CategoryKey; name: string; icon: React.ReactNode }[] = [
+  const categories = [
     { id: "all", name: "All Skills", icon: <LineChart className="w-4 h-4" /> },
     ...Object.entries(skillsData).map(([key, value]) => ({
-      id: key as Exclude<CategoryKey, "all">,
+      id: key,
       name: key,
-      icon: value.icon,
-    })),
+      icon: value.icon
+    }))
   ];
+
+  // Map expertise level to a width value for the bar
+  const expertiseToWidth = {
+    "Beginner": "w-1/4",
+    "Intermediate": "w-2/4",
+    "Advanced": "w-3/4",
+    "Expert": "w-full"
+  };
 
   return (
     <section className="py-16 bg-[#060f12]">
@@ -140,18 +131,18 @@ const Skills = () => {
           transition={{ duration: 0.5 }}
           className="mb-10"
         >
-          <h2 className="text-3xl font-bold flex items-center">
-            Technical Proficiency
-            <span className="inline-block ml-2 animate-bounce">🤹</span>
+          <h2 className="text-3xl font-bold font-clash flex items-center">
+            Technical Expertise
+            <span className="inline-block ml-2">💻</span>
           </h2>
-          <p className="text-sm text-[#808e91] mt-2 mb-8">
-            A comprehensive overview of my technical skills and expertise.
+          <p className="text-sm text-[#808e91] font-rubik mt-2 mb-8">
+            A comprehensive overview of my technical capabilities and domain knowledge.
           </p>
         </motion.div>
 
         {/* Category Filter */}
         <div className="mb-10 overflow-x-auto">
-          <motion.div
+          <motion.div 
             className="flex space-x-2 min-w-max pb-2"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -182,28 +173,31 @@ const Skills = () => {
           animate="visible"
           key={activeCategory} // Re-run animation when category changes
         >
-          {getDisplayedSkills().map((skill: Skill, index: number) => (
+          {getDisplayedSkills().map((skill, index) => (
             <motion.div
               key={`${skill.name}-${index}`}
               variants={itemVariants}
-              whileHover={{ y: -5, transition: { duration: 0.2 } }}
+              whileHover={{ 
+                y: -5, 
+                transition: { duration: 0.2 } 
+              }}
               className="bg-[#0a1c20] rounded-lg p-5 border border-[#1a2e33] shadow-md hover:shadow-lg transition-all duration-300"
             >
-              <p className="text-lg font-medium mb-3 font-clash">{skill.name}</p>
-              
-              <div className="w-full bg-[#162429] rounded-full h-2.5 mb-3">
-                <motion.div 
-                  className="h-2.5 rounded-full"
-                  style={{ backgroundColor: skill.color }}
-                  initial={{ width: 0 }}
-                  animate={{ width: `${skill.level}%` }}
-                  transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-                />
+              <div className="flex justify-between items-center mb-3">
+                <p className="text-lg font-medium font-clash">{skill.name}</p>
+                <span className="text-xs px-2 py-1 rounded-full bg-[#162429] text-[#a4b5ba]">
+                  {skill.expertise}
+                </span>
               </div>
               
-              <div className="flex justify-between text-xs text-[#808e91]">
-                <span>Proficiency</span>
-                <span>{skill.level}%</span>
+              <div className="w-full bg-[#162429] rounded-full h-1.5 mb-1 overflow-hidden">
+                <motion.div 
+                  className={`h-1.5 rounded-full ${expertiseToWidth[skill.expertise]}`}
+                  style={{ backgroundColor: skill.color }}
+                  initial={{ width: 0 }}
+                  animate={{ width: expertiseToWidth[skill.expertise] }}
+                  transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
+                />
               </div>
             </motion.div>
           ))}
@@ -216,9 +210,7 @@ const Skills = () => {
           transition={{ delay: 0.8, duration: 0.5 }}
           className="mt-16 relative"
         >
-          <h3 className="text-xl font-bold font-clash mb-6 text-center">
-            Skills Cloud
-          </h3>
+          <h3 className="text-xl font-bold font-clash mb-6 text-center">Skills Ecosystem</h3>
           <SkillCloud skills={getAllSkills()} />
         </motion.div>
       </div>
@@ -226,75 +218,86 @@ const Skills = () => {
   );
 };
 
-// Props interface for SkillCloud
-interface SkillCloudProps {
-  skills: Skill[];
-}
-
 // 3D Skills Cloud Component
-const SkillCloud: React.FC<SkillCloudProps> = ({ skills }) => {
+const SkillCloud = ({ skills }) => {
   const [rotationX, setRotationX] = useState(0);
   const [rotationY, setRotationY] = useState(0);
   const [isAnimating, setIsAnimating] = useState(true);
 
   useEffect(() => {
     if (!isAnimating) return;
+    
     const interval = setInterval(() => {
-      setRotationX((prev) => (prev + 0.3) % 360);
-      setRotationY((prev) => (prev + 0.5) % 360);
+      setRotationX(prev => (prev + 0.3) % 360);
+      setRotationY(prev => (prev + 0.5) % 360);
     }, 50);
+    
     return () => clearInterval(interval);
   }, [isAnimating]);
 
-  const handleMouseEnter = () => setIsAnimating(false);
-  const handleMouseLeave = () => setIsAnimating(true);
+  const handleMouseEnter = () => {
+    setIsAnimating(false);
+  };
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+  const handleMouseLeave = () => {
+    setIsAnimating(true);
+  };
+
+  const handleMouseMove = (e) => {
     if (isAnimating) return;
+    
     const rect = e.currentTarget.getBoundingClientRect();
     const centerX = rect.left + rect.width / 2;
     const centerY = rect.top + rect.height / 2;
+    
+    // Calculate rotation based on mouse position relative to center
     const angleX = ((e.clientY - centerY) / (rect.height / 2)) * 15;
     const angleY = ((e.clientX - centerX) / (rect.width / 2)) * 15;
+    
     setRotationX(angleX);
     setRotationY(angleY);
   };
 
   return (
-    <div
+    <div 
       className="h-64 relative perspective-skill-cloud"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onMouseMove={handleMouseMove}
     >
-      <div
+      <div 
         className="w-full h-full relative transform-skill-cloud"
         style={{
           transform: `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`,
-          transformStyle: "preserve-3d",
-          transition: isAnimating ? "none" : "transform 0.1s ease-out",
+          transformStyle: 'preserve-3d',
+          transition: isAnimating ? 'none' : 'transform 0.1s ease-out'
         }}
       >
-        {skills.map((skill: Skill, index: number) => {
+        {skills.map((skill, index) => {
+          // Position tags in a spherical arrangement
           const phi = Math.acos(-1 + (2 * index) / skills.length);
           const theta = Math.sqrt(skills.length * Math.PI) * phi;
+          
           const x = 100 * Math.cos(theta) * Math.sin(phi);
           const y = 100 * Math.sin(theta) * Math.sin(phi);
           const z = 100 * Math.cos(phi);
+          
+          // Scale opacity based on z position (items in front are more visible)
           const opacity = (z + 100) / 200;
-          const scale = (z + 120) / 220;
+          const scale = (z + 120) / 220; // Items in front are slightly larger
+          
           return (
             <div
               key={`${skill.name}-${index}-cloud`}
               className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 px-3 py-1 rounded-full text-xs whitespace-nowrap"
               style={{
                 transform: `translateX(${x}px) translateY(${y}px) translateZ(${z}px) scale(${scale})`,
-                backgroundColor: `${skill.color}22`,
+                backgroundColor: `${skill.color}22`, // Semi-transparent background
                 color: skill.color,
                 border: `1px solid ${skill.color}`,
                 opacity,
-                textShadow: "0px 0px 3px rgba(0,0,0,0.5)",
-                boxShadow: `0 0 8px ${skill.color}44`,
+                textShadow: '0px 0px 3px rgba(0,0,0,0.5)',
+                boxShadow: `0 0 8px ${skill.color}44`
               }}
             >
               {skill.name}
