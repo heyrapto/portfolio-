@@ -12,12 +12,19 @@ body {
     font-family: poppins;
 }
 
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
 @font-face {
-    font-family: "Clash Display Medium";
-    src: url("/fonts/ClashDisplay-Medium.otf")
-        format("opentype");
-    font-weight: normal;
-    font-style: normal;
+  font-family: clash;
+  src: url("/fonts/clash/ClashDisplay-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: clashBold;
+  src: url("/fonts/clash/ClashDisplay-Semibold.otf") format("opentype");
 }
 
 .my_fixed_width {
