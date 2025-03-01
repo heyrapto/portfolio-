@@ -25,8 +25,8 @@ const Hero = () => {
                 app development, blockchain, ai development, and indie hacking.
               </p>
               <p className="max-w-[319px]">
-                Self-taught programmer with proven experience in building live projects.
-                Active tech content creator and speaker.
+                Self-taught programmer with proven experience in building live projects and
+                Active tech content creator.
               </p>
             </div>
             <div className="mt-[35px] md:mt-[65px] flex justify-start items-center  gap-[26px] md:gap-[40px]">
