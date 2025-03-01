@@ -18,25 +18,20 @@ const Skills = () => {
   const sectionRef = useRef(null);
   
   useEffect(() => {
-    // Create an Intersection Observer to detect when the section is in viewport
     const observer = new IntersectionObserver((entries) => {
       const [entry] = entries;
       if (entry.isIntersecting) {
         setIsVisible(true);
-        // Once the animation has triggered, we can disconnect the observer
         observer.disconnect();
       }
     }, {
-      // Trigger when at least 20% of the element is visible
       threshold: 0.2
     });
     
-    // Start observing the section
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
     
-    // Cleanup function
     return () => {
       if (sectionRef.current) {
         observer.unobserve(sectionRef.current);
@@ -80,7 +75,6 @@ const Skills = () => {
   );
 };
 
-// Custom utility classes to match the navy blue background
 const style = document.createElement('style');
 style.textContent = `
   .bg-navy-900 {
