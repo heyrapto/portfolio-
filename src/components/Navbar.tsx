@@ -1,4 +1,4 @@
-import { GhIcon } from "./pages/svgs.tsx";
+import { GhIcon } from "../pages/svgs.tsx";
 
 export const Navbar = () => {
     return (
