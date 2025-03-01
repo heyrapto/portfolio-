@@ -1,63 +1,77 @@
+import React from 'react';
+import { Facebook, Twitter, Instagram, Github, Phone, Mail } from 'lucide-react';
+
 export const Footer = () => {
-    const iconStyle = "rounded-full border border-1 border-[#FFCC00] px-4 p-3 text-sm bg-transparent text-[#FFCC00] hover:border-[#34afcb] hover:bg-[#34afcb] hover:text-[#0a1c20]";
-    return (
-      <footer>
-        <div className="flex justify-center py-3 font-rubik">
-          <div className="my_fixed_width text-center py-5">
-            <h2 className="font-bold text-2xl font-clash">
-              <span>Start a project</span>
-              <span className="animate-bounce inline-block">🚀</span>
-            </h2>
-            <p className="text-[#808e91] font-rubik text-sm my-2">
-              Interested in making waves together? Hit Me Up, I don't bite.
-            </p>
-            <hr className="my-[2.7rem] border-[#4c5a5d] inline-block w-[65%] md:w-[45%]" />
-            <div className=" flex justify-center items-center flex-col md:space-x-4 md:flex-row md:flex-wrap">
-              <div className="flex justify-center items-center space-x-4 mb-4 md:mb-0">
-                <a
-                  href="https://www.facebook.com/raptomiofw"
-                  className={iconStyle}
-                >
-                  <i className="fab fa-facebook"></i>
-                </a>
-                <a
-                  href="https://twitter.com/heyrapto"
-                  className={iconStyle}
-                >
-                  <i className="fab fa-twitter"></i>
-                </a>
-                <a
-                  href="https://www.instagram.com/caleb.kale"
-                  className={iconStyle}
-                >
-                  <i className="fab fa-instagram"></i>
-                </a>
-              </div>
-              <div className="flex justify-center items-center space-x-4">
-                <a
-                  href="https://www.github.com/heycalebszn"
-                  className={iconStyle}
-                >
-                  <i className="fab fa-github"></i>
-                </a>
-                <a href="https://wa.me/+2347064019926" className={iconStyle}>
-                  <i className="fab fa-whatsapp"></i>
-                </a>
-                <a
-                  href="mailto: raptomiofw@gmail.com"
-                  className={iconStyle}
-                >
-                  <i className="fa fa-envelope"></i>
-                </a>
-              </div>
-            </div>
-            <div className="text-white font-bold text-sm mt-[5rem] my-[2rem] flex flex-col items-center text-center justify-center">
-              <p>&copy; 2025</p>
-              <p className="ml-1">Inspired by Treasure</p>
-            </div>
-              
+  const iconStyle = "flex items-center justify-center rounded-full border border-1 border-yellow-400 w-10 h-10 text-yellow-400 hover:border-cyan-500 hover:bg-cyan-500 hover:text-gray-900 transition-all duration-300";
+  
+  const year = new Date().getFullYear();
+  
+  return (
+    <footer className="bg-gray-900 text-white w-full">
+      <div className="container mx-auto px-4 py-12">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="font-bold text-2xl mb-6">
+            <span className="mr-2">Start a project</span>
+            <span className="inline-block animate-bounce">🚀</span>
+          </h2>
+          
+          <p className="text-gray-400 mb-8">
+            Interested in making waves together? Let's connect and create something amazing.
+          </p>
+          
+          <div className="w-32 h-1 bg-yellow-400 mx-auto mb-10"></div>
+          
+          <div className="flex flex-wrap justify-center gap-4 mb-12">
+            <a
+              href="https://www.facebook.com/raptomiofw"
+              className={iconStyle}
+              aria-label="Facebook"
+            >
+              <Facebook size={18} />
+            </a>
+            <a
+              href="https://twitter.com/heyrapto"
+              className={iconStyle}
+              aria-label="Twitter"
+            >
+              <Twitter size={18} />
+            </a>
+            <a
+              href="https://www.instagram.com/caleb.kale"
+              className={iconStyle}
+              aria-label="Instagram"
+            >
+              <Instagram size={18} />
+            </a>
+            <a
+              href="https://www.github.com/heycalebszn"
+              className={iconStyle}
+              aria-label="GitHub"
+            >
+              <Github size={18} />
+            </a>
+            <a 
+              href="https://wa.me/+2347064019926" 
+              className={iconStyle}
+              aria-label="WhatsApp"
+            >
+              <Phone size={18} />
+            </a>
+            <a
+              href="mailto:raptomiofw@gmail.com"
+              className={iconStyle}
+              aria-label="Email"
+            >
+              <Mail size={18} />
+            </a>
+          </div>
+          
+          <div className="pt-8 border-t border-gray-800 text-sm">
+            <p>&copy; {year} · Designed & Built with ❤️</p>
+            <p className="mt-1 text-gray-500">Inspired by Treasure</p>
           </div>
         </div>
-      </footer>
-    );
+      </div>
+    </footer>
+  );
 };
