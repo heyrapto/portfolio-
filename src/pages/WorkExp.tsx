@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import Resume from "./Resume.tsx";
 import { motion } from "framer-motion";
 
@@ -109,7 +109,7 @@ const WorkExp = () => {
           initial="hidden"
           animate="visible"
         >
-          {expData.map((job, index) => (
+          {expData.map((job) => (
             <motion.div 
               key={job.company} 
               variants={itemVariants}
