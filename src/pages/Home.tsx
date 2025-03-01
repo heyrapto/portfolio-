@@ -1,80 +1,111 @@
-import SvgIcons from "../assets/icons/SvgIcons";
-import { BackgroundLines } from "../components/ui/background-lines";
+import { motion } from "framer-motion";
+import { FbIcon, IgIcon, InIcon, TwIcon } from "./svgs";
 
-const Hero = () => {
-    return (
-      <header className="my-[5.4rem] flex items-center justify-center relative overflow-hidden w-full md:mt-0 md:h-screen h-[80vh]">
-      <BackgroundLines>
-        <div className="my_fixed_width md:flex justify-center items-center sm:pr-2 md:px-3 text-center">
-          <div className="md:w-[52%] lg:w-[60%]">
-            <h1 className="gradient_text text-[2.5rem] font-clash leading-[2.5rem] md:leading-[3.6rem] md:text-[3.5rem]">
-              Creative <br className="md:hidden" /> Software Developer.
-            </h1>
-            <div className="font-[400] mt-[2.5rem] font-rubik pr-5 text-sm text-center">
-              <p className="gradient_text">
-                You got here! I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-blue-600">Caleb Kalejaiye</span>, a Fullstack Developer heavy on Frontend and passionate about Web3, Blockchain and writing smart contracts. 
+const Home = () => {
+  return (
+    <>
+      <section className="mx-auto px-[38px] pt-[100px] md:px-[26px] lg:pt-[120px] lg:pl-[80px] lg:pr-[40px]">
+        <div className="flex flex-col items-start flex-1 md:flex md:flex-row md:gap-10 md:items-center lg:flex lg:flex-row lg:items-center lg:gap-x-12 lg:justify-between">
+          <div>
+            <div className="gradientText">
+              <h1>
+                Creative Software Engineer<span>.</span>
+              </h1>
+            </div>
+            <p className="gradientText font-medium font-pop text-[15px] text-[#FFFFFF99] max-w-[353px] mt-[45px] md:mt-8 lg:mt-1 md:max-w-[639px] md:text-[18px] leading-md:[27px]">
+              I like to craft solid and scalable products with great
+              user experiences.
+            </p>
+            <div
+              id="intro"
+              className="text-[#F0FEFF] font-pop flex-shrink-0 text-[.9em] leading-[1.5] font-medium mt-[40px] flex flex-col gap-8 md:flex md:flex-col md:gap-[20px] md:mt-[45px] lg:flex lg:flex-row lg:items-start lg:gap-[12px]"
+            >
+              <p className="max-w-[310px]">
+                I&#39;m Robinson Honour, with 6+ Years of experience. Started coding in 2017, specializing in web development,
+                app development, robotics, cloud computing, and game development.
+              </p>
+              <p className="max-w-[319px]">
+                Self-taught programmer with proven experience in building live projects.
+                Active tech content creator and speaker.
               </p>
             </div>
-            <div className="mt-[1.7rem] flex space-x-5 items-center justify-center">
-              <a
-                href="https://www.facebook.com/raptomiofw"
-                className="rounded-full border-2 border-[#34afcb] hover:border-green hover:bg-green md:p-2 p-0"
+            <div className="mt-[35px] md:mt-[65px] flex justify-start items-center  gap-[26px] md:gap-[40px]">
+              <motion.a
+                href="https://www.facebook.com/honour.robinson.1"
                 target="_blank"
+                rel="noreferrer"
+                whileTap={{ scale: 1.1 }}
+                whileHover={{ scale: 0.99 }}
+                className="h-auto w-auto"
               >
-                <SvgIcons
-                  type="facebook"
-                  height="20"
-                  width="20"
-                  color="#34afcb"
-                  className="m-1 hover:fill-[#061417]"
+                <FbIcon
+                  fill="#6f1cd7"
+                  className={`w-[30px] h-[30px] rounded-full border-[#6f1cd7] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-white`}
                 />
-              </a>
-              <a
-                href="https://www.linkedin.com/in"
-                className="rounded-full border-2 border-[#34afcb] hover:border-green hover:bg-green md:p-2 p-0"
+              </motion.a>
+              <motion.a
+                href="https://x.com/honour_can_code"
                 target="_blank"
+                rel="noreferrer"
+                whileTap={{ scale: 1.1 }}
+                whileHover={{ scale: 0.99 }}
+                className={`h-auto w-auto`}
               >
-                <SvgIcons
-                  type="linkedin"
-                  height="20"
-                  width="20"
-                  color="#34afcb"
-                  className="m-1 hover:fill-[#061417]"
+                <TwIcon
+                  fill={`#6f1cd7`}
+                  className={`w-[30px] h-[30px] rounded-full border-[#6f1cd7] border-solid border-[2px] p-1  transition-all duration-500 hover:bg-white`}
                 />
-              </a>
-              <a
-                href="https://www.x.com/heyrapto"
-                className="rounded-full border-2 border-[#34afcb] hover:border-green hover:bg-green md:p-2 p-0"
+              </motion.a>
+              <motion.a
+                href="https://www.instagram.com/robinsonhonour"
                 target="_blank"
+                rel="noreferrer"
+                whileTap={{ scale: 1.1 }}
+                whileHover={{ scale: 0.99 }}
+                className={`h-auto w-auto`}
               >
-                <SvgIcons
-                  type="twitter"
-                  height="20"
-                  width="20"
-                  color="#34afcb"
-                  className="m-1 hover:fill-[#061417]"
+                <IgIcon
+                  fill={`#6f1cd7`}
+                  className={`w-[30px] h-[30px] rounded-full border-[#6f1cd7] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-white`}
                 />
-              </a>
-              <a
-                href="https://www.instagram.com/caleb.kale"
-                className="rounded-full border-2 border-[#34afcb] hover:border-green hover:bg-green md:p-2 p-0"
+              </motion.a>
+              <motion.a
+                href="https://ng.linkedin.com/in/robinsonhonouramadi"
                 target="_blank"
+                rel="noreferrer"
+                whileTap={{ scale: 1.1 }}
+                whileHover={{ scale: 0.99 }}
+                className={`h-auto w-auto`}
               >
-                <SvgIcons
-                  type="instagram"
-                  height="20"
-                  width="20"
-                  color="#34afcb"
-                  className="m-1 hover:fill-[#061417]"
+                <InIcon
+                  fill={`#6f1cd7`}
+                  className={`w-[30px] h-[30px] rounded-full border-[#6f1cd7] border-solid border-[2px] p-0.5  transition-all duration-700 hover:bg-white`}
                 />
-              </a>
+              </motion.a>
             </div>
           </div>
-          {/*<HeroImage />*/}
-          
+          <div className="mt-[2.5rem]">
+            <div className="relative flex flex-col justify-center w-max">
+              <div className={`w-full`}>
+                <img
+                  src="/images/hero.png"
+                  alt="hero image"
+                  width={400}
+                  height={400}
+                  className="absolute w-full h-full bottom-3 right-4 md:bottom-5 md:right-6 lg:bottom-10 lg:right-12"
+                  draggable={false}
+                  priority
+                />
+              </div>
+              <motion.div
+                className={`shrink-0 w-[300px] h-[300px] lg:min-w-[400px] lg:min-h-[400px] border-[3px] border-[#6f1cd7]`}
+              ></motion.div>
+            </div>
+          </div>
         </div>
-        </BackgroundLines>
-      </header>
-    );
+      </section>
+    </>
+  );
 };
-export default Hero;
+
+export default Home;
