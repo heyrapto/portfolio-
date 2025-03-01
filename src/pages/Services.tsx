@@ -2,8 +2,10 @@ import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 const Services = () => {
-  const [visibleStates, setVisibleStates] = useState(Array(7).fill(false));
+  // Type hoveredIndex as number | null
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [visibleStates, setVisibleStates] = useState(Array(7).fill(false));
+  // Explicitly type the refs as an array of HTMLDivElement | null
   const refs = useRef<(HTMLDivElement | null)[]>([]);
 
   const containerVariants = {
@@ -56,7 +58,8 @@ const Services = () => {
     },
     {
       title: "BLOCKCHAIN",
-      description: "I write Smart Contracts that matches the needs of many web3 companies.",
+      description:
+        "I write Smart Contracts that matches the needs of many web3 companies.",
       icon: "🔗",
     },
     {
@@ -112,7 +115,8 @@ const Services = () => {
               </h2>
               <div className="w-24 h-1 bg-yellow-400 mx-auto my-4 rounded-full"></div>
               <p className="text-[#a0b0b4] max-w-2xl mx-auto">
-                These are some of the services I offer as a software developer, crafted with precision and expertise.
+                These are some of the services I offer as a software developer,
+                crafted with precision and expertise.
               </p>
             </motion.div>
           </div>
@@ -153,10 +157,16 @@ const Services = () => {
                   <div className="absolute -top-10 -right-10 w-20 h-20 bg-yellow-400/20 rounded-full blur-xl"></div>
                   <div className="absolute -top-1 -left-1 w-12 h-12 rounded-br-xl bg-yellow-400/10"></div>
                   <div className="flex items-start mb-4">
-                    <span className="text-xl p-3 bg-yellow-400/10 rounded-lg mr-4">{service.icon}</span>
-                    <h3 className="text-white font-bold text-lg tracking-wide">{service.title}</h3>
+                    <span className="text-xl p-3 bg-yellow-400/10 rounded-lg mr-4">
+                      {service.icon}
+                    </span>
+                    <h3 className="text-white font-bold text-lg tracking-wide">
+                      {service.title}
+                    </h3>
                   </div>
-                  <p className="text-[#FFFFFF99] text-sm leading-relaxed pl-14">{service.description}</p>
+                  <p className="text-[#FFFFFF99] text-sm leading-relaxed pl-14">
+                    {service.description}
+                  </p>
                   {/* Bottom accent */}
                   <div
                     className={`h-1 w-16 bg-yellow-400 absolute bottom-0 left-6 rounded-t-lg transition-all duration-500 ${
