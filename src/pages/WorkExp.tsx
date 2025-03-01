@@ -49,7 +49,7 @@ const WorkExp = () => {
     }
     return(
         <section className="flex flex-col justify-center py-5">
-      <div className="flex">
+      <div className="flex justify-center">
         <div className="my_fixed_width">
           <h2 className="text-2xl font-bold font-clash">
             Experience
@@ -98,7 +98,7 @@ const WorkExp = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mt-20 pl-16 md:pl-24"
+            className="mt-20"
           >
             <Resume
               pdfUrl={resumeUrl}
