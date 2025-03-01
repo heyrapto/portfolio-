@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { FbIcon, IgIcon, InIcon, TwIcon } from "./svgs.tsx";
 
 const Hero = () => {
+const iconStyle = "rounded-full border border-1 border-[#0a1c20] px-4 p-3 text-sm bg-[#0a1c20] text-[#34afcb] hover:border-[#34afcb] hover:bg-[#34afcb] hover:text-[#0a1c20]";
+    
   return (
     <>
       <section className="mx-auto px-[38px] pt-[100px] md:px-[26px] lg:pt-[120px] lg:pl-[80px] lg:pr-[40px]">
@@ -40,7 +42,7 @@ const Hero = () => {
               >
                 <FbIcon
                   fill="#6f1cd7"
-                  className={`w-[30px] h-[30px] rounded-full border-[#6f1cd7] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-white`}
+                  className={`w-[30px] h-[30px] rounded-full border-[#0a1c20] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-white`}
                 />
               </motion.a>
               <motion.a
@@ -53,7 +55,7 @@ const Hero = () => {
               >
                 <TwIcon
                   fill={`#6f1cd7`}
-                  className={`w-[30px] h-[30px] rounded-full border-[#6f1cd7] border-solid border-[2px] p-1  transition-all duration-500 hover:bg-white`}
+                  className={`w-[30px] h-[30px] rounded-full border-[#0a1c20] border-solid border-[2px] p-1  transition-all duration-500 hover:bg-white`}
                 />
               </motion.a>
               <motion.a
@@ -66,7 +68,7 @@ const Hero = () => {
               >
                 <IgIcon
                   fill={`#6f1cd7`}
-                  className={`w-[30px] h-[30px] rounded-full border-[#6f1cd7] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-white`}
+                  className={`w-[30px] h-[30px] rounded-full border-[#0a1c20] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-white`}
                 />
               </motion.a>
               <motion.a
@@ -79,7 +81,7 @@ const Hero = () => {
               >
                 <InIcon
                   fill={`#6f1cd7`}
-                  className={`w-[30px] h-[30px] rounded-full border-[#6f1cd7] border-solid border-[2px] p-0.5  transition-all duration-700 hover:bg-white`}
+                  className={`w-[30px] h-[30px] rounded-full border-[#0a1c20] border-solid border-[2px] p-0.5  transition-all duration-700 hover:bg-white`}
                 />
               </motion.a>
             </div>
@@ -97,7 +99,7 @@ const Hero = () => {
                 />
               </div>
               <motion.div
-                className={`shrink-0 w-[300px] h-[300px] lg:min-w-[400px] lg:min-h-[400px] border-[3px] border-[#6f1cd7]`}
+                className={`shrink-0 w-[300px] h-[300px] lg:min-w-[400px] lg:min-h-[400px] border-[3px] border-[#0a1c20]`}
               ></motion.div>
             </div>
           </div>
