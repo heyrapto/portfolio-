@@ -11,7 +11,7 @@ export const Navbar = () => {
             <nav className="flex items-center justify-between">
                 <a href="/" className="relative">
                     <div className="before:content-[''] font-clashbold font-semibold text-[18px] md:text-[25px] lg:hover:before:bg-[#4C686F] active:scale-[0.86] transition-all duration-100 before:absolute before:h-1 before:-bottom-1 before:transition-all before:duration-300 text-white hover:before:w-full">
-                        Honour<span>!</span>
+                        Rapto<span>!</span>
                         <span>⚡</span>
                     </div>
                 </a>
