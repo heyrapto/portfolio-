@@ -140,11 +140,11 @@ const Skills = () => {
           transition={{ duration: 0.5 }}
           className="mb-10"
         >
-          <h2 className="text-3xl font-bold font-clash flex items-center">
+          <h2 className="text-3xl font-bold flex items-center">
             Technical Proficiency
             <span className="inline-block ml-2 animate-bounce">🤹</span>
           </h2>
-          <p className="text-sm text-[#808e91] font-rubik mt-2 mb-8">
+          <p className="text-sm text-[#808e91] mt-2 mb-8">
             A comprehensive overview of my technical skills and expertise.
           </p>
         </motion.div>
