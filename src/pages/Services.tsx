@@ -2,10 +2,8 @@ import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 const Services = () => {
-  // Type hoveredIndex as number | null
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [visibleStates, setVisibleStates] = useState(Array(7).fill(false));
-  // Explicitly type the refs as an array of HTMLDivElement | null
   const refs = useRef<(HTMLDivElement | null)[]>([]);
 
   const containerVariants = {
