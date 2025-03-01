@@ -5,7 +5,7 @@ const Services = () => {
     const [visibleStates, setVisibleStates] = useState(Array(6).fill(false)); // Track visibility of each service
     const refs = useRef<(HTMLDivElement | null)[]>([]); // Refs for each service block
 
-    const pStyle = "text-sm font-rubik text-[#808e91] mt-4 leading-[1.44rem]";
+    const pStyle = "text-sm text-[#808e91] mt-4 leading-[1.44rem]";
 
     const itemVariants = {
         hidden: { opacity: 0, y: 20 },
@@ -45,11 +45,11 @@ const Services = () => {
       <section>
         <div className="flex justify-center py-24">
           <div className="my_fixed_width">
-            <h2 className="text-2xl font-bold font-clash">
+            <h2 className="text-2xl font-bold">
               Services i Offer
               <span className="inline-block animate-bounce">🔥</span>
             </h2>
-            <p className="text-sm text-[#808e91] font-rubik my-3">
+            <p className="text-sm text-[#808e91] my-3">
               These are some of the services I offer as a software
               developer.
             </p>
@@ -121,7 +121,7 @@ const Services = () => {
                   }} 
                 >
                   <div>
-                    <h3 className="text-white text-xl  font-clashbold mb-4 tracking-wide">
+                    <h3 className="text-white text-xl mb-4 tracking-wide">
                       {service.title}
                     </h3>
                     <p className={pStyle}>{service.description}</p>
