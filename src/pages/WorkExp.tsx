@@ -49,7 +49,7 @@ const WorkExp = () => {
     }
     return(
         <section className="flex flex-col justify-center py-5">
-      <div className="flex justify-center">
+      <div className="flex">
         <div className="my_fixed_width">
           <h2 className="text-2xl font-bold font-clash">
             Experience
