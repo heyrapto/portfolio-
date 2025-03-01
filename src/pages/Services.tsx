@@ -112,7 +112,7 @@ const Services = () => {
                 ref={(el) => {
                   refs.current[index] = el;
                 }}
-                className={`w-full h-[270px] flex items-center justify-center relative overflow-hidden px-7 font-clash bg-[#1a1a10]/80 rounded-lg border border-yellow-500/30 ${service.className}`}
+                className={`w-full h-[270px] flex items-center justify-center relative overflow-hidden px-7 font-clash bg-[#1a1a10]/80 border border-yellow-500/30 ${service.className}`}
                 variants={itemVariants}
                 initial="hidden"
                 animate={visibleStates[index] ? "visible" : "hidden"}
