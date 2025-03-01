@@ -1,8 +1,58 @@
 export const projects = [
   {
-    name: "Zgnis Analytics",
-    desc: "Advanced waste management analytics platform with real-time monitoring and data visualization",
+    name: "Afrovivo Waitlist",
+    desc: "Designed and built a seamless waitlist system for a Ghanaian-based company, enhancing user engagement and sign-ups.",
     lang: "Next.js + Node.js + TailwindCSS",
-    link: "https://zeugnis-landing-page.vercel.app/",
-  }
-]
+    link: "https://afrovivo-waitlist-coral.vercel.app/",
+    github: "https://github.com/heycalebszn/afrovivo-waitlist",
+  },
+  {
+    name: "Electric Keke",
+    desc: "Contributed to the development of an eco-friendly ride-booking platform, streamlining the way users book electric Keke rides.",
+    lang: "ReactJS + TailwindCSS + Axios + Map API + API integration",
+    link: "https://electric-keke-frontend.vercel.app/",
+    github: "https://github.com/heycalebszn/Kobodrop",
+  },
+  {
+    name: "PortScan",
+    desc: "Built a powerful AI-powered portfolio analyzer that evaluates coding portfolios, offering actionable feedback to improve developer hireability.",
+    lang: "React + TypeScript + NodeJS + Express + Gemini API + Playwright",
+    link: "https://port-scan-ten.vercel.app/",
+    github: "https://github.com/heycalebszn/PortScan",
+  },
+  {
+    name: "MockTrade",
+    desc: "Developed a real-time trading simulator that lets users practice crypto trading with mock funds using real market data.",
+    lang: "NextJS + TypeScript + CoinGecko API + Clerk Auth",
+    link: "https://mock-trading.vercel.app/",
+    github: "https://github.com/heycalebszn/mock_trading",
+  },
+  {
+    name: "Stacist",
+    desc: "Designed and built a sleek, modern landing page with an intuitive UI to enhance brand presence and user experience.",
+    lang: "React + TypeScript + TailwindCSS + Figma",
+    link: "https://mock-trading.vercel.app/",
+    github: "https://github.com/heycalebszn/mock_trading",
+  },
+  {
+    name: "Rewrap",
+    desc: "Created an NPM package that streamlines the installation of Vite and TailwindCSS, making project setup faster and hassle-free.",
+    lang: "NodeJS + Chalk + Execa + Prompts",
+    link: "https://www.npmjs.com/package/rewrap-vitejs-tailwind",
+    github: "https://github.com/heycalebszn/Rewrap-",
+  },
+  {
+    name: "Baba AI",
+    desc: "Co-developed Baba AI, a fun and engaging Pidgin chat AI that won my first-ever hackathon, bringing AI-powered conversations to a wider audience.",
+    lang: "ReactJS + API + NodeJS + Express + TailwindCSS + MongoDB",
+    link: "https://baba-frontend-react-06ac.onrender.com/",
+    github: "https://github.com/code-clan-g3/baba-frontend-react",
+  },
+  {
+    name: "Multi Signature Wallet",
+    desc: "Built and deployed a secure multi-signature wallet smart contract, providing an extra layer of security for decentralized asset management.",
+    lang: "Solidity + TypeScript + Remix + EVM",
+    link: "https://github.com/heycalebszn/Multi-Signature-Wallet",
+    github: "https://github.com/heycalebszn/Multi-Signature-Wallet",
+  },
+];
