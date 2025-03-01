@@ -61,7 +61,7 @@ const RecentWorks = () => {
             </motion.div>
           ))}
         </div>
-      </div> {/* Closing tag for max-w-7xl container */}
+      </div>
     </section>
   );
 };
