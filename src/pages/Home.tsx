@@ -94,7 +94,6 @@ const Hero = () => {
                   height={400}
                   className="absolute w-full h-full bottom-3 right-4 md:bottom-5 md:right-6 lg:bottom-10 lg:right-12"
                   draggable={false}
-                  priority
                 />
               </div>
               <motion.div
