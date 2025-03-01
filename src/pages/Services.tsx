@@ -136,7 +136,3 @@ const Services = () => {
 };
 
 export default Services;
-            
-
-
-Make sure this matches with the new color scheme too
