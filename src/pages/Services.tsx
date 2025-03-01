@@ -124,7 +124,7 @@ const Services = () => {
                     <h3 className="text-white text-xl mb-4 tracking-wide">
                       {service.title}
                     </h3>
-                    <p className={pStyle}>{service.description}</p>
+                    <p className="text-[#FFFFFF99] text-sm leading-relaxed">{service.description}</p>
                   </div>
                 </motion.div>
               ))}
