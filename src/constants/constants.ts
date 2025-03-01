@@ -1,4 +1,18 @@
 export const projects = [
+{
+    name: "Chimly",
+    desc: "Ai-powered task manager.",
+    lang: "Next.js + Node.js + Express.js + MongoDB",
+    link: "https://chimly.ai",
+    github: "https://github.com/heycalebszn",
+  },
+{
+    name: "Xdegen",
+    desc: "A sefer way to trade degen/meme coins.",
+    lang: "Next.js + Node.js + Express.js + MongoDB",
+    link: "https://waitlist.xdegen.xyz/",
+    github: "https://github.com/heycalebszn",
+  },
   {
     name: "Afrovivo Waitlist",
     desc: "Designed and built a seamless waitlist system for a Ghanaian-based company, enhancing user engagement and sign-ups.",
