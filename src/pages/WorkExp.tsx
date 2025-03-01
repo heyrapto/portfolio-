@@ -38,7 +38,7 @@ const WorkExp = () => {
         "Developed responsive front-end features to enhance student and faculty user experience.",
         "Optimized responsive layouts for better accessibility across desktop and mobile devices."
       ],
-      technologies: ["JavaScript", "HTML/CSS", "Bootstrap"]
+      technologies: ["JavaScript", "React", "API"]
     },
     {
       company: "Afrovivo",
