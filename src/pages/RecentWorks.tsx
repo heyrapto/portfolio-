@@ -8,21 +8,13 @@ const RecentWorks = () => {
             <div className="absolute inset-0 bg-gradient-to-b from-[#130b1c] to-transparent opacity-40" />
 
             <div className="max-w-7xl mx-auto relative">
-                <motion.div
-                    initial={{ opacity: 0, y: -20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="text-left mb-5"
-                >
-                    <h2 className="text-2xl md:text-3xl font-clashbold text-white mb-6 tracking-tight">
-                        Projects
-                        <span className="inline-block ml-4 transform hover:scale-110 transition-transform">🚀</span>
-                    </h2>
-                    <div className="h-1 w-24 bg-gradient-to-r from-purple-500 to-blue-500 mb-6" />
-                    <p className="text-[#FFFFFF99] text-base md:text-l ">
-                        Showcasing my latest works and experiments in tech
-                    </p>
-                </motion.div>
+                <h2 className="text-2xl font-bold font-clash">
+              Projects
+              <span className="inline-block animate-bounce">🔥</span>
+            </h2>
+            <p className="text-sm text-[#808e91] font-rubik my-3">
+              Some of the latest projects i have worked on
+            </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project, index) => (
