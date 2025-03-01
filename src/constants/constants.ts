@@ -17,7 +17,7 @@ export const projects = [
     name: "SBA",
     desc: "Get loans and grants for individuals and businesses.",
     lang: "PHP + JavaScript + Bootstrap",
-    link: "sba.org",
+    link: "sbaorg.com",
     github: "https://github.com/heycalebszn",
   },
   {
