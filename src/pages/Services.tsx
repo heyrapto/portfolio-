@@ -4,9 +4,6 @@ import { useEffect, useRef, useState } from "react";
 const Services = () => {
     const [visibleStates, setVisibleStates] = useState(Array(6).fill(false)); // Track visibility of each service
     const refs = useRef<(HTMLDivElement | null)[]>([]); // Refs for each service block
-
-    const pStyle = "text-sm text-[#808e91] mt-4 leading-[1.44rem]";
-
     const itemVariants = {
         hidden: { opacity: 0, y: 20 },
         visible: {
