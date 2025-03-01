@@ -1,6 +1,6 @@
 import { Arrow } from "./svgs";
 import { motion } from "framer-motion";
-import { projects } from "../data/data";
+import { projects } from "../constants/constants.ts";
 
 const RecentWorks = () => {
     return (

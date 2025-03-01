@@ -1,5 +1,8 @@
 import { ArrowDown, Minus, Check } from "lucide-react";
 import { useState } from "react";
+import Resume from "./resume";
+const resumeUrl = '/pdf/resume.pdf'; 
+
 const WorkExp = () => {
     const expData = [
         {
@@ -89,6 +92,19 @@ const WorkExp = () => {
             ))}
           </div>
           </div>
+
+<motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mt-20 pl-16 md:pl-24"
+          >
+            <Resume
+              pdfUrl={resumeUrl}
+              fileName="KalejaiyeCaleb.pdf"
+              buttonText="Download Resume"
+            />
+          </motion.div>
           </div>
           </section>
     )
