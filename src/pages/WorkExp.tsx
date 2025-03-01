@@ -1,6 +1,6 @@
 import { ArrowDown, Minus, Check } from "lucide-react";
 import { useState } from "react";
-import Resume from "./resume";
+import Resume from "./Resume.tsx";
 const resumeUrl = '/pdf/resume.pdf'; 
 import { motion } from "framer-motion";
 
