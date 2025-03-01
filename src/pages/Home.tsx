@@ -39,8 +39,8 @@ const Hero = () => {
                 className="h-auto w-auto"
               >
                 <FbIcon
-                  fill="#6f1cd7"
-                  className={`w-[30px] h-[30px] rounded-full border-[#0a1c20] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-white`}
+                  fill="#FFCC00"
+                  className={`w-[30px] h-[30px] rounded-full border-[#FFCC00] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-white`}
                 />
               </motion.a>
               <motion.a
