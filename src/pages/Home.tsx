@@ -21,7 +21,7 @@ const Hero = () => {
               className="text-[#F0FEFF] font-pop flex-shrink-0 text-[.9em] leading-[1.5] font-medium mt-[40px] flex flex-col gap-8 md:flex md:flex-col md:gap-[20px] md:mt-[45px] lg:flex lg:flex-row lg:items-start lg:gap-[12px]"
             >
               <p className="max-w-[310px]">
-                I&#39;m Caleb Kalejaiye, with 3+ Years of experience. Started coding in 2021, specializing in web development, blockchain architect, LLM, and indie hacking.
+                I&#39;m Caleb Kalejaiye, with 3+ Years of experience. Started coding in 2021, specializing in web development, blockchain development, LLM, and indie hacking.
               </p>
               <p className="max-w-[319px]">
                 Self-taught programmer with proven experience in building live projects and
