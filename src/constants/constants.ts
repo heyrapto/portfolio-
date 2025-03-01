@@ -17,7 +17,7 @@ export const projects = [
     name: "SBA",
     desc: "Get loans and grants for individuals and businesses.",
     lang: "PHP + JavaScript + Bootstrap",
-    link: "sbaorg.com",
+    link: "https://sbaorg.com",
     github: "https://github.com/heycalebszn",
   },
   {
@@ -52,7 +52,7 @@ export const projects = [
     name: "Stacist",
     desc: "Designed and built a sleek, modern landing page with an intuitive UI to enhance brand presence and user experience.",
     lang: "React + TypeScript + TailwindCSS + Figma",
-    link: "https://mock-trading.vercel.app/",
+    link: "https://stacist.vercel.app",
     github: "https://github.com/heycalebszn/mock_trading",
   },
   {
