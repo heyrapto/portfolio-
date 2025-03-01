@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 const Skills = () => {
   const skills = [
@@ -8,21 +8,44 @@ const Skills = () => {
     "TypeScript",
     "ReactJS",
     "Next.js",
-"Express.js",
-"Node.js",
+    "Express.js",
+    "Node.js",
     "Git",
     "GitHub"
   ];
   
   const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
   
   useEffect(() => {
-    // Trigger animation after component mounts
-    setIsVisible(true);
+    // Create an Intersection Observer to detect when the section is in viewport
+    const observer = new IntersectionObserver((entries) => {
+      const [entry] = entries;
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+        // Once the animation has triggered, we can disconnect the observer
+        observer.disconnect();
+      }
+    }, {
+      // Trigger when at least 20% of the element is visible
+      threshold: 0.2
+    });
+    
+    // Start observing the section
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+    
+    // Cleanup function
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
   }, []);
 
   return (
-    <div className="bg-navy-900 py-8 px-4">
+    <div ref={sectionRef} className="bg-navy-900 py-8 px-4">
       <div className="max-w-3xl mx-auto">
         <div className="mb-8">
           <h2 className="text-3xl font-bold text-white flex items-center">
