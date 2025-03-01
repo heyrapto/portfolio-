@@ -30,7 +30,7 @@ const RecentWorks = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-yellow-300/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
       <div className="relative p-8 flex flex-col h-full">
-        <h3 className="text-yellow-300 text-2xl font-clashbold mb-3">
+        <h3 className="text-white text-2xl font-clashbold mb-3">
           {project.name}
         </h3>
 
@@ -38,7 +38,7 @@ const RecentWorks = () => {
           {project.lang}
         </p>
 
-        <p className="text-yellow-200 text-sm flex-grow">{project.desc}</p>
+        <p className="text-[#FFFFFF99] text-sm flex-grow">{project.desc}</p>
 
         <a
           href={project.link}
@@ -48,7 +48,7 @@ const RecentWorks = () => {
         >
           <motion.div
             whileHover={{ x: 5 }}
-            className="flex items-center space-x-3 text-yellow-300 hover:text-yellow-400 transition-colors"
+            className="flex items-center space-x-3 text-white hover:text-yellow-400 transition-colors"
           >
             <span className="text-sm font-medium">View Project</span>
             <Arrow className="w-4 h-4 transform group-hover/link:translate-x-1 transition-transform" />
@@ -61,7 +61,6 @@ const RecentWorks = () => {
     </motion.div>
   ))}
 </div>
-            </div>
         </section>
     );
 };
