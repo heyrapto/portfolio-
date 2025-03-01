@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
 import { FbIcon, IgIcon, InIcon, TwIcon } from "./svgs.tsx";
 
-const Hero = () => {
-const iconStyle = "rounded-full border border-1 border-[#0a1c20] px-4 p-3 text-sm bg-[#0a1c20] text-[#34afcb] hover:border-[#34afcb] hover:bg-[#34afcb] hover:text-[#0a1c20]";
-    
+const Hero = () => {    
   return (
     <>
       <section className="mx-auto px-[38px] pt-[100px] md:px-[26px] lg:pt-[120px] lg:pl-[80px] lg:pr-[40px]">
