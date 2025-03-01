@@ -116,7 +116,7 @@ const WorkExp = () => {
               className="border-l-2 border-[#1a2e33] pl-6 relative"
             >
               {/* Timeline dot */}
-              <div className="absolute w-4 h-4 bg-[#0a1c20] border-2 border-[#3a4e53] rounded-full left-[-9px] top-1"></div>
+              <div className="absolute w-4 h-4 bg-[#0a1c20] border-2 border-yellow-400 rounded-full left-[-9px] top-1"></div>
               
               <div className="mb-2 flex flex-col md:flex-row md:items-baseline md:justify-between">
                 <h3 className="text-xl font-medium">{job.expTitle}</h3>
