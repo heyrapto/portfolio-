@@ -1,177 +1,77 @@
-import { ArrowUpRight, Github } from "lucide-react";
-import { Afrovivo, Baba, Ecoride, MockTrade, MultiTrading, Portscan, Rewrap, Stacist } from "../assets";
+import { Arrow } from "./svgs";
+import { motion } from "framer-motion";
+import { projects } from "../data/data";
 
 const RecentWorks = () => {
-  const tagsWrapperStyle = "my-[1rem] flex flex-wrap gap-y-3 w-full";
-  const tagStyle =
-    "py-1 p-2 bg-[#ECFDF5] text-[#FFCC00] text-[0.7rem] font-bold overflow-nextline mx-1 rounded-full cursor-pointer";
+    return (
+        <section className="relative py-24 px-4 md:px-8 lg:px-16 overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-b from-[#130b1c] to-transparent opacity-40" />
 
-  const projects = [
-    
-    {
-      title: "Afrovivo Waitlist",
-      description:
-        "I built a Waitlist for a ghanian-based company.",
-      tags: ["ReactJS", "JavaScript", "TailwindCSS"],
-      previewLink: "https://afrovivo-waitlist-coral.vercel.app/",
-      githubLink: "https://github.com/heycalebszn/afrovivo-waitlist",
-      image: Afrovivo,
-    },
-    {
-      title: "Electric Keke",
-      description:
-        "I contributed to build an Electric Keke booking website.",
-      tags: ["ReactJS", , "TailwindCSS", "Axios", "Map API", "API integration"],
-      previewLink: "https://electric-keke-frontend.vercel.app/",
-      githubLink: "https://github.com/heycalebszn/Kobodrop",
-      image: Ecoride,
-    },
-    {
-      title: "PortScan",
-      description:
-        "I built wrote a multi signature wallet contract.",
-      tags: ["React", "Typescript", "NodeJS", "Express", "Gemini API", "Playwright"],
-      previewLink: "https://port-scan-ten.vercel.app/",
-      githubLink: "https://github.com/heycalebszn/PortScan",
-      image: Portscan,
-    
-    },
-    {
-      title: "MockTrade",
-      description:
-        "I built a website to practice trading with mock funds.",
-      tags: ["NextJS", "Typescript", "CoinGecko API", "Clerk Auth"],
-      previewLink: "https://mock-trading.vercel.app/",
-      githubLink: "https://github.com/heycalebszn/mock_trading",
-      image: MockTrade,
-    
-    },
-    {
-      title: "Stacist",
-      description:
-        "I built a sleek ui landing page.",
-      tags: ["React", "Typescript", "TailwindCSS", "Figma"],
-      previewLink: "https://mock-trading.vercel.app/",
-      githubLink: "https://github.com/heycalebszn/mock_trading",
-      image: Stacist,
-    
-    },
-    {
-      title: "Rewrap",
-      description:
-        "I built an NPM package to simplify the installation of Vite + TailwindCSS",
-      tags: ["NodeJS", "Chalk", "Execa", "Prompts"],
-      previewLink: "https://www.npmjs.com/package/rewrap-vitejs-tailwind",
-      githubLink: "https://github.com/heycalebszn/Rewrap-",
-      image: Rewrap,
-    
-    },
-   /* {
-      title: "Bannerly",
-      description:
-        "I built a software that generates Fully customizable Social Banners for Freelancers.",
-      tags: ["ReactJs", "JavaScript", "TailwindCSS", "Cloudinary", "API"],
-      previewLink: "https://bannerly.vercel.app",
-      githubLink: "https://github.com/heycaleszn/bannerly",
-      image: Bannerly,
-    }, */
-    {
-      title: "Baba AI",
-      description:
-        "I contributed in building Baba AI for my first ever Hackathon Win, this is a pidgin chat ai software .",
-      tags: ["ReactJs", "API", "NodeJS", "Express", "TailwindCSS", "MongoDB"],
-      previewLink: "https://baba-frontend-react-06ac.onrender.com/",
-      githubLink: "https://github.com/code-clan-g3/baba-frontend-react",
-      image:  Baba,
-    },
-    {
-      title: "Multi Signature Wallet",
-      description:
-        "I built wrote a multi signature wallet contract.",
-      tags: ["Solidity", "Typescript", "Remix", "EVM"],
-      previewLink: "https://github.com/heycalebszn/Multi-Signature-Wallet",
-      githubLink: "https://github.com/heycalebszn/Multi-Signature-Wallet",
-      image: MultiTrading,
-    
-    },
-    
-  /*  {
-      title: "Nike",
-      description:
-        "I built a Nike Clone with a more modern feel.",
-      tags: ["ReactJS", "JavaScript", "TailwindCSS", "Map"],
-      previewLink: "https://szn-nikelanding.netlify.app",
-      githubLink: "https://github.com/Techies-Collab-and-Upskill-Live-Project/Electric-keke-frontend-",
-      image: Nike,
-    },
-    {
-      title: "Virtual AR",
-      description:
-        "I built an online video-based modern landing page.",
-      tags: ["ReactJS", "JavaScript", "TailwindCSS"],
-      previewLink: "https://virtualar.netlify.app",
-      githubLink: "https://github.com/heycalebszn/virtual",
-      image: VirtualAR,
-    }, */
-  ];
+            <div className="max-w-7xl mx-auto relative">
+                <motion.div
+                    initial={{ opacity: 0, y: -20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="text-left mb-5"
+                >
+                    <h2 className="text-2xl md:text-3xl font-clashbold text-white mb-6 tracking-tight">
+                        Projects
+                        <span className="inline-block ml-4 transform hover:scale-110 transition-transform">🚀</span>
+                    </h2>
+                    <div className="h-1 w-24 bg-gradient-to-r from-purple-500 to-blue-500 mb-6" />
+                    <p className="text-[#FFFFFF99] text-base md:text-l ">
+                        Showcasing my latest works and experiments in tech
+                    </p>
+                </motion.div>
 
-  return (
-    <section className="py-20 flex justify-center">
-      <div className="my_fixed_width">
-      <h2 className="text-2xl font-bold font-clash">
-              Some of my Works
-              <span className="inline-block animate-bounce">💼</span>
-            </h2>
-            <p className="text-sm text-[#808e91] font-rubik my-3">
-              Here are some of the recent projects that I have worked on.
-            </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="bg-[#0a1c20] rounded-2xl p-6 backdrop-blur-sm justify-between flex flex-col"
-            >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-[150px] rounded-lg mb-4"
-              />
-              <h3 className="text-[20px] font-bold mb-2 text-white">{project.title}</h3>
-              <p className="text-gray-400 mb-4 text-[1rem]">{project.description}</p>
-              <div className={tagsWrapperStyle}>
-                {project.tags.map((tag, tagIndex) => (
-                  <span key={tagIndex} className={tagStyle}>
-                    {tag}
-                  </span>
-                ))}
-              </div>
-              <div className="flex justify-between items-center mt-4">
-                <a
-                  href={project.previewLink}
-                  className="text-[#FFCC00] hover:text[#FFCC00] transition-colors hover:scale-110 flex items-center gap-1 transition-ease-in-out duration:300"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="text-emerald-400 hover:text-emerald-300 transition-colors">
-                    Preview
-                  </span>{" "}
-                  <ArrowUpRight className="w-[20px]" />
-                </a>
-                <a
-                  href={project.githubLink}
-                  className="text-gray-400 hover:text-gray-300 transition-colors hover:scale-110 transition-ease-in-out duration:300" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Github />
-                </a>
-              </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {projects.map((project, index) => (
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6, delay: index * 0.1 }}
+                            className="group relative bg-[#130b1c]/80 backdrop-blur-lg rounded-lg overflow-hidden border border-[#ffffff10]"
+                        >
+                            <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                            <div className="relative p-8 flex flex-col h-full">
+                                <h3 className="text-white text-2xl font-clashbold mb-3">
+                                    {project.name}
+                                </h3>
+
+                                <p className="text-purple-400 text-sm font-medium mb-4">
+                                    {project.lang}
+                                </p>
+
+                                <p className="text-[#FFFFFF99] text-sm flex-grow">
+                                    {project.desc}
+                                </p>
+
+                                <a
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="mt-6 inline-flex items-center group/link"
+                                >
+                                    <motion.div
+                                        whileHover={{ x: 5 }}
+                                        className="flex items-center space-x-3 text-white hover:text-purple-300 transition-colors"
+                                    >
+                                        <span className="text-sm font-medium">View Project</span>
+                                        <Arrow className="w-4 h-4 transform group-hover/link:translate-x-1 transition-transform" />
+                                    </motion.div>
+                                </a>
+
+                                <div className="h-[2px] w-full bg-gradient-to-r from-purple-500/50 to-blue-500/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 absolute bottom-0 left-0" />
+                            </div>
+                        </motion.div>
+                    ))}
+                </div>
             </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+        </section>
+    );
 };
 
 export default RecentWorks;
