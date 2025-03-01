@@ -65,8 +65,8 @@ const Hero = () => {
                 className={`h-auto w-auto`}
               >
                 <IgIcon
-                  fill={`#6f1cd7`}
-                  className={`w-[30px] h-[30px] rounded-full border-[#0a1c20] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-white`}
+                  fill={`#FFCC00`}
+                  className={`w-[30px] h-[30px] rounded-full border-[#FFCC00] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-white`}
                 />
               </motion.a>
               <motion.a
@@ -78,8 +78,8 @@ const Hero = () => {
                 className={`h-auto w-auto`}
               >
                 <InIcon
-                  fill={`#6f1cd7`}
-                  className={`w-[30px] h-[30px] rounded-full border-[#0a1c20] border-solid border-[2px] p-0.5  transition-all duration-700 hover:bg-white`}
+                  fill={`#FFCC00`}
+                  className={`w-[30px] h-[30px] rounded-full border-[#FFCC00] border-solid border-[2px] p-0.5  transition-all duration-700 hover:bg-white`}
                 />
               </motion.a>
             </div>
@@ -97,7 +97,7 @@ const Hero = () => {
                 />
               </div>
               <motion.div
-                className={`shrink-0 w-[300px] h-[300px] lg:min-w-[400px] lg:min-h-[400px] border-[3px] border-[#0a1c20]`}
+                className={`shrink-0 w-[300px] h-[300px] lg:min-w-[400px] lg:min-h-[400px] border-[3px] border-[#FFCC00]`}
               ></motion.div>
             </div>
           </div>
