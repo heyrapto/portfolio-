@@ -4,7 +4,7 @@ import { Afrovivo, Baba, Ecoride, MockTrade, MultiTrading, Portscan, Rewrap, Sta
 const RecentWorks = () => {
   const tagsWrapperStyle = "my-[1rem] flex flex-wrap gap-y-3 w-full";
   const tagStyle =
-    "py-1 p-2 bg-[#ECFDF5] text-[#064E3B] text-[0.7rem] font-bold overflow-nextline mx-1 rounded-full cursor-pointer";
+    "py-1 p-2 bg-[#ECFDF5] text-[#FFCC00] text-[0.7rem] font-bold overflow-nextline mx-1 rounded-full cursor-pointer";
 
   const projects = [
     
