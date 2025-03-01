@@ -1,5 +1,5 @@
 export const Footer = () => {
-    const iconStyle = "rounded-full border border-1 border-[#0a1c20] px-4 p-3 text-sm bg-[#0a1c20] text-[#34afcb] hover:border-[#34afcb] hover:bg-[#34afcb] hover:text-[#0a1c20]";
+    const iconStyle = "rounded-full border border-1 border-[#FFCC00] px-4 p-3 text-sm bg-[#FFCC00] text-[#34afcb] hover:border-[#34afcb] hover:bg-[#34afcb] hover:text-[#0a1c20]";
     return (
       <footer>
         <div className="flex justify-center py-3 font-rubik">
