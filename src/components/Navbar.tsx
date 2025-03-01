@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { GhIcon } from "./svgs";
+import { GhIcon } from "../pages/svgs";
 
 export const Navbar = () => {
     return (
