@@ -4,11 +4,11 @@ export const Footer = () => {
       <footer>
         <div className="flex justify-center py-3 font-rubik">
           <div className="my_fixed_width text-center py-5">
-            <h2 className="font-bold text-2xl">
+            <h2 className="font-bold text-2xl font-clash">
               <span>Start a project</span>
               <span className="animate-bounce inline-block">🚀</span>
             </h2>
-            <p className="text-[#808e91] text-sm my-2">
+            <p className="text-[#808e91] font-rubik text-sm my-2">
               Interested in making waves together? Hit Me Up, I don't bite.
             </p>
             <hr className="my-[2.7rem] border-[#4c5a5d] inline-block w-[65%] md:w-[45%]" />
@@ -52,7 +52,7 @@ export const Footer = () => {
               </div>
             </div>
             <div className="text-white font-bold text-sm mt-[5rem] my-[2rem] flex flex-col items-center text-center justify-center">
-              <p>&copy; Rapto 2025</p>
+              <p>&copy; 2025</p>
               <p className="ml-1">Inspired by Treasure</p>
             </div>
               
