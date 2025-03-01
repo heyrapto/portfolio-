@@ -19,8 +19,8 @@ const WorkExp = () => {
     {
       company: "Chimly",
       expTitle: "Fullstack Developer",
-      period: "Mar 2022 - Dec 2022",
-      location: "San Francisco, CA",
+      period: "Jan 2025 - Present",
+      location: "Canada",
       descriptions: [
         "Developed full-stack solutions with modern JavaScript frameworks for enterprise clients.",
         "Designed and implemented RESTful APIs to support front-end applications.",
@@ -29,10 +29,10 @@ const WorkExp = () => {
       technologies: ["Node.js", "React", "MongoDB"]
     },
     {
-      company: "Texas Christian University (TCU)",
+      company: "Techies Colab and Upskill (TCU)",
       expTitle: "Frontend Developer Intern",
-      period: "Jan 2022 - May 2022",
-      location: "Fort Worth, TX",
+      period: "Jan 2024 - May 2022",
+      location: "Remote",
       descriptions: [
         "Crafted modern designs to improve platform usability for university websites.",
         "Developed responsive front-end features to enhance student and faculty user experience.",
