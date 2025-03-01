@@ -1,21 +1,14 @@
-import clsx from "clsx";
-import { GhIcon } from "../pages/svgs";
+import { GhIcon } from "./svgs";
 
 export const Navbar = () => {
     return (
-        <header
-            className={clsx(
-                "fixed z-40 top-0 md:relative bg-[#0b040c]/90 pb-3 w-full pt-[20px] px-[32px] md:py-[30px] lg:px-[80px]"
-            )}
-        >
-            <nav className="flex items-center justify-between">
-                <a href="/" className="relative">
-                    <div className="before:content-[''] font-clashbold font-semibold text-[18px] md:text-[25px] lg:hover:before:bg-[#4C686F] active:scale-[0.86] transition-all duration-100 before:absolute before:h-1 before:-bottom-1 before:transition-all before:duration-300 text-white hover:before:w-full">
-                        Rapto<span>!</span>
-                        <span>⚡</span>
-                    </div>
-                </a>
-                <div className="text-[#FFFFFF99] group group-hover:text-white transition-all duration-300">
+        <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between py-5 bg-transparent bg-opacity-60 backdrop-filter backdrop-blur-md">
+            <div className="flex justify-center w-full">
+                <div className="flex justify-between my_fixed_width items-center">
+                    <span className="text-base font-bold font-clash">
+                        Raptomi ⚡
+                    </span>
+                     className="text-[#FFFFFF99] group group-hover:text-white transition-all duration-300">
                     <a
                         target="_blank"
                         rel="noreferrer"
@@ -30,7 +23,8 @@ export const Navbar = () => {
                         </span>
                     </a>
                 </div>
-            </nav>
-        </header>
+                </div>
+            </div>
+        </nav>
     );
 };
