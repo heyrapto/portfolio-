@@ -8,21 +8,21 @@ export const Navbar = () => {
                     <span className="text-base font-bold font-clash">
                         Raptomi ⚡
                     </span>
-                     className="text-[#FFFFFF99] group group-hover:text-white transition-all duration-300">
-                    <a
-                        target="_blank"
-                        rel="noreferrer"
-                        href="https://www.github.com/ikwerre-dev"
-                        className="group-hover:text-white transition-colors duration-300"
-                    >
-                        <span className="flex items-center gap-[8px] md:gap-[10px]">
-                            <GhIcon className="opacity-60 w-[26px] h-[26px] md:w-[32px] md:h-[32px] transition-opacity duration-300 group-hover:opacity-100" />
-                            <p className="font-clash text-[15px] md:text-[18px] font-medium transition-colors duration-300">
-                                github
-                            </p>
-                        </span>
-                    </a>
-                </div>
+                    <div className="text-[#FFFFFF99] group group-hover:text-white transition-all duration-300">
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://www.github.com/ikwerre-dev"
+                            className="group-hover:text-white transition-colors duration-300"
+                        >
+                            <span className="flex items-center gap-[8px] md:gap-[10px]">
+                                <GhIcon className="opacity-60 w-[26px] h-[26px] md:w-[32px] md:h-[32px] transition-opacity duration-300 group-hover:opacity-100" />
+                                <p className="font-clash text-[15px] md:text-[18px] font-medium transition-colors duration-300">
+                                    github
+                                </p>
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
