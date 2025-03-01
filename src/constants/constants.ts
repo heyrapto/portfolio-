@@ -13,6 +13,13 @@ export const projects = [
     link: "https://waitlist.xdegen.xyz/",
     github: "https://github.com/heycalebszn",
   },
+{
+    name: "SBA",
+    desc: "Get loans and grants for individuals and businesses.",
+    lang: "PHP + JavaScript + Bootstrap",
+    link: "sba.org",
+    github: "https://github.com/heycalebszn",
+  },
   {
     name: "Afrovivo Waitlist",
     desc: "Designed and built a seamless waitlist system for a Ghanaian-based company, enhancing user engagement and sign-ups.",
