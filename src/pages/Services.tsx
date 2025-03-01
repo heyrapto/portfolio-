@@ -118,7 +118,7 @@ const Services = () => {
                   }} 
                 >
                   <div>
-                    <h3 className="text-white text-xl mb-4 tracking-wide">
+                    <h3 className="text-white font-bold text-xl mb-4 tracking-wide">
                       {service.title}
                     </h3>
                     <p className="text-[#FFFFFF99] text-sm leading-relaxed">{service.description}</p>
