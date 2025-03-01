@@ -10,7 +10,7 @@ const RecentWorks = () => {
             <div className="max-w-7xl mx-auto relative">
                 <h2 className="text-2xl font-bold font-clash">
               Projects
-              <span className="inline-block animate-bounce">🔥</span>
+              <span className="inline-block animate-bounce">🎉</span>
             </h2>
             <p className="text-sm text-[#808e91] font-rubik my-3">
               Some of the latest projects i have worked on
