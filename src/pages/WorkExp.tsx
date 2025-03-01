@@ -31,7 +31,7 @@ const WorkExp = () => {
     {
       company: "Techies Colab and Upskill (TCU)",
       expTitle: "Frontend Developer Intern",
-      period: "Jan 2024 - May 2022",
+      period: "Jan 2024 - September 2024",
       location: "Remote",
       descriptions: [
         "Crafted modern designs to improve platform usability for university websites.",
@@ -43,7 +43,7 @@ const WorkExp = () => {
     {
       company: "Afrovivo",
       expTitle: "Frontend Developer",
-      period: "Jun 2021 - Feb 2022",
+      period: "Jun 2024 - August 2024",
       location: "Remote",
       descriptions: [
         "Built engaging interfaces for cultural content platform reaching 5,000+ monthly users.",
@@ -55,7 +55,7 @@ const WorkExp = () => {
     {
       company: "Educhain",
       expTitle: "Blockchain and Frontend Developer",
-      period: "Jan 2021 - May 2021",
+      period: "Jan 2024 - Present",
       location: "Remote",
       descriptions: [
         "Developed interfaces for secure blockchain applications in the education sector.",
