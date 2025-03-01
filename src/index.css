@@ -20,6 +20,14 @@ body {
 }
 
 @font-face {
+    font-family: "Clash Display Medium";
+    src: url("/fonts/ClashDisplay-Medium.otf")
+        format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
   font-family: clash;
   src: url("/fonts/clash/ClashDisplay-Regular.otf") format("opentype");
 }
