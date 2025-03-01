@@ -31,7 +31,7 @@ const Hero = () => {
             </div>
             <div className="mt-[35px] md:mt-[65px] flex justify-start items-center  gap-[26px] md:gap-[40px]">
               <motion.a
-                href="https://www.facebook.com/honour.robinson.1"
+                href="https://www.facebook.com/raptomiofw"
                 target="_blank"
                 rel="noreferrer"
                 whileTap={{ scale: 1.1 }}
@@ -44,7 +44,7 @@ const Hero = () => {
                 />
               </motion.a>
               <motion.a
-                href="https://x.com/honour_can_code"
+                href="https://x.com/raptodev"
                 target="_blank"
                 rel="noreferrer"
                 whileTap={{ scale: 1.1 }}
@@ -57,7 +57,7 @@ const Hero = () => {
                 />
               </motion.a>
               <motion.a
-                href="https://www.instagram.com/robinsonhonour"
+                href="https://www.instagram.com/caleb.kale"
                 target="_blank"
                 rel="noreferrer"
                 whileTap={{ scale: 1.1 }}
@@ -70,7 +70,7 @@ const Hero = () => {
                 />
               </motion.a>
               <motion.a
-                href="https://ng.linkedin.com/in/robinsonhonouramadi"
+                href="https://ng.linkedin.com/in/caleb"
                 target="_blank"
                 rel="noreferrer"
                 whileTap={{ scale: 1.1 }}
@@ -88,7 +88,7 @@ const Hero = () => {
             <div className="relative flex flex-col justify-center w-max">
               <div className={`w-full`}>
                 <img
-                  src="/images/hero.png"
+                  src="/rapto_avatar.jpg_small"
                   alt="hero image"
                   width={400}
                   height={400}
