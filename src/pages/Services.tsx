@@ -93,13 +93,7 @@ const Services = () => {
                   description:
                     "Building Websites that works on every type of browser Safari, Chrome, Firefox, Brave etc.",
                   className: "block_right",
-                },
-                {
-                  title: "Version Control & Collaboration",
-                  description:
-                    "I worked with tools like Git and Github for version control and ease of collaborating on projects.",
-                  className: "block_left",
-                },
+                }
               ].map((service, index) => (
                 <motion.div
                   key={index}
