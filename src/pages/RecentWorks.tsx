@@ -8,7 +8,7 @@ const RecentWorks = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-[#130b1c] to-transparent opacity-40" />
 
       <div className="max-w-7xl mx-auto relative">
-        <h2 className="text-2xl font-bold font-clash">
+        <h2 className="text-2xl font-bold">
           Projects
           <span className="inline-block animate-bounce">🎉</span>
         </h2>
