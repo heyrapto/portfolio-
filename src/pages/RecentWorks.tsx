@@ -24,7 +24,7 @@ const RecentWorks = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group relative bg-[#1a1a10]/80 backdrop-blur-lg overflow-hidden border border-yellow-500/30"
+              className="group relative bg-[#1a1a10]/80 backdrop-blur-lg rounded-lg overflow-hidden border border-yellow-500/30"
             >
               {/* Light yellow gradient hover effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-yellow-300/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
