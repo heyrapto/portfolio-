@@ -148,7 +148,7 @@ const RecentWorks = () => {
               <div className="flex justify-between items-center mt-4">
                 <a
                   href={project.previewLink}
-                  className="text-emerald-400 hover:text-emerald-300 transition-colors hover:scale-110 flex items-center gap-1 transition-ease-in-out duration:300"
+                  className="text-[#FFCC00] hover:text[#FFCC00] transition-colors hover:scale-110 flex items-center gap-1 transition-ease-in-out duration:300"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
