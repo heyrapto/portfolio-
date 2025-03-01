@@ -25,7 +25,7 @@ body {
     max-width: 1200px;
 }
 
-.gradient_text {
+.gradientText {
   overflow: hidden;
   background: linear-gradient(76deg,
       #fde1ff,
