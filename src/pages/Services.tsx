@@ -93,7 +93,7 @@ const Services = () => {
   ];
 
   return (
-    <section className="relative py-24 bg-gradient-to-b from-[#0a1c20] to-[#0f272c] overflow-hidden">
+    <section className="relative my-24 py-24 bg-gradient-to-b from-[#0a1c20] to-[#0f272c] overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-500/0 via-yellow-400 to-yellow-500/0"></div>
       <div className="absolute -top-40 -right-40 w-80 h-80 bg-yellow-500/10 rounded-full blur-3xl"></div>
