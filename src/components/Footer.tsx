@@ -29,7 +29,7 @@ export const Footer = () => {
               <Facebook size={18} />
             </a>
             <a
-              href="https://twitter.com/heyrapto"
+              href="https://twitter.com/raptocaleb"
               className={iconStyle}
               aria-label="Twitter"
             >
