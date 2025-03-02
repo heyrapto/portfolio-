@@ -14,7 +14,7 @@ const RecentWorks = () => {
           viewport={{ once: true }}
           className="text-left mb-5"
         >
-          <h2 className="text-2xl md:text-3xl font-clashbold text-white mb-6 tracking-tight">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 tracking-tight">
             Projects
             <span className="inline-block ml-4 transform hover:scale-110 transition-transform">🚀</span>
           </h2>
@@ -37,7 +37,7 @@ const RecentWorks = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
               <div className="relative p-8 flex flex-col h-full">
-                <h3 className="text-white text-2xl font-clashbold mb-3">
+                <h3 className="text-white text-2xl font-bold mb-3">
                   {project.name}
                 </h3>
 
