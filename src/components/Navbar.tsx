@@ -12,7 +12,7 @@ export const Navbar = () => {
                         <a
                             target="_blank"
                             rel="noreferrer"
-                            href="https://www.github.com/raptodev"
+                            href="https://www.github.com/raptocaleb"
                             className="group-hover:text-white transition-colors duration-300"
                         >
                             <span className="flex items-center gap-[8px] md:gap-[10px]">
