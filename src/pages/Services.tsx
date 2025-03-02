@@ -182,5 +182,3 @@ const Services = () => {
 };
 
 export default Services;
-
-I want you to help me make this one look very similar to it, but yellow
