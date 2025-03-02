@@ -1,4 +1,3 @@
-'use client'
 import { motion } from "framer-motion";
 import {
     Smartphone,
@@ -52,7 +51,7 @@ const Services = () => {
                     viewport={{ once: true }}
                     className="text-left mb-5"
                 >
-                    <h1 className="text-2xl md:text-3xl font-clashbold text-white mb-6 tracking-tight">
+                    <h1 className="text-2xl md:text-3xl font-bold text-white mb-6 tracking-tight">
                         Services I Offer
                         <span className="inline-block ml-4 transform hover:scale-110 transition-transform">🔥</span>
                     </h1>
@@ -87,7 +86,7 @@ const Services = () => {
                                     <div className="h-px w-16 bg-gradient-to-r from-yellow-500 to-amber-500 opacity-50" />
                                 </div>
 
-                                <h3 className="text-white text-xl font-clashbold mb-4 tracking-wide">
+                                <h3 className="text-white text-xl font-bold mb-4 tracking-wide">
                                     {service.title}
                                 </h3>
 
