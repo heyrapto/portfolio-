@@ -41,6 +41,10 @@ body {
   src: url("/fonts/clash/ClashDisplay-Semibold.otf") format("opentype");
 }
 
+.font-clash {
+  font-family: clash;
+}
+
 .my_fixed_width {
     width: 83%;
     max-width: 1200px;
