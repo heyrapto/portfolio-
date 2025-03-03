@@ -41,7 +41,7 @@ const Skills = () => {
 
   return (
     <div ref={sectionRef} className="bg-navy-900 py-8 px-4">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-3xl">
         <div className="mb-8">
           <h2 className="text-3xl font-bold text-white flex items-center">
             Skills<span className="text-2xl ml-2">👨‍💻</span>
