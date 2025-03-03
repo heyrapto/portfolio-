@@ -158,7 +158,7 @@ const WorkExp = () => {
           className="mt-16 flex justify-center"
         >
           <Resume
-            pdfUrl="/pdf/resume.pdf"
+            pdfUrl="/pdf/CalebKalejaiyeMain.pdf"
             fileName="KalejaiyeCaleb.pdf"
             buttonText="Download Resume"
           />
