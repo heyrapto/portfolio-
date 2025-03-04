@@ -21,7 +21,7 @@ const Skills = () => {
   });
 
   return (
-    <section className="overflow-hidden md:py-24 py-10 px-4 md:px-8 lg:px-16">
+    <section className="overflow-hidden py-24 px-4 md:px-8 lg:px-16">
       <div className="flex flex-col gap-[60px] lg:flex-row lg:gap-[36px] lg:justify-center">
         {/* Skills */}
         <div className="flex flex-col w-full lg:w-1/2">
