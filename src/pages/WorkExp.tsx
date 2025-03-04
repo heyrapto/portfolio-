@@ -89,7 +89,7 @@ const WorkExp = () => {
   };
 
   return (
-    <section className="py-24 bg-[#060f12]">
+    <section className="md:py-24 py-10 bg-[#060f12]">
       <div className="max-w-4xl mx-auto px-4 md:px-8 lg:px-16">
         <motion.div
           initial={{ opacity: 0, y: -10 }}
