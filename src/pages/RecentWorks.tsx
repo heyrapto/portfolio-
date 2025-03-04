@@ -4,7 +4,7 @@ import { projects } from "../constants/constants.ts";
 
 const RecentWorks = () => {
   return (
-    <section className="relative py-24 px-[38px] md:px-[26px] overflow-hidden">
+    <section className="relative py-24 px-4 md:px-8 lg:px-16 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-[#130b1c] to-transparent opacity-40" />
 
       <div className="max-w-7xl mx-auto relative">
@@ -19,7 +19,7 @@ const RecentWorks = () => {
             <span className="inline-block ml-4 transform hover:scale-110 transition-transform">🚀</span>
           </h2>
           <div className="h-1 w-24 bg-gradient-to-r from-yellow-500 to-amber-500 mb-6" />
-          <p className="text-[#FFFFFF99] text-base md:text-l ">
+          <p className="text-sm md:text-[20px] text-[#808e91]">
             Some of the latest projects I have worked on
           </p>
         </motion.div>

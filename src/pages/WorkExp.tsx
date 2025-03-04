@@ -89,8 +89,8 @@ const WorkExp = () => {
   };
 
   return (
-    <section className="py-16 bg-[#060f12]">
-      <div className="max-w-4xl mx-auto px-[33px] lg:px-[70px]">
+    <section className="py-24 bg-[#060f12]">
+      <div className="max-w-4xl mx-auto px-4 md:px-8 lg:px-16">
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -98,7 +98,7 @@ const WorkExp = () => {
           className="mb-10"
         >
           <h2 className="text-3xl font-bold mb-2">Professional Experience</h2>
-          <p className="text-sm text-[#808e91]">
+          <p className="text-sm md:text-[20px] text-[#808e91]">
             A chronological overview of my professional journey
           </p>
         </motion.div>

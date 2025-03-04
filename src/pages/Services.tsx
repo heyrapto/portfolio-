@@ -43,7 +43,7 @@ const services = [
 
 const Services = () => {
     return (
-        <section className="relative py-24 px-[38px] md:px-[26px] overflow-hidden">
+        <section className="relative py-24 px-4 md:px-8 lg:px-16 overflow-hidden">
             <div className="max-w-7xl mx-auto relative">
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
@@ -56,7 +56,7 @@ const Services = () => {
                         <span className="inline-block ml-4 transform hover:scale-110 transition-transform">🔥</span>
                     </h1>
                     <div className="h-1 w-24 bg-gradient-to-r from-yellow-500 to-amber-500 mb-6" />
-                    <p className="text-[#FFFFFF99] text-base md:text-l ">
+                    <p className="text-sm md:text-[20px] text-[#808e91]">
                         These are some of the services I offer as a software developer, crafted with precision and expertise.
                     </p>
                 </motion.div>
