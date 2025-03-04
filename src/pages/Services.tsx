@@ -43,7 +43,7 @@ const services = [
 
 const Services = () => {
     return (
-        <section className="relative py-24 px-4 md:px-8 lg:px-16 overflow-hidden">
+        <section className="relative py-24 px-[38px] md:px-[26px] overflow-hidden">
             <div className="max-w-7xl mx-auto relative">
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
