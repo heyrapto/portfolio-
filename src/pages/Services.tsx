@@ -60,6 +60,7 @@ const Services = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {services.map((service, index) => (
                         <div
+key={index}
                             className="group relative bg-[#1a1a10]/80 backdrop-blur-lg rounded-lg overflow-hidden border border-[#ffffff10]"
                         >
                             <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
