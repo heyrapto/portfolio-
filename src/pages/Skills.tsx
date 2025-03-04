@@ -1,89 +1,61 @@
-import { useState, useEffect, useRef } from 'react';
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const skills = [
+  "TailwindCSS",
+  "JavaScript",
+  "TypeScript",
+  "ReactJS",
+  "Next.js",
+  "Express.js",
+  "Node.js",
+  "Git",
+  "GitHub",
+  "Solidity",
+];
 
 const Skills = () => {
-  const skills = [
-    "TailwindCSS",
-    "JavaScript",
-    "Solidity",
-    "TypeScript",
-    "ReactJS",
-    "Next.js",
-    "Express.js",
-    "Node.js",
-    "Git",
-    "GitHub"
-  ];
-  
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef(null);
-  
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      const [entry] = entries;
-      if (entry.isIntersecting) {
-        setIsVisible(true);
-        observer.disconnect();
-      }
-    }, {
-      threshold: 0.2
-    });
-    
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-    
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
-  }, []);
+  const [sectionRef] = useInView({
+    triggerOnce: false,
+    threshold: 0.9,
+  });
 
   return (
-    <div ref={sectionRef} className="bg-navy-900 py-8 px-4">
-      <div className="max-w-3xl mx-auto">
-        <div className="mb-8">
-          <h2 className="text-3xl font-bold text-white flex items-center">
-            Skills<span className="text-2xl ml-2">👨‍💻</span>
-          </h2>
-          <p className="text-gray-400 mt-2">
-            I've honed these skills through diverse projects and experiences.
-          </p>
-        </div>
-
-        <div className="space-y-4">
-          {skills.map((skill, index) => {
-            const isEven = index % 2 === 0;
-            
-            return (
-              <div 
-                key={index} 
-                className={`relative transition-all duration-700 transform ${isVisible ? 'translate-x-0 opacity-100' : (isEven ? '-translate-x-full' : 'translate-x-full') + ' opacity-0'}`}
-                style={{ 
-                  transitionDelay: `${index * 150}ms`
-                }}
+    <section className="overflow-hidden px-[33px] mt-[60px] lg:px-[70px] lg:mt-[152px]">
+      <div className="flex flex-col gap-[60px] lg:flex-row lg:gap-[36px] lg:justify-center">
+        {/* Skills */}
+        <div className="flex flex-col w-full lg:w-1/2">
+          <div>
+            <h2 className="flex items-center font-clashbold text-white font-semibold text-[20px] leading-[24.6px] lg:text-[60px] lg:leading-[49.2px]">
+              Skills <small className="animate-bounce">👨‍💻</small>
+            </h2>
+            <p className="font-medium text-[#FFF8D0] text-[15px] leading-[22.5px] lg:text-[20px] lg:leading-[30px] lg:tracking-wide">
+              I've honed these skills through diverse projects and experiences.
+            </p>
+          </div>
+          <div className="mt-[31px] grid grid-cols-1 gap-y-[18.67px] md:grid-cols-2 md:gap-x-3 lg:mt-[36px] lg:gap-[20px]">
+            {skills.map((skill, index) => (
+              <motion.div
+                key={index}
+                whileHover={{ scale: 0.96 }}
+                ref={sectionRef}
+                initial={{ opacity: 0, x: index % 2 === 0 ? -300 : 300 }}
+                transition={{ duration: 0.6 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                className={`bg-gradient-to-${index % 2 === 0 ? 'r' : 'l'} max-w-[369px] lg:max-w-[252px] to-[#FFD700] from-[#FFA500] ${index % 2 === 0 ? 'pr-0.5 pt-0.5' : 'pb-0.5 pl-0.5'}`}
               >
-                <div className={`bg-navy-800 text-white p-4 rounded-md ${isEven ? 'border-l-4' : 'border-r-4'} border-yellow-500`}>
-                  <span className="text-xl">{skill}</span>
+                <div className={`bg-[#332200] px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}>
+                  <p className="text-white font-medium font-clash lg:text-[20px] lg:leading-[30.75px]">
+                    {skill}
+                  </p>
                 </div>
-              </div>
-            );
-          })}
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
-
-const style = document.createElement('style');
-style.textContent = `
-  .bg-navy-900 {
-    background-color: #0f172a;
-  }
-  .bg-navy-800 {
-    background-color: #1e293b;
-  }
-`;
-document.head.appendChild(style);
 
 export default Skills;
