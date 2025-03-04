@@ -56,11 +56,11 @@ const Services = () => {
                     <p className="text-sm md:text-[20px] text-[#808e91]">
                         These are some of the services I offer as a software developer, crafted with precision and expertise.
                     </p>
-                </motion.div>
+                </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {services.map((service, index) => (
-                        <motion.div
+                        <div
                             key={index}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
