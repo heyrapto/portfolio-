@@ -19,7 +19,7 @@ const RecentWorks = () => {
           <p className="text-sm md:text-[20px] text-[#808e91]">
             Some of the latest projects I have worked on
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
