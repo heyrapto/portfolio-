@@ -45,10 +45,7 @@ const Services = () => {
     return (
         <section className="relative py-24 px-4 md:px-8 lg:px-16 overflow-hidden">
             <div className="max-w-7xl mx-auto relative">
-                <motion.div
-                    initial={{ opacity: 0, y: -20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
+                <div
                     className="text-left mb-5"
                 >
                     <h1 className="text-2xl md:text-3xl font-bold text-white mb-6 tracking-tight">
@@ -96,7 +93,7 @@ const Services = () => {
                             </div>
 
                             <div className="h-[2px] w-full bg-gradient-to-r from-yellow-500/50 to-amber-500/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
             </div>
