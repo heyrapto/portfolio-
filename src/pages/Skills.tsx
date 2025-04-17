@@ -21,7 +21,7 @@ const Skills = () => {
   });
 
   return (
-    <section className="overflow-hidden py-24 px-4 md:px-8 lg:px-16">
+    <section className="overflow-hidden py-24 px-4 md:px-8 lg:px-16 w-full">
       <div className="flex flex-col gap-[60px] lg:flex-row lg:gap-[36px] lg:justify-center">
         {/* Skills */}
         <div className="flex flex-col w-full lg:w-1/2">
@@ -29,11 +29,12 @@ const Skills = () => {
             <h2 className="flex items-center font-clashbold text-white font-semibold leading-[24.6px] text-2xl md:text-3xl lg:leading-[49.2px]">
               Skills <small className="animate-bounce">👨‍💻</small>
             </h2>
+            <div className="h-1 w-24 bg-gradient-to-r from-yellow-500 to-amber-500 my-6" />
             <p className="font-medium text-sm md:text-[20px] text-[#808e91] leading-[22.5px] lg:leading-[30px] lg:tracking-wide">
               I've honed these skills through diverse projects and experiences.
             </p>
           </div>
-          <div className="mt-[31px] grid grid-cols-1 gap-y-[18.67px] md:grid-cols-2 md:gap-x-3 lg:mt-[36px] lg:gap-[20px]">
+          <div className="mt-[31px] grid grid-cols-1 gap-y-[18.67px] md:grid-cols-2 md:gap-x-3 lg:mt-[36px] lg:gap-[20px] w-full">
             {skills.map((skill, index) => (
               <motion.div
                 key={index}

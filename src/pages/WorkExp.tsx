@@ -1,9 +1,20 @@
-
 import Resume from "./Resume.tsx";
 import { motion } from "framer-motion";
 
 const WorkExp = () => {
   const expData = [
+    {
+      company: "Active Freelancer",
+      expTitle: "Fullstack && Blockchain Developer",
+      period: "Jan 2023 - Present",
+      location: "Remote",
+      descriptions: [
+        "Contributed to the development of a decentralized platform for secure and efficient payment solutions.",
+        "Collaborated with cross-functional teams to develop front-end solutions for seamless transactions.",
+        "Streamlined UI for secure and efficient payment platforms, improving conversion rates by 15%."
+      ],
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Solidity", "Web3.js", "Next.js", "Node.js", "Express.js", "MongoDB", "PostgreSQL", "Prisma", "CI/CD"]
+    },
     {
       company: "Qruzpay",
       expTitle: "Frontend Developer",
@@ -89,8 +100,8 @@ const WorkExp = () => {
   };
 
   return (
-    <section className="py-24 bg-[#060f12]">
-      <div className="max-w-4xl mx-auto px-4 md:px-8 lg:px-16">
+    <section className="py-24 bg-[#060f12] w-full">
+      <div className="max-w-full px-4 md:px-8 lg:px-16 w-full">
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -98,13 +109,14 @@ const WorkExp = () => {
           className="mb-10"
         >
           <h2 className="text-3xl font-bold mb-2">Professional Experience</h2>
+          <div className="h-1 w-24 bg-gradient-to-r from-yellow-500 to-amber-500 my-6" />
           <p className="text-sm md:text-[20px] text-[#808e91]">
             A chronological overview of my professional journey
           </p>
         </motion.div>
 
         <motion.div 
-          className="space-y-12"
+          className="space-y-12 w-full"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -113,7 +125,7 @@ const WorkExp = () => {
             <motion.div 
               key={job.company} 
               variants={itemVariants}
-              className="border-l-2 border-[#1a2e33] pl-6 relative"
+              className="border-l-2 border-[#1a2e33] pl-6 relative w-full"
             >
               {/* Timeline dot */}
               <div className="absolute w-4 h-4 bg-[#0a1c20] border-2 border-yellow-400 rounded-full left-[-9px] top-1"></div>
