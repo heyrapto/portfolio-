@@ -67,9 +67,9 @@ key={index}
 
                             <div className="relative p-8">
                                 <div className="flex items-center justify-between mb-6">
-                                    <span className="text-3xl transform group-hover:scale-110 transition-transform duration-300">
+                                    {/* <span className="text-3xl transform group-hover:scale-110 transition-transform duration-300">
                                         <service.icon className="w-8 h-8 text-yellow-500" strokeWidth={1.5} />
-                                    </span>
+                                    </span> */}
                                     <div className="h-px w-16 bg-gradient-to-r from-yellow-500 to-amber-500 opacity-50" />
                                 </div>
 
