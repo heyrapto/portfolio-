@@ -12,6 +12,9 @@ const skills = [
   "Git",
   "GitHub",
   "Solidity",
+  "Foundry",
+  "FunC",
+  "Rust"
 ];
 
 const Skills = () => {
