@@ -7,6 +7,13 @@ export const projects = [
     github: "https://github.com/heycalebszn",
   },
   {
+    name: "Omorix",
+    desc: "E-commerce platform.",
+    lang: "React.js + Node.js + Express.js + PosgreSQL",
+    link: "https://chimly.ai",
+    github: "https://github.com/heycalebszn",
+  },
+  {
     name: "Bannerly",
     desc: "Get social banners for web3 and web2 devs and designers.",
     lang: "React.js + Cloudinary + TailwindCSS",
