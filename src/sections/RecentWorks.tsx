@@ -1,4 +1,4 @@
-import { Arrow } from "./svgs";
+import { Arrow } from "./svgs.tsx";
 import { motion } from "framer-motion";
 import { projects } from "../constants/constants.ts";
 
