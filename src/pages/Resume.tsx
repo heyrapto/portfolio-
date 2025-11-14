@@ -34,7 +34,7 @@ const Resume = ({ pdfUrl, fileName, buttonText }: ResumeProps) => {
         onClick={downloadPDF}
         className="cursor-pointer bg-gradient-to-r max-w-[197px] lg:max-w-[252px] to-[#D9D9D9] from-[#D9D9D900] py-0.5 pr-0.5"
       >
-        <p className="bg-yellow-400 px-[17px] py-[18px] font-medium text-[18px] font-clash">
+        <p className="bg-yellow-400 px-[17px] py-[18px] font-medium text-[18px] font-clash text-black">
           {buttonText || "Download PDF"}
         </p>
       </span>

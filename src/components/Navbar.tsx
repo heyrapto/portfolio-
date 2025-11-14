@@ -6,13 +6,13 @@ export const Navbar = () => {
             <div className="flex justify-center w-full">
                 <div className="flex justify-between w-full md:px-16 px-8 items-center">
                     <span className="text-base font-bold text-[18px] md:text-[25px]">
-                        Caleb ⚡
+                        Caleb.
                     </span>
                     <div className="text-[#FFFFFF99] group group-hover:text-white transition-all duration-300">
                         <a
                             target="_blank"
                             rel="noreferrer"
-                            href="https://www.github.com/heycalebszn"
+                            href="https://www.github.com/heyrapto"
                             className="group-hover:text-white transition-colors duration-300"
                         >
                             <span className="flex items-center gap-[8px] md:gap-[10px]">
