@@ -27,7 +27,7 @@ const Skills = () => {
     <section className="overflow-hidden py-24 px-4 md:px-8 lg:px-16 w-full">
       <div className="flex flex-col gap-[60px] lg:flex-row lg:gap-[36px] lg:justify-start max-w-7xl mx-auto">
         {/* Skills */}
-        <div className="flex flex-col w-full lg:w-1/2">
+        <div className="flex flex-col w-full">
           <div>
             <h2 className="flex items-center font-clashbold text-white font-semibold leading-[24.6px] text-2xl md:text-3xl lg:leading-[49.2px]">
               Skills <small className="animate-bounce">👨‍💻</small>

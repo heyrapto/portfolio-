@@ -82,7 +82,7 @@ key={index}
                                 </p>
                             </div>
 
-                            <div className="h-[2px] w-full bg-gradient-to-r from-yellow-500/50 to-amber-500/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
+                            <div className="h-[2px] w-full bg-gradient-to-r from-yellow-500/50 to-amber-500/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 absolute bottom-0" />
                         </div>
                     ))}
                 </div>

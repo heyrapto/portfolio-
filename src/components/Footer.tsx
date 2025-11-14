@@ -6,7 +6,7 @@ export const Footer = () => {
   const year = new Date().getFullYear();
   
   return (
-    <footer className="bg-gray-900 text-white w-full">
+    <footer className="bg-gray-900/50 text-white w-full">
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-bold text-2xl mb-6">
@@ -22,14 +22,14 @@ export const Footer = () => {
           
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             <a
-              href="https://www.facebook.com/raptomiofw"
+              href="https://www.facebook.com/heyrapto"
               className={iconStyle}
               aria-label="Facebook"
             >
               <Facebook size={18} />
             </a>
             <a
-              href="https://twitter.com/raptocaleb"
+              href="https://twitter.com/heyrapto"
               className={iconStyle}
               aria-label="Twitter"
             >
@@ -43,7 +43,7 @@ export const Footer = () => {
               <Instagram size={18} />
             </a>
             <a
-              href="https://www.github.com/heycalebszn"
+              href="https://www.github.com/heyrapto"
               className={iconStyle}
               aria-label="GitHub"
             >
@@ -57,7 +57,7 @@ export const Footer = () => {
               <Phone size={18} />
             </a>
             <a
-              href="mailto:raptomiofw@gmail.com"
+              href="mailto:kalejaiyecaleb@gmail.com"
               className={iconStyle}
               aria-label="Email"
             >
