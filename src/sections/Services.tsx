@@ -15,7 +15,7 @@ const services = [
     },
     {
         title: "BLOCKCHAIN",
-        description: "I write Smart Contracts that matches the needs of many web3 companies.",
+        description: "I write, integrate and maintain Smart Contracts that matches the needs of many web3 companies.",
         icon: BotIcon,
     },
     {
@@ -25,7 +25,7 @@ const services = [
     },
     {
         title: "CONTINUOUS LEARNING",
-        description: "Staying updated with the latest frontend technologies, trends, and best practices to deliver modern and innovative solutions.",
+        description: "Staying updated with the latest technologies, trends, and best practices to deliver modern and innovative solutions.",
         icon: Palette,
     },
     {
@@ -42,36 +42,50 @@ const services = [
 
 const Services = () => {
     return (
-        <section className="relative py-24 px-4 md:px-8 lg:px-16 overflow-hidden">
+        <section className="relative md:pt-44 pt-24 px-4 md:px-8 lg:px-16 overflow-y-visible">
             <div className="max-w-7xl mx-auto relative">
                 <div
                     className="text-left mb-5"
                 >
-                    <h1 className="text-2xl md:text-3xl font-bold text-white mb-6 tracking-tight">
-                        Services I Offer
-                        <span className="inline-block ml-4 transform hover:scale-110 transition-transform">🔥</span>
+                    <h1 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
+                        Expertise
                     </h1>
-                    <div className="h-1 w-24 bg-gradient-to-r from-yellow-500 to-amber-500 mb-6" />
+                    <div className="h-1 w-24 bg-gradient-to-r from-yellow-500 to-amber-500 mt-3 mb-6" />
                     <p className="text-sm md:text-[20px] text-[#808e91]">
                         These are some of the services I offer as a software developer, crafted with precision and expertise.
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-10 mt-12 overflow-visible">
                     {services.map((service, index) => (
                         <div
-key={index}
-                            className="group relative bg-[#1a1a10]/80 backdrop-blur-lg rounded-lg overflow-hidden border border-[#ffffff10]"
+                            key={index}
+                            className="group relative bg-[#1a1a10]/80 backdrop-blur-lg rounded-lg overflow-visible border border-dashed border-yellow-500"
                         >
-                            <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                            {[
+                                "top-0 left-0 -translate-x-1/2 -translate-y-1/2",
+                                "top-0 right-0 translate-x-1/2 -translate-y-1/2",
+                                "bottom-0 left-0 -translate-x-1/2 translate-y-1/2 rotate-180",
+                                "bottom-0 right-0 translate-x-1/2 translate-y-1/2 rotate-180",
+                            ].map((pos, j) => (
+                                <img
+                                    key={j}
+                                    src="/images/rectangle.svg"
+                                    alt="corner"
+                                    width={10}
+                                    height={10}
+                                    className={`absolute ${pos}`}
+                                />
+                            ))}
+                            {/* <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" /> */}
 
                             <div className="relative p-8">
-                                <div className="flex items-center justify-between mb-6">
-                                    {/* <span className="text-3xl transform group-hover:scale-110 transition-transform duration-300">
+                                {/* <div className="flex items-center justify-between mb-6">
+                                    <span className="text-3xl transform group-hover:scale-110 transition-transform duration-300">
                                         <service.icon className="w-8 h-8 text-yellow-500" strokeWidth={1.5} />
-                                    </span> */}
+                                    </span>
                                     <div className="h-px w-16 bg-gradient-to-r from-yellow-500 to-amber-500 opacity-50" />
-                                </div>
+                                </div> */}
 
                                 <h3 className="text-white text-xl font-bold mb-4 tracking-wide">
                                     {service.title}
@@ -81,8 +95,8 @@ key={index}
                                     {service.description}
                                 </p>
                             </div>
-
-                            <div className="h-[2px] w-full bg-gradient-to-r from-yellow-500/50 to-amber-500/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 absolute bottom-0" />
+{/* 
+                            <div className="h-[2px] w-full bg-gradient-to-r from-yellow-500/50 to-amber-500/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 absolute bottom-0" /> */}
                         </div>
                     ))}
                 </div>

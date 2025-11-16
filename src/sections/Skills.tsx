@@ -2,19 +2,18 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const skills = [
-  "TailwindCSS",
-  "JavaScript",
-  "TypeScript",
-  "ReactJS",
-  "Next.js",
-  "Express.js",
-  "Node.js",
-  "Git",
-  "GitHub",
+  "Javascript",
+  "Typescript",
+  "Dart",
   "Solidity",
-  "Foundry",
-  "FunC",
-  "Rust"
+  "React.js",
+  "Next.js",
+  "Node.js",
+  "Express.js",
+  "TailwindCSS",
+  "React Router Framework",
+  "GSAP/Framer Motion",
+  "Git"
 ];
 
 const Skills = () => {
@@ -24,7 +23,7 @@ const Skills = () => {
   });
 
   return (
-    <section className="overflow-hidden py-24 px-4 md:px-8 lg:px-16 w-full">
+    <section className="overflow-hidden md:pt-44 pt-24 px-4 md:px-8 lg:px-16 w-full">
       <div className="flex flex-col gap-[60px] lg:flex-row lg:gap-[36px] lg:justify-start max-w-7xl mx-auto">
         {/* Skills */}
         <div className="flex flex-col w-full">
@@ -32,7 +31,7 @@ const Skills = () => {
             <h2 className="flex items-center font-clashbold text-white font-semibold leading-[24.6px] text-2xl md:text-3xl lg:leading-[49.2px]">
               Skills <small className="animate-bounce">👨‍💻</small>
             </h2>
-            <div className="h-1 w-24 bg-gradient-to-r from-yellow-500 to-amber-500 my-6" />
+            <div className="h-1 w-24 bg-gradient-to-r from-yellow-500 to-amber-500 mb-6 mt-3" />
             <p className="font-medium text-sm md:text-[20px] text-[#808e91] leading-[22.5px] lg:leading-[30px] lg:tracking-wide">
               I've honed these skills through diverse projects and experiences.
             </p>

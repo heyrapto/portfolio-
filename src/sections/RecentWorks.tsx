@@ -1,19 +1,19 @@
 import { Arrow } from "./svgs.tsx";
 import { motion } from "framer-motion";
 import { projects } from "../constants/constants.ts";
+import { Button } from "../components/Button.tsx";
 
 const RecentWorks = () => {
   return (
-    <section className="relative pt-24 px-4 md:px-8 lg:px-16 overflow-hidden">
+    <section className="relative md:pt-44 pt-24 px-4 md:px-8 lg:px-16 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-[#130b1c] to-transparent opacity-40" />
 
       <div className="max-w-7xl mx-auto relative">
         <div
           className="text-left mb-5"
         >
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 tracking-tight">
-            Projects
-            <span className="inline-block ml-4 transform hover:scale-110 transition-transform">🚀</span>
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 tracking-tight">
+            Featured Projects <small className="animate-bounce">🚀</small>
           </h2>
           <div className="h-1 w-24 bg-gradient-to-r from-yellow-500 to-amber-500 mb-6" />
           <p className="text-sm md:text-[20px] text-[#808e91]">
@@ -22,10 +22,10 @@ const RecentWorks = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {projects.slice(0, 9).map((project, index) => (
             <div
               key={index}
-              className="group relative bg-[#1a1a10]/80 backdrop-blur-lg rounded-lg overflow-hidden border border-[#ffffff10]"
+              className="group relative bg-[#1a1a10]/80 backdrop-blur-lg overflow-hidden border border-[#ffffff10]"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
@@ -59,6 +59,10 @@ const RecentWorks = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="flex items-center justify-center mt-16">
+        <Button buttonText={"View More"} />
         </div>
       </div>
     </section>
