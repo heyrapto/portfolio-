@@ -119,7 +119,7 @@ const WorkExp = () => {
               
               <div className="mb-2 flex flex-col md:flex-row md:items-baseline md:justify-between">
                 <h3 className="text-[18px] font-semibold">{job.expTitle}</h3>
-                <span className="text-sm text-[#60777c] font-medium">{job.period}</span>
+                <span className="text-sm text-white font-medium">{job.period}</span>
               </div>
               
               <div className="mb-3 flex flex-col md:flex-row md:items-baseline md:justify-between">
@@ -135,11 +135,11 @@ const WorkExp = () => {
                 ))}
               </ul>
               
-              <div className="flex flex-wrap gap-2 mt-3">
+              <div className="flex flex-wrap gap-2 mt-3 max-w-[500px]">
                 {job.technologies.map((tech) => (
                   <span 
                     key={tech} 
-                    className="bg-[#0a1c20] text-xs px-2 py-1 rounded-md text-[#9cb0b6] border border-[#1a2e33]"
+                    className="bg-[#1a1a10]/80 text-xs px-2 py-1 rounded-md text-yellow-500 border border-[#1a2e33]"
                   >
                     {tech}
                   </span>
