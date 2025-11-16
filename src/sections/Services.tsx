@@ -60,7 +60,7 @@ const Services = () => {
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="group relative bg-[#1a1a10]/80 backdrop-blur-lg rounded-lg overflow-visible border border-dashed border-yellow-500"
+                            className="group relative bg-[#1a1a10]/80 backdrop-blur-lg rounded-lg overflow-visible border border-dashed border-[#FFCC00]"
                         >
                             {[
                                 "top-0 left-0 -translate-x-1/2 -translate-y-1/2",
