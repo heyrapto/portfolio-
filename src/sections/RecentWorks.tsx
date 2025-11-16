@@ -37,7 +37,9 @@ const RecentWorks = () => {
           {displayProjects.map((project, index) => (
             <div
               key={index}
-              className="group relative bg-[#1a1a10]/80 backdrop-blur-lg overflow-visible border border-[#ffffff10]"
+              className={`group relative bg-[#1a1a10]/80 backdrop-blur-lg overflow-visible border border-[#ffffff10] ${
+                hoveredIndex === index ? 'z-50' : 'z-0'
+              }`}
             >
               <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="relative p-8 flex flex-col h-full">
@@ -52,7 +54,7 @@ const RecentWorks = () => {
                   href={project.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-6 inline-flex items-center relative group"
+                  className="mt-6 inline-flex items-center relative z-10"
                   onMouseEnter={() => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(null)}
                 >
