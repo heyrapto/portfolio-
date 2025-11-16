@@ -2,8 +2,22 @@ import { Arrow } from "./svgs.tsx";
 import { motion } from "framer-motion";
 import { projects } from "../constants/constants.ts";
 import { Button } from "../components/Button.tsx";
+import { useState } from "react";
 
 const RecentWorks = () => {
+  const [projectsToShow, setProjectsToShow] = useState(9);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const displayProjects = projects.slice(0, projectsToShow);
+
+  const handleViewMore = () => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setProjectsToShow((prev) => prev + 9);
+      setIsLoading(false);
+    }, 300);
+  }
+
   return (
     <section className="relative md:pt-44 pt-24 px-4 md:px-8 lg:px-16 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-[#130b1c] to-transparent opacity-40" />
@@ -22,7 +36,7 @@ const RecentWorks = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.slice(0, 9).map((project, index) => (
+          {displayProjects.map((project, index) => (
             <div
               key={index}
               className="group relative bg-[#1a1a10]/80 backdrop-blur-lg overflow-hidden border border-[#ffffff10]"
@@ -61,8 +75,14 @@ const RecentWorks = () => {
           ))}
         </div>
 
-        <div className="flex items-center justify-center mt-16">
-        <Button buttonText={"View More"} />
+        {isLoading && (
+          <div className="w-full flex items-center justify-center mt-4">
+            <p className="text-yellow-500 animate-pulse text-4xl md:text-[10rem] text-center">...</p>
+          </div>
+        )}
+
+        <div className={`flex items-center justify-center ${isLoading ? "mt-24" : "mt-16"}`}>
+          <Button buttonText={"View More"} onClick={handleViewMore} />
         </div>
       </div>
     </section>
