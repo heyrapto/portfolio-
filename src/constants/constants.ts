@@ -5,6 +5,7 @@ export const projects = [
     lang: "Next.js + Node.js + Express.js + MongoDB",
     link: "https://chimly.ai",
     github: "https://github.com/heycalebszn",
+    preview: "/previews/portscan.jpeg",
   },
   {
     name: "Omorix",
@@ -12,6 +13,7 @@ export const projects = [
     lang: "React.js + Node.js + Express.js + PosgreSQL",
     link: "https://chimly.ai",
     github: "https://github.com/heycalebszn",
+    preview: "/previews/portscan.jpeg",
   },
   // {
   //   name: "Bannerly",
@@ -26,6 +28,7 @@ export const projects = [
     lang: "Next.js + ReactJS + TailwindCSS + Typescript + Rust",
     link: "https://xdegen.xyz/",
     github: "https://github.com/heycalebszn",
+    preview: "/previews/portscan.jpeg",
   },
   {
     name: "SBA",
@@ -47,6 +50,7 @@ export const projects = [
     lang: "ReactJS + TailwindCSS + Axios + Map API",
     link: "https://electric-keke-frontend.vercel.app/",
     github: "https://github.com/heycalebszn/Kobodrop",
+    preview: "/previews/portscan.jpeg",
   },
   // {
   //   name: "Rewrap",
