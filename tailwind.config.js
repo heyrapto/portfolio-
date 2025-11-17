@@ -13,10 +13,10 @@ export default {
         rubik: ["Rubik", "sans-serif"],
       },
       colors: {
-        green: "#34afcb",
+        yellow: "#FFCC00",
       },
       backgroundColor: {
-        green: "#34afcb",
+        yellow: "#130b1c",
       },
     },
   },

@@ -41,7 +41,7 @@ const WorkExp = () => {
     {
       company: "Techies Colab and Upskill (TCU)",
       expTitle: "Frontend Engineer Intern",
-      period: "Jan 2023 - September 2024",
+      period: "Jan 2023 - Sept 2024",
       location: "Nigeria - Remote",
       descriptions: [
         "Crafted modern designs to improve platform usability for university websites.",
@@ -95,9 +95,9 @@ const WorkExp = () => {
           transition={{ duration: 0.5 }}
           className="mb-10"
         >
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 tracking-tight">Experience</h2>
+          <h2 className="text-2xl md:text-3xl font-clashBold  font-bold text-white mb-3 tracking-tight">Experience</h2>
           <div className="h-1 w-24 bg-gradient-to-r from-yellow-500 to-amber-500 mb-6 mt-3" />
-          <p className="font-medium text-sm md:text-[20px] text-[#808e91] leading-[22.5px] lg:leading-[30px] lg:tracking-wid">
+          <p className="font-medium text-sm font-clash  md:text-[20px] text-[#808e91] leading-[22.5px] lg:leading-[30px] lg:tracking-wid">
             A chronological overview of my professional journey
           </p>
         </motion.div>
@@ -118,7 +118,7 @@ const WorkExp = () => {
               <div className="absolute w-4 h-4 bg-[#0a1c20] border-2 border-yellow-400 rounded-full left-[-9px] top-1"></div>
               
               <div className="mb-2 flex flex-col md:flex-row md:items-baseline md:justify-between">
-                <h3 className="text-[18px] font-semibold">{job.expTitle}</h3>
+                <h3 className="text-[18px] font-semibold font-clashBold">{job.expTitle}</h3>
                 <span className="text-sm text-white font-medium">{job.period}</span>
               </div>
               
@@ -129,7 +129,7 @@ const WorkExp = () => {
               
               <ul className="list-disc ml-4 space-y-2 mb-4">
                 {job.descriptions.map((desc, i) => (
-                  <li key={i} className="text-sm text-[#c0c9cc] pl-1">
+                  <li key={i} className="text-sm text-[#c0c9cc] pl-1 font-clash">
                     {desc}
                   </li>
                 ))}
