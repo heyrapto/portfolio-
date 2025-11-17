@@ -27,7 +27,7 @@ const Skills = () => {
               Skills <small className="animate-bounce">👨‍💻</small>
             </h2>
             <div className="h-1 w-24 bg-gradient-to-r from-yellow-500 to-amber-500 mb-6 mt-3" />
-            <p className="font-medium font-clash  text-sm md:text-[20px] text-[#808e91] leading-[22.5px] lg:leading-[30px] lg:tracking-wide">
+            <p className="font-medium font-clash text-[18px] md:text-[20px] text-[#808e91] leading-[22.5px] lg:leading-[30px] lg:tracking-wide">
               I've honed these skills through diverse projects and experiences.
             </p>
           </div>

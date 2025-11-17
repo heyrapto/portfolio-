@@ -97,7 +97,7 @@ const WorkExp = () => {
         >
           <h2 className="text-2xl md:text-3xl font-clashBold  font-bold text-white mb-3 tracking-tight">Experience</h2>
           <div className="h-1 w-24 bg-gradient-to-r from-yellow-500 to-amber-500 mb-6 mt-3" />
-          <p className="font-medium text-sm font-clash  md:text-[20px] text-[#808e91] leading-[22.5px] lg:leading-[30px] lg:tracking-wid">
+          <p className="font-medium text-[18px] font-clash md:text-[20px] text-[#808e91] leading-[22.5px] lg:leading-[30px] lg:tracking-wid">
             A chronological overview of my professional journey
           </p>
         </motion.div>

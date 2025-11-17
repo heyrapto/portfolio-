@@ -51,7 +51,7 @@ const Services = () => {
                         Expertise
                     </h1>
                     <div className="h-1 w-24 bg-gradient-to-r from-yellow-500 to-amber-500 mt-3 mb-6" />
-                    <p className="font-medium font-clash  text-sm md:text-[20px] text-[#808e91] leading-[22.5px] lg:leading-[30px] lg:tracking-wid">
+                    <p className="font-medium font-clash text-[18px] md:text-[20px] text-[#808e91] leading-[22.5px] lg:leading-[30px] lg:tracking-wid">
                         These are some of the services I offer as a software developer, crafted with precision and expertise.
                     </p>
                 </div>
