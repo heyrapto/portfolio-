@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FbIcon, IgIcon, InIcon, TwIcon } from "./svgs.tsx";
+import { FbIcon, IgIcon, InIcon, TwIcon } from "../components/ui/svgs.tsx";
 
 const Hero = () => {    
   return (
@@ -13,8 +13,8 @@ const Hero = () => {
               </h1>
             </div>
             <p className="gradientText font-medium font-pop text-[15px] text-[#FFFFFF99] max-w-[353px] mt-[45px] md:mt-8 lg:mt-1 md:max-w-[639px] md:text-[18px] leading-md:[27px]">
-              I like to craft fast and scalable products with great
-              user experiences.
+              I like to craft fast, clean and scalable products with great
+              user experience.
             </p>
             <div
               id="intro"

@@ -1,4 +1,4 @@
-import { Arrow } from "./svgs.tsx";
+import { Arrow } from "../components/ui/svgs.tsx";
 import { motion } from "framer-motion";
 import { projects } from "../constants/constants.ts";
 import { Button } from "../components/Button.tsx";
@@ -29,7 +29,7 @@ const RecentWorks = () => {
             Featured Projects <small className="animate-bounce">🚀</small>
           </h2>
           <div className="h-1 w-24 bg-gradient-to-r from-yellow-500 to-amber-500 mb-6" />
-          <p className="text-sm md:text-[20px] text-[#808e91]">
+          <p className="font-medium text-sm md:text-[20px] text-[#808e91] leading-[22.5px] lg:leading-[30px] lg:tracking-wid">
             Some of the latest projects I have worked on
           </p>
         </div>
@@ -43,7 +43,7 @@ const RecentWorks = () => {
             >
               <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="relative p-8 flex flex-col h-full">
-                <h3 className="text-white text-2xl font-bold mb-3">
+                <h3 className="text-white text-[18px] font-bold mb-3">
                   {project.name}
                 </h3>
                 <p className="text-yellow-400 text-sm font-medium mb-4">

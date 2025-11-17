@@ -51,7 +51,7 @@ const Services = () => {
                         Expertise
                     </h1>
                     <div className="h-1 w-24 bg-gradient-to-r from-yellow-500 to-amber-500 mt-3 mb-6" />
-                    <p className="text-sm md:text-[20px] text-[#808e91]">
+                    <p className="font-medium text-sm md:text-[20px] text-[#808e91] leading-[22.5px] lg:leading-[30px] lg:tracking-wid">
                         These are some of the services I offer as a software developer, crafted with precision and expertise.
                     </p>
                 </div>
@@ -87,7 +87,7 @@ const Services = () => {
                                     <div className="h-px w-16 bg-gradient-to-r from-yellow-500 to-amber-500 opacity-50" />
                                 </div> */}
 
-                                <h3 className="text-white text-xl font-bold mb-4 tracking-wide">
+                                <h3 className="text-white text-[18px] font-bold mb-4 tracking-wide">
                                     {service.title}
                                 </h3>
 
