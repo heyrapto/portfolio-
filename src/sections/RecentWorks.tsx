@@ -54,7 +54,7 @@ const RecentWorks = () => {
                   href={project.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-6 inline-flex items-center relative z-10"
+                  className="mt-6 md:inline-flex hidden items-center relative z-10"
                   onMouseEnter={() => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(null)}
                 >
@@ -68,21 +68,37 @@ const RecentWorks = () => {
 
                   <HoverPreview image={project.preview} isHovered={hoveredIndex === index} />
                 </a>
+                {/* mobile btn */}
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-6 md:hidden inline-flex items-center relative z-10"
+                >
+                  <motion.div
+                    whileHover={{ x: 5 }}
+                    className="flex items-center space-x-3 text-white hover:text-yellow-300 transition-colors"
+                  >
+                    <span className="text-sm font-medium">View Project</span>
+                    <Arrow className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
+                  </motion.div>
+                </a>
                 <div className="h-[2px] w-full bg-gradient-to-r from-yellow-500/50 to-amber-500/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 absolute bottom-0 left-0" />
               </div>
             </div>
           ))}
         </div>
+
         {isLoading && (
-          <div className="w-full flex items-center justify-center mt-4">
-            <p className="text-yellow-500 animate-pulse text-4xl md:text-[10rem] text-center">
+          <div className="w-full flex items-center justify-center md:mt-4 mt-0">
+            <p className="text-yellow-500 animate-pulse text-[8rem] md:text-[10rem] text-center">
               ...
             </p>
           </div>
         )}
         <div
           className={`flex items-center justify-center ${
-            isLoading ? "mt-24" : "mt-16"
+            isLoading ? "md:mt-24 mt-0" : "mt-16"
           }`}
         >
           <Button buttonText={"View More"} onClick={handleViewMore} />
