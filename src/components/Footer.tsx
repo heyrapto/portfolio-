@@ -10,7 +10,7 @@ export const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-bold text-2xl mb-6">
-            <span className="mr-2">Start a project</span>
+            <span className="mr-2">Hire me</span>
             <span className="inline-block animate-bounce">🚀</span>
           </h2>
           

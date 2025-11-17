@@ -10,7 +10,7 @@ export const projects = [
   {
     name: "NumPay x402",
     desc: "Seamless money transfers using phone numbers with privacy built-in and KYC by Assure DeFi.",
-    lang: "Next.js TailwindCSS",
+    lang: "Next.js + TailwindCSS",
     link: "https://numpay-new-landing.vercel.app/",
     github: "https://github.com/heycalebszn",
     preview: "/previews/portscan.jpeg",
@@ -26,7 +26,7 @@ export const projects = [
   {
     name: "Magmar Wallet",
     desc: "Smart Wallet simplifying crypto transactions and asset management securely.",
-    lang: "Next.js + Web3 + TailwindCSS",
+    lang: "Next.js + Wagmi + Covalent API + TailwindCSS",
     link: "https://magmar-new-frontend.vercel.app/",
     github: "https://github.com/heycalebszn",
     preview: "/previews/portscan.jpeg",
@@ -42,7 +42,7 @@ export const projects = [
   {
     name: "Whisper",
     desc: "Decentralized privacy messaging with encrypted wallet-based chats, asset transfers, and voice messaging.",
-    lang: "Next.js + Web3 + TailwindCSS",
+    lang: "Next.js + TailwindCSS",
     link: "https://whisper-landing-page.vercel.app/",
     github: "https://github.com/heycalebszn",
     preview: "/previews/portscan.jpeg",
@@ -122,7 +122,7 @@ export const projects = [
   {
     name: "Delta Exchange",
     desc: "Decentralized trading DApp for crypto derivatives and perpetual contracts.",
-    lang: "Next.js + Web3 Integrations + TailwindCSS",
+    lang: "Next.js + Ethers.js + Wagmi + Covalent API + Binance API + Contract Calls + TailwindCSS",
     link: "https://delta-exchange-jade.vercel.app/",
     github: "https://github.com/heycalebszn",
     preview: "/previews/portscan.jpeg",

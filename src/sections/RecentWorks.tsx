@@ -90,7 +90,7 @@ const RecentWorks = () => {
         </div>
 
         {isLoading && (
-          <div className="w-full flex items-center justify-center md:mt-4 mt-0">
+          <div className="w-full h-[100px] flex items-center justify-center">
             <p className="text-yellow-500 animate-pulse text-[8rem] md:text-[10rem] text-center">
               ...
             </p>
@@ -98,7 +98,7 @@ const RecentWorks = () => {
         )}
         <div
           className={`flex items-center justify-center ${
-            isLoading ? "md:mt-24 mt-0" : "mt-16"
+            isLoading ? "mt-10" : "mt-16"
           }`}
         >
           <Button buttonText={"View More"} onClick={handleViewMore} />
