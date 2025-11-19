@@ -129,7 +129,7 @@ const WorkExp = () => {
               
               <ul className="list-disc ml-4 space-y-2 mb-4">
                 {job.descriptions.map((desc, i) => (
-                  <li key={i} className="text-sm text-[#c0c9cc] pl-1 font-clash">
+                  <li key={i} className="text-sm text-[#c0c9cc] pl-1">
                     {desc}
                   </li>
                 ))}

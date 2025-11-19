@@ -26,7 +26,7 @@ const Skills = () => {
             <h2 className="flex items-center font-clashBold text-white font-semibold leading-[24.6px] text-2xl md:text-3xl lg:leading-[49.2px]">
               Skills <small className="animate-bounce">👨‍💻</small>
             </h2>
-            <div className="h-1 w-24 bg-gradient-to-r from-yellow-500 to-amber-500 mb-6 mt-3" />
+            <div className="h-1 w-12 bg-gradient-to-r from-yellow-500 to-amber-500 mb-6 mt-3" />
             <p className="font-medium font-clash text-[18px] md:text-[20px] text-[#808e91] leading-[22.5px] lg:leading-[30px] lg:tracking-wide">
               I've honed these skills through diverse projects and experiences.
             </p>
